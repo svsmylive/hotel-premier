@@ -20,15 +20,13 @@ services:
   mysql:
     platform: linux/x86_64
     image: mysql:5.7
-    ports:
-      - "3317:3306"
     environment:
-      - MYSQL_DATABASE=${DB_DATABASE}  // from .env file
-      - MYSQL_USER=${DB_USERNAME}  // from .env file
-      - MYSQL_PASSWORD=${DB_PASSWORD}  // from .env file
-      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}  // from .env file
-    volumes:
-      - db_data:/var/lib/mysql
+      - "MYSQL_ROOT_PASSWORD=secret"
+      - "MYSQL_USER=user"
+      - "MYSQL_PASSWORD=secret"
+      - "MYSQL_DATABASE=laravel"
+    ports:
+      - "33061:3306"
 
   composer:
     build:
