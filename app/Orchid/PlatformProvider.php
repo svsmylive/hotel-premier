@@ -21,7 +21,6 @@ class PlatformProvider extends OrchidServiceProvider
     public function boot(Dashboard $dashboard): void
     {
         parent::boot($dashboard);
-
         // ...
     }
 
@@ -42,9 +41,8 @@ class PlatformProvider extends OrchidServiceProvider
                 ->permission('platform.systems.users')
                 ->route('platform.systems.properties'),
 
-            Menu::make('Категории блюд')
-                ->permission('platform.systems.users')
-                ->route('platform.systems.categories'),
+            Menu::make('Новости')
+                ->route('platform.systems.news'),
 
             Menu::make(__('Users'))
                 ->icon('bs.people')

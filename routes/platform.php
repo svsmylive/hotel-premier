@@ -2,15 +2,12 @@
 
 declare(strict_types=1);
 
-use App\Orchid\Screens\Category\CategoriesEditScreen;
-use App\Orchid\Screens\Category\CategoriesListScreen;
+use App\Orchid\Screens\News\NewsEditScreen;
+use App\Orchid\Screens\News\NewsListScreen;
 use App\Orchid\Screens\Room\RoomsEditScreen;
 use App\Orchid\Screens\Room\RoomsListScreen;
 use App\Orchid\Screens\Property\PropertiesEditScreen;
 use App\Orchid\Screens\Property\PropertiesListScreen;
-use App\Orchid\Screens\Institution\InstitutionEditScreen;
-use App\Orchid\Screens\Institution\InstitutionListScreen;
-use App\Orchid\Screens\Institution\InstitutionMainEditScreen;
 use App\Orchid\Screens\PlatformScreen;
 use App\Orchid\Screens\Role\RoleEditScreen;
 use App\Orchid\Screens\Role\RoleListScreen;
@@ -102,21 +99,13 @@ Route::screen('roles', RoleListScreen::class)
 
 //Route::screen('idea', Idea::class, 'platform.screens.idea');
 
-
-Route::screen('events', PropertiesListScreen::class)->name('platform.systems.events');
-Route::screen('events/create', PropertiesEditScreen::class)->name('platform.systems.events.create');
-Route::screen('events/{event}/edit', PropertiesEditScreen::class)->name('platform.systems.events.edit');
-
-Route::screen('categories', CategoriesListScreen::class)->name('platform.systems.categories');
-Route::screen('categories/{category}/edit', CategoriesEditScreen::class)->name('platform.systems.categories.edit');
-
-Route::screen('dishes', RoomsListScreen::class)->name('platform.systems.dishes');
-Route::screen('dishes/{dish}/edit', RoomsEditScreen::class)->name('platform.systems.dishes.edit');
-
-
 Route::screen('properties', PropertiesListScreen::class)->name('platform.systems.properties');
 Route::screen('properties/create', PropertiesEditScreen::class)->name('platform.systems.properties.create');
 Route::screen('properties/{property}/edit', PropertiesEditScreen::class)->name('platform.systems.properties.edit');
+
+Route::screen('news', NewsListScreen::class)->name('platform.systems.news');
+Route::screen('news/create', NewsEditScreen::class)->name('platform.systems.news.create');
+Route::screen('news/{news}/edit', NewsEditScreen::class)->name('platform.systems.news.edit');
 
 Route::screen('rooms', RoomsListScreen::class)->name('platform.systems.rooms');
 Route::screen('rooms/{room}/edit', RoomsEditScreen::class)->name('platform.systems.rooms.edit');
