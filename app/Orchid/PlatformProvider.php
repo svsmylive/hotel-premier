@@ -44,6 +44,9 @@ class PlatformProvider extends OrchidServiceProvider
             Menu::make('Новости')
                 ->route('platform.systems.news'),
 
+            Menu::make('Отзывы')
+                ->route('platform.systems.reviews'),
+
             Menu::make(__('Users'))
                 ->icon('bs.people')
                 ->route('platform.systems.users')

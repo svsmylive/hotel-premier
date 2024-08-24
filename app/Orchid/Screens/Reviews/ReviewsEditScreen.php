@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Orchid\Screens\News;
+namespace App\Orchid\Screens\Reviews;
 
-use App\Models\News;
-use App\Orchid\Layouts\News\NewsEditLayout;
+use App\Models\Reviews;
+use App\Orchid\Layouts\Reviews\ReviewsEditLayout;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Orchid\Screen\Action;
@@ -13,24 +13,22 @@ use Orchid\Support\Color;
 use Orchid\Support\Facades\Layout;
 use Orchid\Support\Facades\Toast;
 
-class NewsEditScreen extends Screen
+class ReviewsEditScreen extends Screen
 {
     /**
-     * @var News
+     * @var Reviews
      */
-    public $news;
+    public $review;
 
     /**
      * Fetch data to be displayed on the screen.
      *
      * @return array
      */
-    public function query(News $news): iterable
+    public function query(Reviews $review): iterable
     {
-        $news->load('imagePreview');
-
         return [
-            'news' => $news
+            'review' => $review
         ];
     }
 
@@ -39,7 +37,7 @@ class NewsEditScreen extends Screen
      */
     public function name(): ?string
     {
-        return $this->news->exists ? 'Редактирование новости' : 'Создание новости';
+        return $this->review->exists ? 'Редактирование отзыва' : 'Создание отзыва';
     }
 
     /**
@@ -53,38 +51,33 @@ class NewsEditScreen extends Screen
     public function layout(): iterable
     {
         return [
-            Layout::block(NewsEditLayout::class)
-                ->title(__('Новость'))
-                ->description(__('Форма создания новости'))
+            Layout::block(ReviewsEditLayout::class)
+                ->title(__('Отзыв'))
+                ->description(__('Форма создания отзыва'))
                 ->vertical()
                 ->commands(
                     Button::make(__('Save'))
                         ->type(Color::BASIC)
                         ->icon('bs.check-circle')
-                        ->canSee($this->news->exists)
+                        ->canSee($this->review->exists)
                         ->method('save')
                 ),
         ];
     }
 
-    public function save(News $news, Request $request): RedirectResponse
+    public function save(Reviews $review, Request $request): RedirectResponse
     {
-        $data = $request->input('news');
-        $attachment = $data['attachment'] ?? null;
+        $data = $request->input('review');
 
-        if (!$news->id) {
-            $news = News::create($data);
+        if (!$review->id) {
+            Reviews::create($data);
         } else {
-            $news->update($data);
-        }
-
-        if ($attachment) {
-            $news->attachment()->sync($attachment);
+            $review->update($data);
         }
 
         Toast::info(__('Сохранено успешно'));
 
-        return redirect()->route('platform.systems.news');
+        return redirect()->route('platform.systems.reviews');
     }
 
     /**
@@ -92,13 +85,13 @@ class NewsEditScreen extends Screen
      * @throws \Exception
      *
      */
-    public function remove(News $news): RedirectResponse
+    public function remove(Reviews $review): RedirectResponse
     {
-        $news->delete();
+        $review->delete();
 
         Toast::info(__('Удалено успешно'));
 
-        return redirect()->route('platform.systems.news');
+        return redirect()->route('platform.systems.reviews');
     }
 
     /**
@@ -116,7 +109,7 @@ class NewsEditScreen extends Screen
                 ->icon('bs.trash3')
                 ->confirm(__('Подтверждение удаления'))
                 ->method('remove')
-                ->canSee($this->news->exists),
+                ->canSee($this->review->exists),
         ];
     }
 }

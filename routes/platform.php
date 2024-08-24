@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 use App\Orchid\Screens\News\NewsEditScreen;
 use App\Orchid\Screens\News\NewsListScreen;
+use App\Orchid\Screens\Reviews\ReviewsEditScreen;
+use App\Orchid\Screens\Reviews\ReviewsListScreen;
 use App\Orchid\Screens\Room\RoomsEditScreen;
 use App\Orchid\Screens\Room\RoomsListScreen;
 use App\Orchid\Screens\Property\PropertiesEditScreen;
@@ -106,6 +108,10 @@ Route::screen('properties/{property}/edit', PropertiesEditScreen::class)->name('
 Route::screen('news', NewsListScreen::class)->name('platform.systems.news');
 Route::screen('news/create', NewsEditScreen::class)->name('platform.systems.news.create');
 Route::screen('news/{news}/edit', NewsEditScreen::class)->name('platform.systems.news.edit');
+
+Route::screen('reviews', ReviewsListScreen::class)->name('platform.systems.reviews');
+Route::screen('reviews/create', ReviewsEditScreen::class)->name('platform.systems.reviews.create');
+Route::screen('reviews/{review}/edit', ReviewsEditScreen::class)->name('platform.systems.reviews.edit');
 
 Route::screen('rooms', RoomsListScreen::class)->name('platform.systems.rooms');
 Route::screen('rooms/{room}/edit', RoomsEditScreen::class)->name('platform.systems.rooms.edit');
