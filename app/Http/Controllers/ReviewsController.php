@@ -12,14 +12,24 @@ class ReviewsController
 {
     public function index(): LengthAwarePaginator
     {
-        return Reviews::query()
+        $reviews = Reviews::query()
             ->where('passed_moderation', true)
             ->orderByDesc('stars')
             ->orderByDesc('created_at')
-            ->paginate(20);
+            ->get();
+
+        return $reviews->map(function (Reviews $reviews) {
+            return [
+                'id' => $reviews->id,
+                'date' => $reviews->created_at,
+                'author' => $reviews->user_name,
+                'text' => $reviews->description,
+                'rating' => $reviews->stars,
+            ];
+        })->paginate(20);
     }
 
-    public function store(Request $request): Reviews
+    public function store(Request $request): array
     {
         $data = $request->all();
 
@@ -27,8 +37,22 @@ class ReviewsController
             unset($data['passed_moderation']);
         }
 
+        $data = [
+            'user_name' => $data['author'] ?? null,
+            'description' => $data['text'] ?? null,
+            'stars' => $data['rating'] ?? null,
+        ];
+
         $fillable = (new Reviews())->getFillable();
 
-        return Reviews::query()->create(Arr::only($data, $fillable));
+        $reviews = Reviews::query()->create(Arr::only($data, $fillable));
+
+        return [
+            'id' => $reviews->id,
+            'date' => $reviews->created_at,
+            'author' => $reviews->user_name,
+            'text' => $reviews->description,
+            'rating' => $reviews->stars,
+        ];
     }
 }

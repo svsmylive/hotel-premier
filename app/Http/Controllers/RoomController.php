@@ -11,6 +11,7 @@ class RoomController
         $rooms = Room::query()->with(['previewProperties', 'previewImages'])->get();
         $data = [];
 
+
         foreach ($rooms as $room) {
             $previewProperties = $room->previewProperties;
             $previewImages = $room->previewImages;
@@ -26,6 +27,7 @@ class RoomController
                 }
             }
 
+            $i = 0;
             if ($previewImages) {
                 foreach ($previewImages as $image) {
                     $images[] = [
@@ -35,7 +37,10 @@ class RoomController
                         'extension' => $image->extension,
                         'size' => $image->size,
                         'url' => '/storage/' . $image->path . $image->name . '.' . $image->extension,
+                        'is_main' => $i == 0,
                     ];
+
+                    $i++;
                 }
             }
 
@@ -88,10 +93,13 @@ class RoomController
         return [
             'id' => $room->id,
             'name' => $room->title,
-            'description' => $room->preview_description,
+            'description' => $room->detail_description,
             'price' => $room->price,
             'price_old' => $room->price_old,
             'discount_percent' => $room->discount_percent,
+            'square' => $room->square,
+            'bed_size' => $room->bed_size,
+            'capacity' => $room->persons,
             'options' => $propData,
             'images' => $images
         ];
