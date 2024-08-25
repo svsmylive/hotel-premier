@@ -1,6 +1,8 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ReviewsController;
+use App\Http\Controllers\RoomController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/rooms', [RoomController::class, 'index']);
+Route::get('/rooms/{id}', [RoomController::class, 'get']);
+
+Route::get('/news', [NewsController::class, 'index']);
+
+Route::get('/reviews', [ReviewsController::class, 'index']);
+Route::post('/reviews/add', [ReviewsController::class, 'store']);
