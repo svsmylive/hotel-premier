@@ -14,8 +14,8 @@ class PropertyEditLayout extends Rows
             Input::make('property.name')
                 ->type('text')
                 ->required()
-                ->title(__('Название события'))
-                ->placeholder(__('Название события')),
+                ->title(__('Название свойства'))
+                ->placeholder(__('Название свойства')),
 
             CheckBox::make('property.is_detail')
                 ->title(__('Свойство детальной страницы'))
