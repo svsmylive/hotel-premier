@@ -1,0 +1,98 @@
+body {
+    margin: 24px;
+    min-height: 958px;
+    position: relative;
+}
+.header {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+.header .header__logo {
+    padding: 10px 20px 20px 5px;
+    background-color: white;
+    border-radius: 0 0 18px 0;
+    position: relative;
+    width: 181px;
+    height: 78px;
+    box-sizing: border-box;
+    margin-left: -1px;
+}
+.header__logo-corner {
+    position: absolute;
+    width:36px;
+    height: 36px;
+    border: 12px solid white;
+}
+.header__logo-corner--top-right {
+    top: 0;
+    right: -38px;
+    border-radius: 18px 0 0 0;
+}
+.header__logo-corner--bottom-left {
+    bottom: -38px;
+    left: 0;
+    border-radius: 18px 0 0 0;
+}
+.header .header__contacts {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    gap: 80px;
+    margin: 18px 30px 0 0;
+}
+.header .contacts__tel {
+    background-image: url(/assets/icons/icon-tel-white.svg);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 36px;
+    height: fit-content;
+}
+.header .contacts__address {
+    background-image: url(/assets/icons/icon-location-white.svg);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-left: 36px;
+    height: fit-content;
+}
+
+.menu {
+    width: fit-content;
+    padding: 32px;
+    margin: 108px 0 0 40px;
+    position: relative;
+    z-index: 100;
+    font-family: 'Golos Text';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+}
+.menu .menu__items {
+}
+.menu .menu__item a {
+    color: white;
+    text-decoration: none;
+}
+.menu .menu__contacts {
+}
+
+.main-page-video {
+    position: absolute;
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+    width: calc(100vw - 48px);
+    height: calc(100vh - 48px);
+    min-height: 912px;
+    border-radius: 20px;
+}

@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+}
+
+.cover-image {
+    width: calc(1320px + 80px);
+    height: 422px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: -16px auto 80px;
+    position: relative;
+}
+.cover-image img {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+.cover-image__text {
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    font-family: 'Tenor Sans';
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 65.52px;
+    text-align: center;
+    color: white;
+}
+.rooms {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+.room {
+    width: 100%;
+    display: flex;
+    gap: 55px;
+    align-items: stretch;
+}
+.room__images {
+    width: 527px;
+    min-width: 527px;
+    height: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.room__images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+.room__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: end;
+}
+.room__info-top {
+    flex: 1;
+    width: 100%;
+}
+.room__name {
+    font-family: 'Tenor Sans';
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.room__description {
+    font-family: 'Golos Text';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.room__info-bottom {
+    display: flex;
+    align-items: end;
+    width: 100%;
+}
+.room__info-bottom-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.room__options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: start;
+    height: fit-content;
+    flex: 1;
+}
+.options__item {
+    padding: 10px 20px;
+    background-color: rgba(243, 243, 244, 1);
+    border-radius: 50px;
+    font-family: 'Golos Text';
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(30, 30, 30, 1);
+    width: fit-content;
+    height: fit-content;
+}
+.room__prices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 85px;
+    align-items: end;
+}
+.room__price-old {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Golos Text';
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(137, 137, 137, 1);
+    text-decoration: line-through;
+    white-space: nowrap;
+}
+.room__price-old span {
+    text-decoration: none;
+    font-family: 'Golos Text';
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(156, 102, 40, 1);
+    padding: 4px 10px;
+    background-color: rgba(239, 240, 244, 1);
+    border-radius: 50px;
+}
+.room__price-new {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    font-family: 'Golos Text';
+    font-size: 32px;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-top: -6px;
+}
+.room__price-new span {
+    font-family: 'Golos Text';
+    font-size: 24px;
+    font-weight: 400;
+}
+.room__price-select .button {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgba(30, 30, 30, 1);
+    color: white;
+    padding: 16px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    border-spacing: 0;
+    border: none;
+}
+.room__price-tel {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid rgba(185, 185, 185, 1);
+    color: rgba(30, 30, 30, 1);
+    padding: 16px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.room__features {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.features__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: 'Golos Text';
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(83, 84, 86, 1);
+    padding-left: 44px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 0 50%;
+}
+.features__item--qty {
+    background-image: url(/assets/icons/icon-conf-room-qty.svg);
+}
+.features__item--sqr {
+    background-image: url(/assets/icons/icon-conf-room-sqr.svg);
+}
+.features__item div {
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+}
+
+.banner {
+    display: flex;
+    background-color: rgba(243, 243, 244, 1);
+    border-radius: 16px;
+    margin-top: 120px;
+    height: 320px;
+    margin-bottom: 120px;
+}
+.banner__content {
+    flex: 1;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner__text {
+    color: rgba(30, 30, 30, 1);
+}
+.banner__title {
+    font-family: 'Tenor Sans';
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+.banner__text {
+    font-family: 'Golos Text';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.banner__image {
+    width: 527px;
+    height: 320px;
+}
+.banner__image img {
+    width: 100%;
+    height: 100%;
+}
