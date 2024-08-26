@@ -5,6 +5,28 @@
 
     RewriteEngine On
 
+    RewriteRule ^nomernoy-fond-2$ /rooms/ [R=301,L]
+    RewriteRule ^nomernoy-fond-2/$ /rooms/ [R=301,L]
+
+    RewriteRule ^sample-page/park-krasnodar$ /park-krasnodar/ [R=301,L]
+    RewriteRule ^sample-page/park-krasnodar/$ /park-krasnodar/ [R=301,L]
+
+    RewriteRule ^restorannyiy-kompleks$ /restaurant/ [R=301,L]
+    RewriteRule ^restorannyiy-kompleks/$ /restaurant/ [R=301,L]
+
+    RewriteRule ^dlya-sporta-i-otdyiha$ /pool_gym/ [R=301,L]
+    RewriteRule ^dlya-sporta-i-otdyiha/$ /pool_gym/ [R=301,L]
+
+    RewriteRule ^konferents-zal$ /conference_rooms/ [R=301,L]
+    RewriteRule ^konferents-zal/$ /conference_rooms/ [R=301,L]
+
+    RewriteRule ^raspolozhenie$ /about/ [R=301,L]
+    RewriteRule ^raspolozhenie/$ /about/ [R=301,L]
+
+    RewriteRule ^kontaktyi$ /about/ [R=301,L]
+    RewriteRule ^kontaktyi/$ /about/ [R=301,L]
+
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
