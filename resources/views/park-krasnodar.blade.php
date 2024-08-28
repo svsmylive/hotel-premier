@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Отель рядом с парком Краснодар - бизнес-отель «Премьер»</title>
+    <meta name="description"
+          content="Вы сможете быстро добраться до главной достопримечательности города — парка Краснодар. Расстояние составит всего 2 км. Бизнес-отель «Премьер».">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

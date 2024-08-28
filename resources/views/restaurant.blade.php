@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Ресторан «Камелот» в бизнес-отеле «Премьер», в центре Краснодара</title>
+    <meta name="description"
+          content="Ресторан «Камелот» в бизнес-отеле «Премьер», в центре Краснодара. Завтраки, обслуживание по меню, банкетный зал, караоке и бильярд.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

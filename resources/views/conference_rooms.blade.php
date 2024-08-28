@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Аренда конференц-зала в отеле «Премьер» в центре Краснодара - официальный сайт</title>
+    <meta name="description"
+          content="Аренда конференц-зала в отеле «Премьер» в центре Краснодара. Узнать стоимость аренды и забронировать можете на сайте.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,7 +76,7 @@
                             <div class="room__prices">
                                 <div class="room__price-new">
                                     3 240
-                                    <span>₽/сутки</span>
+                                    <span>₽/час</span>
                                 </div>
                                 <div class="room__price-tel">
                                     +7 (861) 274-11-55
@@ -109,7 +111,7 @@
                             <div class="room__prices">
                                 <div class="room__price-new">
                                     3 240
-                                    <span>₽/сутки</span>
+                                    <span>₽/час</span>
                                 </div>
                                 <div class="room__price-tel">
                                     +7 (861) 274-11-55
@@ -144,7 +146,7 @@
                             <div class="room__prices">
                                 <div class="room__price-new">
                                     3 240
-                                    <span>₽/сутки</span>
+                                    <span>₽/час</span>
                                 </div>
                                 <div class="room__price-tel">
                                     +7 (861) 274-11-55
