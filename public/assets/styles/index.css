@@ -1,6 +1,5 @@
 body {
-    margin: 24px;
-    min-height: 958px;
+    margin: 24px 24px 0;
     position: relative;
 }
 .header {
@@ -14,8 +13,8 @@ body {
     background-color: white;
     border-radius: 0 0 18px 0;
     position: relative;
-    width: 181px;
-    height: 78px;
+    width: 177px;
+    height: 68px;
     box-sizing: border-box;
     margin-left: -1px;
 }
@@ -60,6 +59,9 @@ body {
     padding-left: 36px;
     height: fit-content;
 }
+.header .header__burger {
+    background-image: url(/assets/icons/icon-burger.svg);
+}
 
 .menu {
     width: fit-content;
@@ -67,6 +69,20 @@ body {
     margin: 108px 0 0 40px;
     position: relative;
     z-index: 100;
+    position: relative;
+}
+.menu__backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+.menu.desktop .menu__items {
+    width: 300px;
     font-family: 'Golos Text';
     font-size: 24px;
     font-weight: 400;
@@ -75,15 +91,22 @@ body {
     display: flex;
     flex-direction: column;
     gap: 28px;
+    position: relative;
+}
 
-}
-.menu .menu__items {
-}
 .menu .menu__item a {
     color: white;
     text-decoration: none;
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
-.menu .menu__contacts {
+.menu .menu__item:hover a:before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 24px;
+    background-color: rgba(189, 120, 42, 1);
 }
 
 .main-page-video {
@@ -93,6 +116,36 @@ body {
     left: 0px;
     width: calc(100vw - 48px);
     height: calc(100vh - 48px);
-    min-height: 912px;
     border-radius: 20px;
+}
+
+@media all and (max-width: 768px) {
+    .menu.desktop {
+        display: none;
+    }
+    .header .header__burger {
+        display: block;
+        margin: 16px 16px 0 0;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1200px) {
+    .menu.desktop {
+        display: none;
+    }
+    body {
+        min-height: auto;
+    }
+    .header .header__contacts {
+        padding: 0 12px 0 24px;
+        gap: 42px;
+        align-items: center;
+    }
+    .header .header__burger {
+        display: block;
+        margin: 16px 16px 0 0;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
 }

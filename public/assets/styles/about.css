@@ -2,75 +2,45 @@ body {
     margin: 0;
 }
 
-.about__map {
-    width: 100%;
-    height: 640px;
-    border-radius: 16px;
-    overflow: hidden;
-    margin-bottom: 120px;
-}
-.about__map img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50%;
-}
-
-.banner {
-    display: flex;
-    height: 320px;
-    gap: 60px;
-    border-radius: 20px;
-    background-color: rgba(243, 243, 244, 1);
+.about__caption {
     margin-bottom: 80px;
-}
-.banner__content {
     display: flex;
-    flex-direction: column;
-    padding: 40px 0 40px 40px;
+    gap: 40px;
 }
-.banner__title {
-    margin-bottom: 12px;
-    font-family: 'Tenor Sans';
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 44px;
-    color: rgba(30, 30, 30, 1);
-}
-.banner__text {
-    margin-bottom: auto;
-    font-family: 'Golos Text';
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 32px;
-    color: rgba(30, 30, 30, 1);
-}
-.banner__button {
-    margin-top: auto;
-    font-family: 'Golos Text';
-    font-size: 18px;
-    font-weight: 400;
-    color: rgba(30, 30, 30, 1);
-    padding: 16px 20px;
-    border-radius: 12px;
-    background-color: white;
-    width: fit-content;
-    cursor: pointer;
-}
-.banner__image {
-    height: 320px;
-    width: 40%;
-    min-width: 40%;
+.about__caption-cover {
+    flex: 1;
     border-radius: 20px;
     overflow: hidden;
+    height: 480px;
 }
-.banner__image img {
+.about__caption-cover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 50%;
 }
-
+.about__caption-text {
+    flex: 1;
+}
+.about__caption-text h1 {
+    font-family: 'Tenor Sans';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+    margin: 0 0 40px;
+    color: rgba(30, 30, 30, 1);
+}
+.about__caption-text p {
+    font-family: 'Golos Text';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgba(30, 30, 30, 1);
+    margin-bottom: 32px;
+}
+.about__caption-text p:last-child {
+    margin-bottom: 0;
+}
 
 .about__info {
     display: flex;
@@ -115,44 +85,18 @@ body {
     color: rgba(163, 134, 77, 1);
 }
 
-.about__caption {
-    margin-bottom: 80px;
-    display: flex;
-    gap: 40px;
-}
-.about__caption-cover {
-    flex: 1;
-    border-radius: 20px;
+.about__map {
+    width: 100%;
+    height: 640px;
+    border-radius: 16px;
     overflow: hidden;
-    height: 480px;
+    margin-bottom: 120px;
 }
-.about__caption-cover img {
+.about__map img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 50%;
-}
-.about__caption-text {
-    flex: 1;
-}
-.about__caption-text h1 {
-    font-family: 'Tenor Sans';
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 46px;
-    margin: 0 0 40px;
-    color: rgba(30, 30, 30, 1);
-}
-.about__caption-text p {
-    font-family: 'Golos Text';
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    color: rgba(30, 30, 30, 1);
-    margin-bottom: 32px;
-}
-.about__caption-text p:last-child {
-    margin-bottom: 0;
 }
 
 .reviews {
@@ -163,6 +107,17 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+}
+.reviews__button {
+    border-radius: 12px;
+    background-color: rgba(30, 30, 30, 1);
+    padding: 16px 40px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Golos Text';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
 }
 .reviews h1 {
     font-family: 'Tenor Sans';
@@ -177,15 +132,16 @@ body {
     display: flex;
     gap: 40px;
     width: 100vw;
-    margin-left: calc(0px - (100vw - 1320px) / 2);
-    padding: 0 30px;
+    overflow: auto;
+    padding: 0 60px;
 }
 .reviews__item {
     padding: 40px;
-    opacity: 0.5;
+    opacity: 1;
     border-radius: 20px;
     background-color: rgba(243, 243, 244, 1);
-    flex: 1;
+    min-width: 594px;
+    max-width: 33%;
 }
 .reviews__item--active {
     opacity: 1;
@@ -246,4 +202,282 @@ body {
     height: 12px;
     border-radius: 12px;
     background-color: rgba(30, 30, 30, 1);
+}
+
+.banner {
+    display: flex;
+    height: 320px;
+    gap: 60px;
+    border-radius: 20px;
+    background-color: rgba(243, 243, 244, 1);
+    margin-bottom: 80px;
+}
+.banner__content {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 40px 40px;
+}
+.banner__title {
+    margin-bottom: 12px;
+    font-family: 'Tenor Sans';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    color: rgba(30, 30, 30, 1);
+}
+.banner__text {
+    margin-bottom: auto;
+    font-family: 'Golos Text';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgba(30, 30, 30, 1);
+}
+.banner__button {
+    margin-top: auto;
+    font-family: 'Golos Text';
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(30, 30, 30, 1);
+    padding: 16px 20px;
+    border-radius: 12px;
+    background-color: white;
+    width: fit-content;
+    cursor: pointer;
+}
+.banner__image {
+    height: 320px;
+    width: 40%;
+    min-width: 40%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.banner__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+@media all and (max-width: 768px) {
+    .about__caption {
+        margin-bottom: 60px;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about__caption-cover {
+        flex: 1;
+        border-radius: 0;
+        overflow: hidden;
+        height: 320px;
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+    .about__caption-text h1 {
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0 0 16px;
+    }
+    .about__caption-text p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 28px;
+    }
+
+    .about__info {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0;
+        margin: 0 0 24px;
+        gap: 16px;
+        align-items: center;
+    }
+    .about__info-item {
+        width: fit-content;
+    }
+    .about__info-item-text {
+        font-size: 16px;
+    }
+
+    .about__map {
+        height: 420px;
+        margin-bottom: 42px;
+    }
+
+    .reviews {
+        margin-bottom: 60px;
+    }
+
+    .reviews__heading {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+        gap: 32px;
+        align-items: start;
+    }
+
+    .reviews__button {
+        width: 100%;
+    }
+
+    .reviews h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .reviews__items {
+        display: flex;
+        gap: 20px;
+        width: 100vw;
+        margin-left: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        overflow: auto;
+    }
+    .reviews__item {
+        padding: 24px;
+        min-width: 50vw;
+        max-width: 50vw;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 0;
+    }
+    .banner__content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .banner__title {
+        margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .banner__text {
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .banner__button {
+        margin-top: auto;
+        font-family: 'Golos Text';
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(30, 30, 30, 1);
+        padding: 16px 20px;
+        border-radius: 12px;
+        background-color: white;
+        width: fit-content;
+        cursor: pointer;
+    }
+    .banner__image {
+        height: 212px;
+        width: 100%;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 1200px) {
+    .about__caption {
+        margin-bottom: 60px;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about__caption-cover {
+        flex: 1;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 320px;
+    }
+    .about__caption-text h1 {
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0 0 16px;
+    }
+    .about__caption-text p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 28px;
+    }
+
+    .about__info {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 0;
+        margin: 0 0 24px;
+        gap: 16px;
+        align-items: center;
+    }
+    .about__info-item {
+        width: fit-content;
+    }
+    .about__info-item-text {
+        font-size: 16px;
+    }
+
+    .about__map {
+        height: 320px;
+        margin-bottom: 60px;
+    }
+
+    .reviews {
+        margin-bottom: 60px;
+    }
+
+    .reviews h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .reviews__items {
+        display: flex;
+        gap: 20px;
+        width: 100vw;
+        margin-left: -24px;
+        overflow: auto;
+    }
+    .reviews__item {
+        padding: 24px;
+        min-width: 50vw;
+        max-width: 50vw;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 0;
+    }
+    .banner__content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .banner__title {
+        margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .banner__text {
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .banner__button {
+        margin-top: auto;
+        font-family: 'Golos Text';
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(30, 30, 30, 1);
+        padding: 16px 20px;
+        border-radius: 12px;
+        background-color: white;
+        width: fit-content;
+        cursor: pointer;
+    }
+    .banner__image {
+        height: 212px;
+        width: 100%;
+    }
 }
