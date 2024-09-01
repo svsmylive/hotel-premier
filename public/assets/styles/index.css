@@ -1,6 +1,7 @@
 body {
     margin: 24px 24px 0;
     position: relative;
+    overflow: hidden;
 }
 .header {
     position: relative;

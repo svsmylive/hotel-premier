@@ -4,6 +4,7 @@
 
 body {
     overflow-x: hidden;
+    height: 100vh;
 }
 
 .wrapper {}
@@ -737,9 +738,113 @@ menu.mobile .menu__item a {
 .widget {
     position: absolute;
     z-index: 10000 !important;
-    bottom: 40px;
+    bottom: 100px;
     left: 40px;
     right: 40px;
-    width: 100%;
-    height: 116px;
+    width: calc(100vw - 80px - 40px);
+    display: flex;
+    gap: 10px;
+    padding: 30px;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 20px;
+}
+.widget__datepickers {
+    display: flex;
+    gap: 10px;
+    flex: 2;
+}
+.widget__datepicker {
+    border-radius: 12px;
+    padding: 16px 12px;
+    border: 1px solid rgba(231, 232, 233, 1);
+    background-color: #fff;
+    flex: 1;
+    height: fit-content;
+}
+.widget__button {
+    flex: 1;
+    color: #fff;
+    background-color: rgba(30, 30, 30, 1);
+    border-radius: 12px;
+    padding: 17px 20px 17px 20px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+    .widget {
+        flex-direction: column;
+    }
+    .widget__datepickers {
+        flex-direction: column;
+    }
+}
+@media all and (min-width: 769px) and (max-width: 1200px) {
+    .widget {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .widget__button {
+        flex: 2;
+    }
+}
+
+.dp__input {
+    border: none !important;
+    font-family: 'Montserrat' !important;
+    font-size: 16px !important;
+    font-weight: 400;
+}
+.dp__menu_inner {
+    padding: 12px;
+}
+.dp--arrow-btn-nav {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background-color: rgba(245, 245, 245, 1) !important;
+}
+.dp__calendar_header {
+    font-weight: normal;
+}
+.dp__calendar_header_item {
+    font-size: 10px;
+    width: 36px;
+    height: 28px;
+    min-width: 36px;
+    min-height: 28px;
+}
+.dp__calendar_item {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    font-size: 16px;
+}
+.dp__input_focus {
+    border: none !important;
+}
+.dp__input_wrap {
+    display: flex;
+}
+.dp__input_icon_pad {
+    padding-inline-start: 0 !important;
+}
+.dp__input_icon {
+    position: relative !important;
+    top: auto !important;
+    right: auto;
+    transform: none !important;
+}
+.dp__range_end, .dp__range_start, .dp__active_date {
+    border-radius: 17px !important;
+    background-color: rgba(51, 51, 51, 1) !important;
+}
+.dp__date_hover_end:hover, .dp__date_hover_start:hover, .dp__date_hover:hover {
+    border-radius: 17px !important;
 }
