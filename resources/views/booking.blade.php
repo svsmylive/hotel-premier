@@ -20,7 +20,7 @@
 	<header class="header header--shadow">
 		<div class="content">
 			<div class="header__logo logo">
-				<img src="/public/images/logo.png" />
+				<img src="/images/logo.png" />
 			</div>
 			<menu class="header__menu">
 				<div class="menu__item">
@@ -51,7 +51,7 @@
 	<menu class="mobile" v-if="mobileMenu">
 		<div class="menu__close" @click="toggleMenu"></div>
 		<div class="menu__logo">
-			<img src="/public/images/logo.png" />
+			<img src="/images/logo.png" />
 		</div>
 		<div class="menu__contacts">
 			<div class="contacts__tel">8 (861) 274-11-55</div>
@@ -70,7 +70,7 @@
 
 	<main class="main">
 		<div class="cover-image">
-			<img src="/public/images/rooms-cover.png" />
+			<img src="/images/rooms-cover.png" />
 		</div>
 		<div class="content">
 			<div id="tl-booking-form"></div>
@@ -82,7 +82,7 @@
 		<div class="content">
 			<div class="footer__col">
 				<div class="footer__logo logo">
-					<img src="/public/images/logo.png" />
+					<img src="/images/logo.png" />
 				</div>
 				<div class="footer__address">
 					г. Краснодар,<br />ул. Васнецова, 14

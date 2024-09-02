@@ -22,6 +22,10 @@ Route::get('/rooms/', function () {
     return view('rooms');
 })->name('rooms');
 
+Route::get('/booking/', function () {
+    return view('booking');
+})->name('booking');
+
 
 Route::get('/conference_rooms/', function () {
     return view('conference_rooms');
