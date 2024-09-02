@@ -5,15 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap" rel="stylesheet">
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link href="/assets/styles/styles.css" rel="stylesheet">
-	<link href="/assets/styles/rooms.css" rel="stylesheet">
+	<link href="/assets/styles/restaurant.css" rel="stylesheet">
 </head>
 <body id="app">
 	<div class="wrapper">
@@ -69,62 +67,99 @@
 		</menu>
 
 		<main class="main">
-			<div class="cover-image">
-				<img src="/public/images/rooms-cover.png" />
-			</div>
 			<div class="content">
-				<h1>Выберите категорию номера</h1>
-				<div class="rooms">
-					<div
-						class="room"
-						v-for="(room, roomIdx) in rooms"
-						:key="`room-${room.id}`"
-					>
-						<div class="room__images">
-							<template v-if="room.images.length">
-								<div class="swiper mySwiper">
-									<div class="swiper-wrapper">
-										<div
-											class="swiper-slide"
-											v-for="image in room.images" :key="image.id"
-										>
-											<img :src="`http://vladim0u.beget.tech${image.url}`" />
-										</div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-							</template>
+				<div class="breadcrumbs">
+					<div class="breadcrumbs__item"><a href="#">Главная</a></div>
+					<div class="breadcrumbs__item">Завтрак и рестораны</div>
+				</div>
+
+				<h1>Ресторан «Камелот»</h1>
+
+				<div class="restaurant__items">
+					<div class="restaurant__item">
+						<h4 class="restaurant__item-title">Завтраки</h4>
+						<div class="restaurant__item-text">Завтрак для гостей отеля по системе «Шведский стол»</div>
+						<div class="restaurant__item-cover">
+							<img src="/public/images/breakfast-cover.jpg" />
 						</div>
-						<div class="room__info">
-							<div class="room__info-top">
-								<h4 class="room__name">{{ room.name }}</h4>
-								<div class="room__description">{{ room.description }}</div>
-							</div>
-							<div class="room__info-bottom">
-								<div class="room__options">
-									<div
-										class="options__item"
-										v-for="option in room.options"
-										:key="`room-option-${option.id}`"
-									>{{ option.name }}</div>
-								</div>
-								<div class="room__prices">
-									<div>
-										<div class="room__price-old">
-											<span>{{ room.price_old }} ₽/сутки</span>
-											<span>{{ room.discount_percent }}</span>
-										</div>
-										<div class="room__price-new">
-											{{ room.price }}
-											<span>₽/сутки</span>
-										</div>
-									</div>
-									<div class="room__price-select">
-										<button class="button">Выбрать номер</button>
-									</div>
-								</div>
-							</div>
+					</div>
+					<div class="restaurant__item">
+						<h4 class="restaurant__item-title">Ресторан</h4>
+						<div class="restaurant__item-text">Обслуживание по меню для всех гостей. Ресторан открыт до 01:00</div>
+						<div class="restaurant__item-cover">
+							<img src="/public/images/restaurant-cover.jpg" />
 						</div>
+					</div>
+					<div class="restaurant__item">
+						<h4 class="restaurant__item-title">Банкетный зал</h4>
+						<div class="restaurant__item-text">Для проведения мероприятий до 100 человек</div>
+						<div class="restaurant__item-cover">
+							<img src="/public/images/bankethall-cover.jpg" />
+						</div>
+					</div>
+					<div class="restaurant__item">
+						<h4 class="restaurant__item-title">Караоке</h4>
+						<div class="restaurant__item-text">Караоке вечера для талантливых и весёлых компаний</div>
+						<div class="restaurant__item-cover">
+							<img src="/public/images/karaoke.cover.jpg" />
+						</div>
+					</div>
+					<div class="restaurant__item">
+						<h4 class="restaurant__item-title">Бильярдный зал</h4>
+						<div class="restaurant__item-text">Уникальная бильярдная в рыцарском стиле</div>
+						<div class="restaurant__item-cover">
+							<img src="/public/images/billiard-cover.jpg" />
+						</div>
+					</div>
+					<div class="restaurant__item">
+						<h4 class="restaurant__item-title">Летняя веранда</h4>
+						<div class="restaurant__item-text">Свежий воздух и живописный вид с летней веранды ресторана</div>
+						<div class="restaurant__item-cover">
+							<img src="/public/images/terrace-cover.jpg" />
+						</div>
+					</div>
+				</div>
+
+				<div class="restaurant__text">
+					Уютно расположенный в самом сердце Краснодара между улицами Северная и Селезнева ресторан с легкостью перенесет Вас из кипящего жизнью центра южной столицы в прохладный и таинственный полумрак средневекового европейского замка.
+				</div>
+
+				<div class="restaurant__info">
+					<div class="restaurant__info-item">
+						<h5 class="restaurant__info-item-title">Вместимость</h5>
+						<div class="restaurant__info-item-text">до 100 чел.</div>
+					</div>
+					<div class="restaurant__info-item">
+						<h5 class="restaurant__info-item-title">Телефон</h5>
+						<div class="restaurant__info-item-text">+7 (861) 274-11-55</div>
+					</div>
+					<div class="restaurant__info-item">
+						<h5 class="restaurant__info-item-title">Меню</h5>
+						<div class="restaurant__info-item-text"><a href="#">Основное меню</a></div>
+					</div>
+				</div>
+
+				<div class="banner">
+					<div class="banner__content">
+						<div class="banner__title">Получите максимум удовольствия</div>
+						<div class="banner__text">Забронируйте номер в нашем отеле и пользуйтесь всеми услугами, включенными в проживание</div>
+						<div class="banner__button">Выбрать номер</div>
+					</div>
+					<div class="banner__image">
+						<img src="/public/images/banner2.jpg" />
+					</div>
+				</div>
+
+				<div class="location">
+					<div class="location__content">
+						<h2 class="location__title">Где находимся</h2>
+						<div class="location__items">
+							<div class="location__item location__item--location">г. Краснодар, ул. Васнецова, 14</div>
+							<div class="location__item location__item--tel">+7 (861) 274-11-55</div>
+						</div>
+					</div>
+					<div class="location__map">
+						<img src="/public/images/map.jpg" />
 					</div>
 				</div>
 			</div>
@@ -186,48 +221,18 @@
 		</footer>
 	</div>
 	<script>
-		const { createApp, ref, onMounted } = Vue
-
-		const rooms = ref([])
+		const { createApp, ref } = Vue
 
 		const mobileMenu = ref(false)
 		const toggleMenu = () => {
 			mobileMenu.value = !mobileMenu.value
 		}
-		const fetchRooms = async () => {
-			try {
-				const response = await fetch('http://vladim0u.beget.tech/api/rooms')
-				if (!response.ok) {
-					throw new Error(`Response status: ${response.status}`)
-				}
-
-				rooms.value = await response.json()
-				setTimeout(() => {
-					const swiper = new Swiper(".mySwiper", {
-						slidesPerView: 1,
-						spaceBetween: 12,
-						loop: true,
-						pagination: {
-							el: ".swiper-pagination",
-							clickable: true,
-						},
-					})
-				}, 2000)
-			} catch (error) {
-				console.error(error.message)
-			}
-		}
 
 		createApp({
 			setup() {
-				onMounted(() => {
-					fetchRooms()
-				})
-
-				return { mobileMenu, toggleMenu, rooms }
+				return { mobileMenu, toggleMenu }
 			}
 		}).mount('#app')
 	</script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

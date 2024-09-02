@@ -5,13 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap" rel="stylesheet">
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link href="/assets/styles/styles.css" rel="stylesheet">
 	<link href="/assets/styles/rooms.css" rel="stylesheet">
 </head>
@@ -70,61 +68,126 @@
 
 		<main class="main">
 			<div class="cover-image">
-				<img src="/public/images/rooms-cover.png" />
+				<img src="/public/images/conf-rooms-cover.png" />
+				<div class="cover-image__text">
+					Конференц-залы<br />для ваших мероприятий
+				</div>
 			</div>
 			<div class="content">
-				<h1>Выберите категорию номера</h1>
 				<div class="rooms">
-					<div
-						class="room"
-						v-for="(room, roomIdx) in rooms"
-						:key="`room-${room.id}`"
-					>
+					<div class="room">
 						<div class="room__images">
-							<template v-if="room.images.length">
-								<div class="swiper mySwiper">
-									<div class="swiper-wrapper">
-										<div
-											class="swiper-slide"
-											v-for="image in room.images" :key="image.id"
-										>
-											<img :src="`http://vladim0u.beget.tech${image.url}`" />
-										</div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-							</template>
+							<img src="/public/images/conf-room-1.jpeg" />
 						</div>
 						<div class="room__info">
 							<div class="room__info-top">
-								<h4 class="room__name">{{ room.name }}</h4>
-								<div class="room__description">{{ room.description }}</div>
+								<h4 class="room__name">Основной конференц-зал</h4>
+								<div class="room__description">Театральная рассадка</div>
 							</div>
 							<div class="room__info-bottom">
-								<div class="room__options">
-									<div
-										class="options__item"
-										v-for="option in room.options"
-										:key="`room-option-${option.id}`"
-									>{{ option.name }}</div>
-								</div>
-								<div class="room__prices">
-									<div>
-										<div class="room__price-old">
-											<span>{{ room.price_old }} ₽/сутки</span>
-											<span>{{ room.discount_percent }}</span>
+								<div class="room__info-bottom-content">
+									<div class="room__features">
+										<div class="features__item features__item--sqr">
+											Площадь
+											<div>60 м<sup>2</sup></div>
 										</div>
-										<div class="room__price-new">
-											{{ room.price }}
-											<span>₽/сутки</span>
+										<div class="features__item features__item--qty">
+											Вместимость
+											<div>до 70 чел.</div>
 										</div>
 									</div>
-									<div class="room__price-select">
-										<button class="button">Выбрать номер</button>
+									<div class="room__description">Чтобы забронировать, позвоните по телефону</div>
+								</div>
+								<div class="room__prices">
+									<div class="room__price-new">
+										3 240
+										<span>₽/сутки</span>
+									</div>
+									<div class="room__price-tel">
+										+7 (861) 274-11-55
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="room">
+						<div class="room__images">
+							<img src="/public/images/conf-room-2.jpeg" />
+						</div>
+						<div class="room__info">
+							<div class="room__info-top">
+								<h4 class="room__name">Большой конференц-зал</h4>
+								<div class="room__description">Свободная рассадка</div>
+							</div>
+							<div class="room__info-bottom">
+								<div class="room__info-bottom-content">
+									<div class="room__features">
+										<div class="features__item features__item--sqr">
+											Площадь
+											<div>60 м<sup>2</sup></div>
+										</div>
+										<div class="features__item features__item--qty">
+											Вместимость
+											<div>до 70 чел.</div>
+										</div>
+									</div>
+									<div class="room__description">Чтобы забронировать, позвоните по телефону</div>
+								</div>
+								<div class="room__prices">
+									<div class="room__price-new">
+										3 240
+										<span>₽/сутки</span>
+									</div>
+									<div class="room__price-tel">
+										+7 (861) 274-11-55
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="room">
+						<div class="room__images">
+							<img src="/public/images/conf-room-3.jpeg" />
+						</div>
+						<div class="room__info">
+							<div class="room__info-top">
+								<h4 class="room__name">Переговорная комната</h4>
+								<div class="room__description">Свободная рассадка</div>
+							</div>
+							<div class="room__info-bottom">
+								<div class="room__info-bottom-content">
+									<div class="room__features">
+										<div class="features__item features__item--sqr">
+											Площадь
+											<div>60 м<sup>2</sup></div>
+										</div>
+										<div class="features__item features__item--qty">
+											Вместимость
+											<div>до 70 чел.</div>
+										</div>
+									</div>
+									<div class="room__description">Чтобы забронировать, позвоните по телефону</div>
+								</div>
+								<div class="room__prices">
+									<div class="room__price-new">
+										3 240
+										<span>₽/сутки</span>
+									</div>
+									<div class="room__price-tel">
+										+7 (861) 274-11-55
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="banner">
+					<div class="banner__content">
+						<h4 class="banner__title">Организуем кофе-брейки и бизнес-ланчи</h4>
+						<div class="banner__text">Возьмем на себя обслуживание гостей с нашим персоналом</div>
+					</div>
+					<div class="banner__image">
+						<img src="/public/images/conf_rooms_banner.png" />
 					</div>
 				</div>
 			</div>
@@ -188,46 +251,16 @@
 	<script>
 		const { createApp, ref, onMounted } = Vue
 
-		const rooms = ref([])
-
 		const mobileMenu = ref(false)
 		const toggleMenu = () => {
 			mobileMenu.value = !mobileMenu.value
 		}
-		const fetchRooms = async () => {
-			try {
-				const response = await fetch('http://vladim0u.beget.tech/api/rooms')
-				if (!response.ok) {
-					throw new Error(`Response status: ${response.status}`)
-				}
-
-				rooms.value = await response.json()
-				setTimeout(() => {
-					const swiper = new Swiper(".mySwiper", {
-						slidesPerView: 1,
-						spaceBetween: 12,
-						loop: true,
-						pagination: {
-							el: ".swiper-pagination",
-							clickable: true,
-						},
-					})
-				}, 2000)
-			} catch (error) {
-				console.error(error.message)
-			}
-		}
 
 		createApp({
 			setup() {
-				onMounted(() => {
-					fetchRooms()
-				})
-
-				return { mobileMenu, toggleMenu, rooms }
+				return { mobileMenu, toggleMenu }
 			}
 		}).mount('#app')
 	</script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

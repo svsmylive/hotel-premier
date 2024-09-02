@@ -1,0 +1,266 @@
+.room {
+    margin-bottom: 80px;
+}
+.room__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    grid-template-areas:
+    "main main . ."
+    "main main . .";
+    margin-bottom: 80px;
+}
+.room__image {
+    height: 240px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.room__image img {
+    object-fit: cover;
+    object-position: 50%;
+    width: 100%;
+    height: 100%;
+}
+.room__image span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Golos Text';
+    font-size: 24px;
+    font-weight: 500;
+}
+.room__image-main {
+    grid-area: main;
+}
+.room__image:first-child {
+    height: 520px;
+}
+.room__image img {
+    object-fit: cover;
+    object-position: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.room__flex {
+    display: flex;
+    gap: 40px;
+}
+.room__info {
+    flex: 1;
+}
+.room__options {
+    margin-bottom: 60px;
+    display: flex;
+    gap: 40px;
+}
+.room__option {
+    font-family: 'Golos Text';
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(30, 30, 30, 1);
+}
+.room__option span {
+    display: block;
+    margin-bottom: 4px;
+    font-family: 'Golos Text';
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(83, 84, 86, 1);
+}
+.room__description {
+    font-family: 'Golos Text';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgba(30, 30, 30, 1);
+}
+.room__form {
+    border: 1px solid rgba(231, 232, 233, 1);
+    border-radius: 20px;
+    padding: 24px;
+    width: 527px;
+    max-width: 527px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: rgba(30, 30, 30, 1);
+    font-family: 'Tenor Sans';
+    font-size: 24px;
+    font-weight: 400;
+}
+.room__form-time {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(219, 221, 227, 1);
+    background-image: url(/assets/icons/icon-time.svg);
+    background-size: 16px;
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+    display: flex;
+    padding-left: 26px;
+    gap: 16px;
+}
+.room__form-time1 {
+    color: rgba(30, 30, 30, 1);
+    font-family: 'Golos Text';
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    gap: 16px;
+}
+.room__form-time1:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 20px;
+    background-color: rgba(30, 30, 30, 1);
+}
+.room__form-time2 {
+    color: rgba(30, 30, 30, 1);
+    font-family: 'Golos Text';
+    font-size: 16px;
+    font-weight: 400;
+}
+.room__form-row {}
+.room__form-cost {
+    padding-top: 20px;
+    border-top: 1px solid rgba(219, 221, 227, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.room__form-cost-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.room__form-cost-line span:first-child {
+    font-family: 'Golos Text';
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(30, 30, 30, 1);
+}
+.room__form-cost-line span:last-child {
+    font-family: 'Golos Text';
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(30, 30, 30, 1);
+}
+.room__form-cost-line--big span:first-child {
+    display: flex;
+    flex-direction: column;
+}
+.room__form-cost-line--big span:last-child {
+    font-family: 'Golos Text';
+    font-size: 32px;
+}
+.room__form-cost-line span div {
+    display: inline-block;
+    font-family: 'Golos Text';
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(156, 102, 40, 1);
+    background-color: rgba(243, 243, 244, 1);
+    border-radius: 100px;
+    padding: 4px 10px;
+}
+.room__form-cost-line span small {
+    font-family: 'Golos Text';
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(83, 84, 86, 1);
+}
+.room__form-input {
+    border: 1px solid rgba(231, 232, 233, 1);
+    border-radius: 12px;
+    padding: 16px 12px;
+}
+.room__form-button {
+    border-radius: 12px;
+    padding: 17px 20px 17px 20px;
+    background-color: rgba(30, 30, 30, 1);
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.services__item {
+    font-family: 'Golos Text';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgba(30, 30, 30, 1);
+    display: flex;
+}
+.services__item:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 1px;
+    background-color: rgba(83, 84, 86, 1);
+    margin-right: 8px;
+    margin-top: 16px;
+}
+
+.h2 {
+    margin-top: 0;
+    margin-bottom: 60px;
+    color: rgba(30, 30, 30, 1);
+    font-family: 'Tenor Sans';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+}
+.h2--right {
+    margin-left: 33%;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.benefits__item {
+    flex: 0.25;
+    height: 315px;
+    position: relative;
+    cursor: pointer;
+}
+.benefits__item img {
+    object-fit: cover;
+    object-position: 50%;
+    width: 100%;
+    height: 100%;
+}
+.benefits__item-title {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    color: #fff;
+    font-family: 'Tenor Sans';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+	<link href="/assets/styles/styles.css" rel="stylesheet">
+	<link href="/assets/styles/park.css" rel="stylesheet">
+</head>
+<body id="app">
+<div class="wrapper">
+	<header class="header header--shadow">
+		<div class="content">
+			<div class="header__logo logo">
+				<img src="/public/images/logo.png" />
+			</div>
+			<menu class="header__menu">
+				<div class="menu__item">
+					<a href="/rooms.html">Номера</a>
+				</div>
+				<div class="menu__item">
+					<a href="/conference_rooms.html">Конференц-залы</a>
+				</div>
+				<div class="menu__item">
+					<a href="/pool_gym.html">Бассейн и спортзал</a>
+				</div>
+				<div class="menu__item menu__item--more">
+					Еще
+					<div class="menu__item-sub">
+						<div class="menu__item-sub-item"><a href="">Новости</a></div>
+						<div class="menu__item-sub-item"><a href="">О нас</a></div>
+						<div class="menu__item-sub-item"><a href="">Парк Краснодар</a></div>
+					</div>
+				</div>
+			</menu>
+			<div class="header__contacts">
+				<div class="contacts_tel">8 (861) 274-11-55</div>
+				<div class="contacts_address">г. Краснодар, ул. Васнецова, 14</div>
+			</div>
+			<div class="header__burger" @click="toggleMenu"></div>
+		</div>
+	</header>
+	<menu class="mobile" v-if="mobileMenu">
+		<div class="menu__close" @click="toggleMenu"></div>
+		<div class="menu__logo">
+			<img src="/public/images/logo.png" />
+		</div>
+		<div class="menu__contacts">
+			<div class="contacts__tel">8 (861) 274-11-55</div>
+			<div class="contacts__address">г. Краснодар, ул. Васнецова, 14</div>
+		</div>
+		<div class="menu__items">
+			<div class="menu__item"><a href="/rooms.html">Номера</a></div>
+			<div class="menu__item"><a href="/conference_rooms.html">Конференц-залы</a></div>
+			<div class="menu__item"><a href="/pool_gym.html">Бассейн и спортзал</a></div>
+			<div class="menu__item"><a href="/restaurant.html">Завтрак и рестораны</a></div>
+			<div class="menu__item"><a href="/events.html">События</a></div>
+			<div class="menu__item"><a href="/about.html">О нас</a></div>
+			<div class="menu__item"><a href="/park.html">Парк Краснодар</a></div>
+		</div>
+	</menu>
+
+	<main class="main">
+		<div class="content">
+			<div class="breadcrumbs">
+				<div class="breadcrumbs__item"><a href="#">Главная</a></div>
+				<div class="breadcrumbs__item">Парк Краснодар</div>
+			</div>
+
+			<h1>ПОРЯДОК ПРОЖИВАНИЯ В ПРЕМЬЕР ОТЕЛЕ</h1>
+			<ol>
+				<li>Носите карточку гостя с собой. Она является документом, подтверждающим Ваше право на проживание и пользование услугами отеля, входящими в стоимость.</li>
+				<li>Расчётный час в 12:00. Если Вы хотите заехать раньше или взять дополнительные часы проживания, предупредите об этом администратора гостиницы заранее и оплатите согласно прейскуранту на дополнительные часы. Дополнительные часы предоставляются при условии наличия свободного номера той же категории.</li>
+				<li>Если вы хотите сократить срок пребывания в отеле, Вам необходимо сообщить об этом администратору не менее чем за 24 часа. В противном случае проживание рассчитывается по ранее оговоренному сроку</li>
+				<li>При проживании менее суток плата взимается за полные сутки.</li>
+				<li>При заселении в номер Вы получаете ключ-карту. При её потере Вам необходимо сразу сообщить администратору, чтобы предотвратить злоупотребления. Сразу после извещения администратор выдаст Вам новый ключ стоимостью согласно прейскуранту.</li>
+				<li>Люди, навещающие гостей, должны предварительно подходить к администратору службы размещения.</li>
+				<li>Обо всех возможных дополнительных пожеланиях (например, побудка, стирка, глажение и т.д.) и отказах от услуг сообщайте администратору.</li>
+				<li>Ежедневная уборка – после 14:00. Если Вам удобно другое время – позвоните, пожалуйста, 553 или повесьте зелёную карту. Замена постельного белья в номерах производится каждый день.</li>
+				<li>Просим соблюдать тишину и правила этики по отношению к другим гостям отеля.</li>
+				<li>Если гость пользуется номером или другими помещениями отеля и ресторанного комплекса с нарушениями общепринятых правил, администрация отеля имеет право отказать в дальнейшем предоставлении услуг.</li>
+				<li>Сообщите о Вашем отъезде заранее, и мы сделаем всё возможное, чтобы не занимать Вашего времени на оформление отъезда.</li>
+				<li>Если Вам необходима дополнительная информация или помощь, обращайтесь в службу приёма и размещения.</li>
+			</ol>
+
+			<h2>ПРАВИЛА ПОЛЬЗОВАНИЯ НОМЕРАМИ ОТЕЛЯ</h2>
+			<ol>
+				<li>Просим аккуратно пользоваться аппаратурой, оборудованием и инвентарём, находящимся в номерах отеля, а также общих помещениях, и использовать их только по их прямому назначению. Ущерб, принесённый отелю по Вашей вине, будет отнесён на Ваш счёт согласно действующему прейскуранту на ремонтно-восстановительные работы.</li>
+				<li>Просим сразу сообщать о замеченных Вами повреждениях и неисправностях, чтобы мы устранили их в кратчайшие сроки.</li>
+				<li>Соблюдайте правила противопожарной безопасности, Инструкцию о действиях в случае пожара и экстремальных ситуаций, Правила пользования электробытовыми приборами, иные правила, действующие на территории Отеля.</li>
+				<li>Курение в любых помещениях и на территории отеля запрещено. Курение разрешено в специально отведенной зоне для курения (на улице).</li>
+			</ol>
+
+			<h2>ПОРЯДОК И УСЛОВИЯ БРОНИРОВАНИЯ НОМЕРОВ</h2>
+			<ol>
+				<li>Бронирование может быть осуществлено в любой форме: с помощью почтовой, телефонной и иной связи.</li>
+				<li>В ПРЕМЬЕР отеле применяются следующие виды бронирования:
+					<ul>
+						<li>Гарантированное бронирование – вид бронирования, при котором гостиница ожидает потребителя до расчетного часа дня, следующего за днем запланированного заезда. В случае отказа от бронирования позднее, чем за 24 часа до расчетного часа даты заезда, опоздания или незаезда потребителя с него или с заказчика взимается плата за фактический простой номера, но не более, чем за сутки. При опоздании более чем на сутки гарантированное бронирование аннулируется.</li>
+						<li>Негарантированное бронирование – вид бронирования, при котором гостиница ожидает потребителя до 18:00 дня заезда, после чего бронирование аннулируется.</li>
+					</ul>
+				</li>
+				<li>Бронирование считается действительным с момента получения заказчиком уведомления, содержащего сведения о наименовании исполнителя, данных заказчика, категории заказанного номера и о его цене, об условиях бронирования, о сроках проживания.</li>
+				<li>Заказчик вправе аннулировать заявку не позднее, чем за 24 часа до даты заезда. В случае несвоевременной отмены заявки исполнитель вправе взимать оплату, за простой номера, но не более, чем за сутки.</li>
+			</ol>
+
+		</div>
+	</main>
+
+	<div class="before-footer"></div>
+	<footer class="footer">
+		<div class="content">
+			<div class="footer__col">
+				<div class="footer__logo logo">
+					<img src="/public/images/logo.png" />
+				</div>
+				<div class="footer__address">
+					г. Краснодар,<br />ул. Васнецова, 14
+				</div>
+			</div>
+			<div class="footer__col">
+				<menu class="footer__menu">
+					<div class="menu__item">
+						<a href="/rooms.html">Номера</a>
+					</div>
+					<div class="menu__item">
+						<a href="/conference_rooms.html">Конференц-залы</a>
+					</div>
+					<div class="menu__item">
+						<a href="/pool_gym.html">Бассейн и спортзал</a>
+					</div>
+					<div class="menu__item">
+						<a href="/restaurant.html">Завтрак и рестораны</a>
+					</div>
+				</menu>
+			</div>
+			<div class="footer__col">
+				<menu class="footer__menu">
+					<div class="menu__item">
+						<a href="/about.html">О нас</a>
+					</div>
+					<div class="menu__item">
+						<a href="/park.html">Парк "Краснодар"</a>
+					</div>
+				</menu>
+			</div>
+			<div class="footer__col">
+				<div class="footer__socials">
+					<div class="socials__tel">8 (861) 274-11-55</div>
+					<div class="socials__vk"></div>
+					<div class="socials__ok"></div>
+				</div>
+				<div class="footer__links">
+					<div class="links__item">
+						<a href="#">Политика конфиденциальности</a>
+					</div>
+					<div class="links__item">
+						<a href="#">Правила проживания</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<script>
+	const { createApp, ref, onMounted } = Vue
+
+	const mobileMenu = ref(false)
+	const toggleMenu = () => {
+		mobileMenu.value = !mobileMenu.value
+	}
+
+	createApp({
+		setup() {
+			return { mobileMenu, toggleMenu }
+		}
+	}).mount('#app')
+</script>
+</body>
+</html>

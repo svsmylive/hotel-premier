@@ -5,15 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/date-fns@3.6.0/cdn.min.js"></script>
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link href="/assets/styles/styles.css" rel="stylesheet">
-	<link href="/assets/styles/rooms.css" rel="stylesheet">
+	<link href="/assets/styles/events.css" rel="stylesheet">
 </head>
 <body id="app">
 	<div class="wrapper">
@@ -69,61 +68,28 @@
 		</menu>
 
 		<main class="main">
-			<div class="cover-image">
-				<img src="/public/images/rooms-cover.png" />
-			</div>
 			<div class="content">
-				<h1>Выберите категорию номера</h1>
-				<div class="rooms">
+				<div class="breadcrumbs">
+					<div class="breadcrumbs__item"><a href="#">Главная</a></div>
+					<div class="breadcrumbs__item">Новости</div>
+				</div>
+
+				<h1>Новости</h1>
+
+				<div class="events">
 					<div
-						class="room"
-						v-for="(room, roomIdx) in rooms"
-						:key="`room-${room.id}`"
+						class="events__item"
+						v-for="item in events.data"
+						:key="`event-${item.id}`"
 					>
-						<div class="room__images">
-							<template v-if="room.images.length">
-								<div class="swiper mySwiper">
-									<div class="swiper-wrapper">
-										<div
-											class="swiper-slide"
-											v-for="image in room.images" :key="image.id"
-										>
-											<img :src="`http://vladim0u.beget.tech${image.url}`" />
-										</div>
-									</div>
-									<div class="swiper-pagination"></div>
-								</div>
-							</template>
+						<div class="events__item-cover">
+							<img src="/public/images/events-1.jpg" />
 						</div>
-						<div class="room__info">
-							<div class="room__info-top">
-								<h4 class="room__name">{{ room.name }}</h4>
-								<div class="room__description">{{ room.description }}</div>
-							</div>
-							<div class="room__info-bottom">
-								<div class="room__options">
-									<div
-										class="options__item"
-										v-for="option in room.options"
-										:key="`room-option-${option.id}`"
-									>{{ option.name }}</div>
-								</div>
-								<div class="room__prices">
-									<div>
-										<div class="room__price-old">
-											<span>{{ room.price_old }} ₽/сутки</span>
-											<span>{{ room.discount_percent }}</span>
-										</div>
-										<div class="room__price-new">
-											{{ room.price }}
-											<span>₽/сутки</span>
-										</div>
-									</div>
-									<div class="room__price-select">
-										<button class="button">Выбрать номер</button>
-									</div>
-								</div>
-							</div>
+						<div class="events__item-content">
+							<div class="events__item-date">{{ formatDate(item.created_at) }}</div>
+							<h2>{{ item.title}}</h2>
+							<p>{{ item.description }}</p>
+							<!--<div class="events__item-link"><a href="#">Подробнее</a></div>-->
 						</div>
 					</div>
 				</div>
@@ -185,49 +151,45 @@
 			</div>
 		</footer>
 	</div>
+
 	<script>
 		const { createApp, ref, onMounted } = Vue
 
-		const rooms = ref([])
-
+		const events = ref([])
 		const mobileMenu = ref(false)
+
 		const toggleMenu = () => {
 			mobileMenu.value = !mobileMenu.value
 		}
-		const fetchRooms = async () => {
+
+		const fetchEvents = async () => {
 			try {
-				const response = await fetch('http://vladim0u.beget.tech/api/rooms')
+				const response = await fetch('http://vladim0u.beget.tech/api/news')
 				if (!response.ok) {
 					throw new Error(`Response status: ${response.status}`)
 				}
 
-				rooms.value = await response.json()
-				setTimeout(() => {
-					const swiper = new Swiper(".mySwiper", {
-						slidesPerView: 1,
-						spaceBetween: 12,
-						loop: true,
-						pagination: {
-							el: ".swiper-pagination",
-							clickable: true,
-						},
-					})
-				}, 2000)
+				events.value = await response.json()
+				console.log(events.value)
 			} catch (error) {
 				console.error(error.message)
 			}
 		}
 
+		const formatDate = (date) => {
+			return dateFns.format(new Date(date), 'dd.MM.yyyy')
+		}
+
 		createApp({
 			setup() {
 				onMounted(() => {
-					fetchRooms()
+					fetchEvents()
+					console.log(dateFns)
 				})
 
-				return { mobileMenu, toggleMenu, rooms }
+				return { mobileMenu, toggleMenu, events, formatDate }
 			}
 		}).mount('#app')
 	</script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
