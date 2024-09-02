@@ -17,7 +17,7 @@
     <link href="/assets/styles/styles.css" rel="stylesheet">
     <link href="/assets/styles/pool_gym.css" rel="stylesheet">
 </head>
-<body>
+<body id="app">
 <div class="wrapper">
     <header class="header header--shadow">
         <div class="content">
@@ -26,22 +26,51 @@
             </div>
             <menu class="header__menu">
                 <div class="menu__item">
-                    <a href="{{ route('rooms') }}">Номера</a>
+                    <a href="/rooms/">Номера</a>
                 </div>
                 <div class="menu__item">
-                    <a href="{{ route('conference_rooms') }}">Конференц-залы</a>
+                    <a href="/conference_rooms/">Конференц-залы</a>
                 </div>
                 <div class="menu__item">
-                    <a href="{{ route('pool_gym') }}">Бассейн и спортзал</a>
+                    <a href="/pool_gym/">Бассейн и спортзал</a>
+                </div>
+                <div class="menu__item menu__item--more">
+                    Еще
+                    <div class="menu__item-sub">
+                        <div class="menu__item-sub-item"><a href="/news/">Новости</a></div>
+                        <div class="menu__item-sub-item"><a href="/about/">О нас</a></div>
+                        <div class="menu__item-sub-item"><a href="/park-krasnodar/">Парк Краснодар</a></div>
+                    </div>
                 </div>
             </menu>
             <div class="header__contacts">
                 <div class="contacts_tel">8 (861) 274-11-55</div>
                 <div class="contacts_address">г. Краснодар, ул. Васнецова, 14</div>
             </div>
+            <div class="header__burger" @click="toggleMenu"></div>
         </div>
     </header>
-    <div class="pg" id="app">
+    <menu class="mobile" v-if="mobileMenu">
+        <div class="menu__close" @click="toggleMenu"></div>
+        <div class="menu__logo">
+            <a href="/"><img src="/images/logo.png"/></a>
+        </div>
+        <div class="menu__contacts">
+            <div class="contacts__tel">8 (861) 274-11-55</div>
+            <div class="contacts__address">г. Краснодар, ул. Васнецова, 14</div>
+        </div>
+        <div class="menu__items">
+            <div class="menu__item"><a href="/rooms/">Номера</a></div>
+            <div class="menu__item"><a href="/conference_rooms/">Конференц-залы</a></div>
+            <div class="menu__item"><a href="/pool_gym/">Бассейн и спортзал</a></div>
+            <div class="menu__item"><a href="/restaurant/">Завтрак и рестораны</a></div>
+            <div class="menu__item"><a href="/events/">События</a></div>
+            <div class="menu__item"><a href="/about/">О нас</a></div>
+            <div class="menu__item"><a href="/park-krasnodar/">Парк Краснодар</a></div>
+        </div>
+    </menu>
+
+    <div class="pg">
         <div class="pg__sliders">
             <div class="pg__slider" v-if="tab === 'pool'">
                 <div class="pg__slide" style="background-image: url(/images/pool.png)"></div>
@@ -72,13 +101,17 @@
 
     const tab = ref('pool')
 
+    const mobileMenu = ref(false)
+    const toggleMenu = () => {
+        mobileMenu.value = !mobileMenu.value
+    }
     const switchTo = (tabName) => {
         tab.value = tabName
     }
 
     createApp({
         setup() {
-            return {tab, switchTo}
+            return {mobileMenu, toggleMenu, tab, switchTo}
         }
     }).mount('#app')
 </script>

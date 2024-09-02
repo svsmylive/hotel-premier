@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аренда конференц-зала в отеле «Премьер» в центре Краснодара - официальный сайт</title>
-    <meta name="description"
-          content="Аренда конференц-зала в отеле «Премьер» в центре Краснодара. Узнать стоимость аренды и забронировать можете на сайте.">
+    <title></title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap"
         rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <link href="/assets/styles/styles.css" rel="stylesheet">
     <link href="/assets/styles/rooms.css" rel="stylesheet">
 </head>
-<body>
+<body id="app">
 <div class="wrapper">
     <header class="header header--shadow">
         <div class="content">
@@ -25,21 +24,49 @@
             </div>
             <menu class="header__menu">
                 <div class="menu__item">
-                    <a href="{{ route('rooms') }}">Номера</a>
+                    <a href="/rooms/">Номера</a>
                 </div>
                 <div class="menu__item">
-                    <a href="{{ route('conference_rooms') }}">Конференц-залы</a>
+                    <a href="/conference_rooms/">Конференц-залы</a>
                 </div>
                 <div class="menu__item">
-                    <a href="{{ route('pool_gym') }}">Бассейн и спортзал</a>
+                    <a href="/pool_gym/">Бассейн и спортзал</a>
+                </div>
+                <div class="menu__item menu__item--more">
+                    Еще
+                    <div class="menu__item-sub">
+                        <div class="menu__item-sub-item"><a href="/news/">Новости</a></div>
+                        <div class="menu__item-sub-item"><a href="/about/">О нас</a></div>
+                        <div class="menu__item-sub-item"><a href="/park-krasnodar/">Парк Краснодар</a></div>
+                    </div>
                 </div>
             </menu>
             <div class="header__contacts">
                 <div class="contacts_tel">8 (861) 274-11-55</div>
                 <div class="contacts_address">г. Краснодар, ул. Васнецова, 14</div>
             </div>
+            <div class="header__burger" @click="toggleMenu"></div>
         </div>
     </header>
+    <menu class="mobile" v-if="mobileMenu">
+        <div class="menu__close" @click="toggleMenu"></div>
+        <div class="menu__logo">
+            <a href="/"><img src="/images/logo.png"/></a>
+        </div>
+        <div class="menu__contacts">
+            <div class="contacts__tel">8 (861) 274-11-55</div>
+            <div class="contacts__address">г. Краснодар, ул. Васнецова, 14</div>
+        </div>
+        <div class="menu__items">
+            <div class="menu__item"><a href="/rooms/">Номера</a></div>
+            <div class="menu__item"><a href="/conference_rooms/">Конференц-залы</a></div>
+            <div class="menu__item"><a href="/pool_gym/">Бассейн и спортзал</a></div>
+            <div class="menu__item"><a href="/restaurant/">Завтрак и рестораны</a></div>
+            <div class="menu__item"><a href="/events/">События</a></div>
+            <div class="menu__item"><a href="/about/">О нас</a></div>
+            <div class="menu__item"><a href="/park-krasnodar/">Парк Краснодар</a></div>
+        </div>
+    </menu>
 
     <main class="main">
         <div class="cover-image">
@@ -76,7 +103,7 @@
                             <div class="room__prices">
                                 <div class="room__price-new">
                                     3 240
-                                    <span>₽/час</span>
+                                    <span>₽/сутки</span>
                                 </div>
                                 <div class="room__price-tel">
                                     +7 (861) 274-11-55
@@ -111,7 +138,7 @@
                             <div class="room__prices">
                                 <div class="room__price-new">
                                     3 240
-                                    <span>₽/час</span>
+                                    <span>₽/сутки</span>
                                 </div>
                                 <div class="room__price-tel">
                                     +7 (861) 274-11-55
@@ -146,7 +173,7 @@
                             <div class="room__prices">
                                 <div class="room__price-new">
                                     3 240
-                                    <span>₽/час</span>
+                                    <span>₽/сутки</span>
                                 </div>
                                 <div class="room__price-tel">
                                     +7 (861) 274-11-55
@@ -182,26 +209,26 @@
             <div class="footer__col">
                 <menu class="footer__menu">
                     <div class="menu__item">
-                        <a href="{{ route('rooms') }}">Номера</a>
+                        <a href="/rooms/">Номера</a>
                     </div>
                     <div class="menu__item">
-                        <a href="{{ route('conference_rooms') }}">Конференц-залы</a>
+                        <a href="/conference_rooms/">Конференц-залы</a>
                     </div>
                     <div class="menu__item">
-                        <a href="{{ route('pool_gym') }}">Бассейн и спортзал</a>
+                        <a href="/pool_gym/">Бассейн и спортзал</a>
                     </div>
                     <div class="menu__item">
-                        <a href="/restaurant.html">Завтрак и рестораны</a>
+                        <a href="/restaurant/">Завтрак и рестораны</a>
                     </div>
                 </menu>
             </div>
             <div class="footer__col">
                 <menu class="footer__menu">
                     <div class="menu__item">
-                        <a href="/about.html">О нас</a>
+                        <a href="/about/">О нас</a>
                     </div>
                     <div class="menu__item">
-                        <a href="{{ route('park-krasnodar') }}">Парк "Краснодар"</a>
+                        <a href="/park-krasnodar/">Парк "Краснодар"</a>
                     </div>
                 </menu>
             </div>
@@ -213,15 +240,29 @@
                 </div>
                 <div class="footer__links">
                     <div class="links__item">
-                        <a href="#">Политика конфиденциальности</a>
+                        <a href="/privacy-policy/">Политика конфиденциальности</a>
                     </div>
                     <div class="links__item">
-                        <a href="#">Правила проживания</a>
+                        <a href="/rules/">Правила проживания</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 </div>
+<script>
+    const {createApp, ref, onMounted} = Vue
+
+    const mobileMenu = ref(false)
+    const toggleMenu = () => {
+        mobileMenu.value = !mobileMenu.value
+    }
+
+    createApp({
+        setup() {
+            return {mobileMenu, toggleMenu}
+        }
+    }).mount('#app')
+</script>
 </body>
 </html>

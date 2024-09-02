@@ -53,3 +53,11 @@ Route::get('/about/', function () {
 Route::get('/news/', function () {
     return view('news');
 })->name('news');
+
+Route::get('/privacy-policy/', function () {
+    return view('confidence');
+})->name('confidence');
+
+Route::get('/rules/', function () {
+    return view('rules');
+})->name('rules');
