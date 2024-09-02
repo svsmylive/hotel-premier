@@ -146,39 +146,40 @@
 			}
 		}).mount('#app')
 
-		;(function (d, w, e) {
-			w[e] = w[e] || function(){
-				try {
-					w.ecviBookingForm = new EcviBookingForm({
-						protocol: 'http',
-						showOtherHotels: true,
-						checkHotelByDefault: true,
-						headOfficeID: '42',
-						hotelID: '56',
-						bookingPath: 'http://vladim0u.beget.tech/booking',
-						token: '03e87066-9360-44f6-957a-a680b39c70b8',
-						width: '',
-						height: 420,
-						cssPath: 'http://vladim0u.beget.tech/custom.css',
-						rulesPath: 'http://vladim0u.beget.tech/rules.html',
-						policyPath: 'http://vladim0u.beget.tech/confidential.html',
-						container: 'tl-booking-form',
-						target: 'booking',
-						lang: sessionStorage.getItem('ecviLang') || document.documentElement.lang.toUpperCase() || 'RU',
-						hiddenElems: 'nutrition,time'
-					});
-				} catch(e) { console.warn( 'Something goes wrong'); }
-			}
-			var n = d.getElementsByTagName('script')[0],
-				s = d.createElement('script'),
-				f = function () { n.parentNode.insertBefore(s, n); };
-			s.type = 'text/javascript';
-			s.async = true;
-			s.src = 'http://cm.web-booking.ru/assets/formreservation/js/iframeCreate/widget.create.js';
-			if (w.opera == '[object Opera]') {
-				d.addEventListener('DOMContentLoaded', f, false);
-			} else { f(); }
-		})(document, window, 'ecvi_booking_callback');
+
+        ;(function (d, w, e) {
+            w[e] = w[e] || function(){
+                try {
+                    w.ecviBookingForm = new EcviBookingForm({
+                        protocol: 'https',
+                        showOtherHotels: true,
+                        checkHotelByDefault: true,
+                        headOfficeID: '42',
+                        hotelID: '56',
+                        bookingPath: 'https://hotelpremier-test.ru/booking',
+                        token: 'a8d3da15-f863-4a26-a11e-2db40468ea7e',
+                        width: '',
+                        height: 420,
+                        cssPath: 'https://hotelpremier-test.ru/assets/styles/custom.css',
+                        rulesPath: '',
+                        policyPath: '',
+                        container: 'tl-booking-form',
+                        target: 'booking',
+                        lang: sessionStorage.getItem('ecviLang') || document.documentElement.lang.toUpperCase() || 'RU',
+                        hiddenElems: 'nutrition,time'
+                    });
+                } catch(e) { console.warn( 'Something goes wrong'); }
+            }
+            var n = d.getElementsByTagName('script')[0],
+                s = d.createElement('script'),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://cm.web-booking.ru/assets/formreservation/js/iframeCreate/widget.create.js';
+            if (w.opera == '[object Opera]') {
+                d.addEventListener('DOMContentLoaded', f, false);
+            } else { f(); }
+        })(document, window, 'ecvi_booking_callback');
 	</script>
 </div>
 </body>

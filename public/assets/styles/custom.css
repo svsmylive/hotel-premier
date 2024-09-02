@@ -1,87 +1,49 @@
-iframe {
-    position: absolute;
-    z-index: 10000;
-}
-.inner-tl-search-form {
-    height: 116px;
-}
-.ecvi-booking-widget {
-    width: 100%;
-    min-height: fit-content;
-    height: fit-content;
-}
-.ecvi-booking-widget .widget-common-container {
-    display: flex;
-    background: rgba(242, 242, 242, 1);
-    border-radius: 20px;
-    padding: 30px;
-    gap: 10px;
-    align-items: stretch;
-}
-.widget-date-container .calendar-container .header {
-    display: none;
-}
-.widget-date-container {
-    display: flex;
+#ecvi-booking-container .search-container {
+    background: #fff;
     padding: 0;
-    flex: 2;
-    gap: 10px;
 }
-.widget-date-container .calendar-container {
-    flex: 1;
+.container {
+    max-width: 100%;
 }
-.widget-date-container .calendar-container .header {
-    display: none;
+#ecvi-booking-container .search-container .container {
+    display: flex;
+    gap: 20px;
 }
-.widget-date-container .calendar-container label {
-    display: block;
-    height: auto;
+#ecvi-booking-container .search-container .search-container-item {
+    margin-left: 0;
 }
-.widget-date-container .calendar-container label .date-info-block__time {
-    display: none;
+#ecvi-booking-container .search-container .search-container-item .header {
+    color: rgb(30, 30, 30);
 }
-.widget-date-container .calendar-container label .date-info-block {
-    border: 1px solid rgba(231, 232, 233, 1);
+#ecvi-booking-container .search-container .search-container-item.widget-date-container {
+    display: flex;
+    gap: 20px;
+}
+#ecvi-booking-container .search-container .search-container-item.widget-date-container .date-block {
+    margin-left: auto;
+}
+.widget-date-container .calendar-container label .date-info-block__date {
+    padding-left: 0;
+}
+.widget-date-container .calendar-container label .date-info-block__date::after {
+    top: 0px;
+    right: 8px;
+    left: auto;
+    background-size: 16px;
+}
+#new-search {
     box-shadow: none;
-    padding: 16px 12px;
-    border-radius: 12px;
-    height: fit-content;
-    line-height: 100%;
-}
-.widget-date-container .calendar-container label input {
-    border-radius: 12px;
-}
-.date-info-block__date {
-    display: flex;
-    padding: 0;
-    width: 100%;
-    height: fit-content;
-}
-.calendar-container label .date-info-block__date::after {
-    width: 20px;
-    height: 20px;
-    top: -2px;
-}
-
-.ecvi-booking-widget .widget-buttons-container {
-    padding: 0;
-    margin: 0;
-    flex: 1;
-    height: 100%;
-}
-.ecvi-booking-widget .widget-buttons-container .widget-button-booking,
-.ecvi-booking-widget .widget-buttons-container .widget-button-check-status {
+    text-transform: none;
     background: rgba(30, 30, 30, 1);
     border-radius: 12px;
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: 100;
-    height: 56px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    padding: 14px 12px;
+    height: auto;
+    line-height: auto;
+}
+
+.avaliable-item {
+    background-color: #fff;
+    box-shadow: none;
 }
 
 
@@ -110,13 +72,18 @@ iframe {
     width: fit-content;
     height: fit-content;
 }
+.ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-prev {
+    width: auto;
+}
+.ui-datepicker .ui-datepicker-next {
+    right: 0;
+}
+.ui-datepicker .ui-datepicker-title {
+    line-height: 100%;
+    margin: 0 2.3em 0 1.8em;
+}
 .ui-datepicker .ui-datepicker-next span, .ui-datepicker .ui-datepicker-prev span {
-    width: 36px;
-    min-width: 36px;
-    height: 36px;
-    min-height: 36px;
     background-color: rgba(245, 245, 245, 1);
-    background-image: none;
     border-radius: 36px;
     position: relative;
     left: 0;
