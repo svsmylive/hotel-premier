@@ -65,7 +65,7 @@
             <div class="menu__item"><a href="/conference_rooms/">Конференц-залы</a></div>
             <div class="menu__item"><a href="/pool_gym/">Бассейн и спортзал</a></div>
             <div class="menu__item"><a href="/restaurant/">Завтрак и рестораны</a></div>
-            <div class="menu__item"><a href="/events/">События</a></div>
+            <div class="menu__item"><a href="/news/">Новости</a></div>
             <div class="menu__item"><a href="/about/">О нас</a></div>
             <div class="menu__item"><a href="/park-krasnodar/">Парк Краснодар</a></div>
         </div>
@@ -168,7 +168,7 @@
 
     const fetchEvents = async () => {
         try {
-            const response = await fetch('http://vladim0u.beget.tech/api/news')
+            const response = await fetch('https://hotelpremier-test.ru/api/news')
             if (!response.ok) {
                 throw new Error(`Response status: ${response.status}`)
             }
