@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8"><link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ресторан «Камелот» в бизнес-отеле «Премьер», в центре Краснодара</title>
     <meta name="description"
@@ -152,7 +153,9 @@
                     <div class="banner__text">Забронируйте номер в нашем отеле и пользуйтесь всеми услугами, включенными
                         в проживание
                     </div>
-                    <a href="/rooms/"><div class="banner__button">Выбрать номер</div></a>
+                    <a href="/rooms/" style="text-decoration: none">
+                        <div class="banner__button">Выбрать номер</div>
+                    </a>
                 </div>
                 <div class="banner__image">
                     <img src="/images/banner2.jpg"/>
