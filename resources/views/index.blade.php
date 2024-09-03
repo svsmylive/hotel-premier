@@ -127,7 +127,7 @@
         const hotelName = '%D0%9F%D1%80%D0%B5%D0%BC%D1%8C%D0%B5%D1%80%20%D0%BE%D1%82%D0%B5%D0%BB%D1%8C'
         const start = formatDate(startDate.value)
         const end = formatDate(endDate.value)
-        window.location.href = `https://hotelpremier-test.ru/booking?startDate=${start}&endDate=${end}&hotelID=${hotelID}&headOfficeID=${headOfficeID}&hotelName=${hotelName}&startTime=14:00&endTime=12:00`
+        window.location.href = `https://hotelpremier.ru/booking?startDate=${start}&endDate=${end}&hotelID=${hotelID}&headOfficeID=${headOfficeID}&hotelName=${hotelName}&startTime=14:00&endTime=12:00`
     }
 
     createApp({

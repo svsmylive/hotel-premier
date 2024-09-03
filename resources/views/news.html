@@ -168,7 +168,7 @@
 
     const fetchEvents = async () => {
         try {
-            const response = await fetch('https://hotelpremier-test.ru/api/news')
+            const response = await fetch('https://hotelpremier.ru/api/news')
             if (!response.ok) {
                 throw new Error(`Response status: ${response.status}`)
             }
