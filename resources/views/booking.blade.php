@@ -74,7 +74,7 @@
 
     <main class="main">
         <div class="cover-image">
-            <img src="/images/rooms-cover.png"/>
+            <img src="/images/rooms-cover.jpg"/>
         </div>
         <div class="content">
             <div id="tl-booking-form"></div>

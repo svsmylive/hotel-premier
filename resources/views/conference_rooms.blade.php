@@ -73,7 +73,7 @@
 
     <main class="main">
         <div class="cover-image">
-            <img src="/images/conf-rooms-cover.png"/>
+            <img src="/images/conf-rooms-cover.jpg"/>
             <div class="cover-image__text">
                 Конференц-залы<br/>для ваших мероприятий
             </div>
