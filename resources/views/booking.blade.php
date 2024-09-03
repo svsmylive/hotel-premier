@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8"><link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бронирование номеров | Бизнес-отель «Премьер» - Краснодар</title>
     <meta name="description"
@@ -161,12 +162,12 @@
                         headOfficeID: '42',
                         hotelID: '56',
                         bookingPath: 'https://hotelpremier.ru/booking',
-                        token: 'a8d3da15-f863-4a26-a11e-2db40468ea7e',
+                        token: '8dbaaa69-2182-4be0-866d-c6f6ef456753',
                         width: '',
                         height: 420,
                         cssPath: 'https://hotelpremier.ru/assets/styles/custom.css',
-                        rulesPath: '',
-                        policyPath: '',
+                        rulesPath: 'https://hotelpremier.ru/rules',
+                        policyPath: 'https://hotelpremier.ru/privacy-policy',
                         container: 'tl-booking-form',
                         target: 'booking',
                         lang: sessionStorage.getItem('ecviLang') || document.documentElement.lang.toUpperCase() || 'RU',
