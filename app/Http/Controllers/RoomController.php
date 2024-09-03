@@ -67,6 +67,24 @@ class RoomController
         $detailImages = $room->detailImages;
         $propData = [];
         $images = [];
+        $moreCount = 0;
+
+        if ($room->id == 1) {
+            $meta_title = 'Номер категории Стандарт для двух человек - бизнес-отель «Премьер» в центре Краснодара';
+            $meta_description = 'Номер категории Стандарт подходит для комфортабельного проживания двух человек. Бизнес-отель «Премьер» в самом центре Краснодара. Цены и бронирование на сайте. ';
+        } elseif ($room->id == 2) {
+            $meta_title = 'Номер категории улучшенный Стандарт - бизнес-отель «Премьер» в центре Краснодара';
+            $meta_description = 'Номер категории улучшенный Стандарт подходит для комфортабельного проживания двух человек. Бизнес-отель «Премьер» в самом центре Краснодара. Цены и бронирование на сайте.';
+        } elseif ($room->id == 3) {
+            $meta_title = 'Номер категории премиум Стандарт - бизнес-отель «Премьер» в центре Краснодара';
+            $meta_description = 'Номер категории премиум Стандарт подходит для комфортабельного проживания двух человек. Бизнес-отель «Премьер» в самом центре Краснодара. Цены и бронирование на сайте.';
+        } elseif ($room->id == 4) {
+            $meta_title = 'Номер студия в бизнес-отеле «Премьер» в центре Краснодара';
+            $meta_description = 'Номер студия в бизнес-отеле «Премьер». Бизнес-отель «Премьер» в самом центре Краснодара. Стоимость и бронирование на сайте.';
+        } else {
+            $meta_title = 'НОМЕР КЛАССА ЛЮКС | Бизнес-отель «Премьер» - Краснодар';
+            $meta_description = 'В отеле «Премьер» расположены 2 номера класса Люкс со всеми удобствами. Гостиничные номера Люкс в Краснодаре';
+        }
 
         if ($detailProperties) {
             foreach ($detailProperties as $property) {
@@ -78,7 +96,14 @@ class RoomController
         }
 
         if ($detailImages) {
+            $i = 0;
+            $moreCount = count($detailImages) - 5;
+
             foreach ($detailImages as $image) {
+                if ($i == 4) {
+                    break;
+                }
+
                 $images[] = [
                     'id' => $image->id,
                     'name' => $image->name,
@@ -87,6 +112,8 @@ class RoomController
                     'size' => $image->size,
                     'url' => '/storage/' . $image->path . $image->name . '.' . $image->extension,
                 ];
+
+                $i++;
             }
         }
 
@@ -101,7 +128,23 @@ class RoomController
             'bed_size' => $room->bed_size,
             'capacity' => $room->persons,
             'options' => $propData,
-            'images' => $images
+            'images' => $images,
+            'meta_title' => $meta_title,
+            'meta_description' => $meta_description,
+            'more_count' => $moreCount,
         ];
+    }
+
+    public function byId(int $id)
+    {
+        $room = Room::query()->find($id);
+
+        if (!$room) {
+            return route('rooms');
+        }
+
+        $data = $this->get($id);
+
+        return view('room', compact('data'));
     }
 }

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>{{ $data['meta_title'] }}</title>
+    <meta name="description" content="{{ $data['meta_description'] }}">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,55 +76,55 @@
 
     <main class="main">
         <div class="content">
-            <h1>Номер категории «Стандарт»</h1>
+            <div class="breadcrumbs">
+                <div class="breadcrumbs__item"><a href="/">Главная</a></div>
+                <div class="breadcrumbs__item"><a href="{{ route('rooms') }}">Номера</a></div>
+                <div class="breadcrumbs__item">{{ $data['name'] }}</div>
+            </div>
+            <h1>Номер категории "{{ $data['name'] }}"</h1>
             <div class="room">
                 <div class="room__images">
-                    <div class="room__image room__image-main">
-                        <img src="/images/room-1.jpg"/>
-                    </div>
-                    <div class="room__image">
-                        <img src="/images/room-2.jpg"/>
-                    </div>
-                    <div class="room__image">
-                        <img src="/images/room-3.jpg"/>
-                    </div>
-                    <div class="room__image">
-                        <img src="/images/room-4.jpg"/>
-                    </div>
-                    <div class="room__image">
-                        <img src="/images/room-5.jpg"/>
-                        <span>+20 фото</span>
-                    </div>
+                    @foreach($data['images'] as $image)
+                        @if($loop->last)
+                            <div class="room__image">
+                                <img src="{{ $image['url'] }}"/>
+                                @if($data['more_count'] > 0)
+                                    <span> {{  $data['more_count'] }} </span>
+                                @endif
+                            </div>
+                        @endif
+
+                        <div class="room__image @if($loop->first) room__image-main @endif ">
+                            <img src="{{ $image['url'] }}"/>
+                        </div>
+                    @endforeach
+
                 </div>
                 <div class="room__flex">
                     <div class="room__info">
                         <div class="room__options">
                             <div class="room__option room__option--sqr">
                                 <span>Площадь</span>
-                                от 20 м2
+                                {{ $data['square'] }}
                             </div>
                             <div class="room__option room__option--bed">
                                 <span>Кровать</span>
-                                160*200 см
+                                {{ $data['bed_size'] }}
                             </div>
                             <div class="room__option room__option--qty">
                                 <span>Гости</span>
-                                до 2 человек
+                                {{ $data['capacity'] }}
                             </div>
                         </div>
                         <div class="room__description">
-                            Компактный и уютный номер в современном стиле с комфортным зонированием пространства для
-                            работы и отдыха.
-                            Современный интерьер в благородных тонах и оптимальный набор удобств — это то самое
-                            сочетание,
-                            которое поможет вам ощутить домашний уют.
+                            {!! $data['description'] !!}
                         </div>
                     </div>
                     <div class="room__form">
-                        <h3 class="h3">Номер категории «Стандарт»</h3>
+                        <h3 class="h3">Номер категории "{{ $data['name'] }}"</h3>
                         <div class="room__form-time">
-                            <div class="room__form-time1">Заезд 15:00</div>
-                            <div class="room__form-time2">Выезд 11:00</div>
+                            <div class="room__form-time1">Заезд 14:00</div>
+                            <div class="room__form-time2">Выезд 12:00</div>
                         </div>
                         <div class="room__form-row">
                             <div class="room__form-input">
@@ -142,7 +143,7 @@
                         <div class="room__form-row">
                             <div class="room__form-input">
                                 <vue-date-picker
-                                    v-model="startDate"
+                                    v-model="endDate"
                                     locale="ru"
                                     auto-apply
                                     :enable-time-picker="false"
@@ -153,44 +154,32 @@
                                 />
                             </div>
                         </div>
-                        <div class="room__form-cost">
-                            <div class="room__form-cost-line">
-                                <span>Стоимость за 5 ночей</span>
-                                <span>18 000 ₽</span>
-                            </div>
-                            <div class="room__form-cost-line">
-                                <span>Скидка <div>-10%</div></span>
-                                <span>1 800 ₽</span>
-                            </div>
-                            <div class="room__form-cost-line room__form-cost-line--big">
-								<span>
-									ИТОГО
-									<small>Налоги и сборы включены</small>
-								</span>
-                                <span>16 200 ₽</span>
-                            </div>
-                        </div>
-                        <div class="room__form-button">Забронировать</div>
+                        {{--                        <div class="room__form-cost">--}}
+                        {{--                            <div class="room__form-cost-line">--}}
+                        {{--                                <span>Стоимость за 5 ночей</span>--}}
+                        {{--                                <span>18 000 ₽</span>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="room__form-cost-line">--}}
+                        {{--                                <span>Скидка <div>-10%</div></span>--}}
+                        {{--                                <span>1 800 ₽</span>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="room__form-cost-line room__form-cost-line--big">--}}
+                        {{--								<span>--}}
+                        {{--									ИТОГО--}}
+                        {{--									<small>Налоги и сборы включены</small>--}}
+                        {{--								</span>--}}
+                        {{--                                <span>16 200 ₽</span>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
+                        <div class="room__form-button" @click="goToBooking()">Забронировать</div>
                     </div>
                 </div>
             </div>
             <h2 class="h2">Услуги и оснащение номера</h2>
             <div class="services">
-                <div class="services__item">Ортопедические матрасы высотой 30 см</div>
-                <div class="services__item">Пуховые одеяла класса люкс</div>
-                <div class="services__item">Гипоаллергенное постельное белье</div>
-                <div class="services__item">Wi Fi бесплатно</div>
-                <div class="services__item">Городской телефон для междугородней связи</div>
-                <div class="services__item">Персональный компьютер для работы</div>
-                <div class="services__item">Smart-TV/3D c интернетом</div>
-                <div class="services__item">Бутилированная питьевая вода</div>
-                <div class="services__item">Кулеры с горячей и холодной водой</div>
-                <div class="services__item">Кондиционер</div>
-                <div class="services__item">Зубные принадлежности</div>
-                <div class="services__item">Халаты, тапочки, полотенца</div>
-                <div class="services__item">Гель для душа, мыло</div>
-                <div class="services__item">Бритвенный станок</div>
-                <div class="services__item">Фен</div>
+                @foreach($data['options'] as $option)
+                    <div class="services__item">{{ $option['name'] }}</div>
+                @endforeach
             </div>
             <h2 class="h2 h2--right">Предлагаем широкий набор дополнительных услуг для вашего комфортного отдыха</h2>
             <div class="benefits">
@@ -199,23 +188,31 @@
                     <div class="benefits__item-title">Room service</div>
                 </div>
                 <div class="benefits__item"></div>
-                <div class="benefits__item">
-                    <img src="/images/benefits-2.jpg"/>
-                    <div class="benefits__item-title">Бассейн</div>
-                </div>
-                <div class="benefits__item">
-                    <img src="/images/benefits-3.jpg"/>
-                    <div class="benefits__item-title">Тренажерный зал</div>
-                </div>
+                <a href="{{ route('pool_gym') }}">
+                    <div class="benefits__item">
+                        <img src="/images/benefits-2.jpg"/>
+                        <div class="benefits__item-title">Бассейн</div>
+                    </div>
+                </a>
+                <a href="{{ route('pool_gym') }}">
+                    <div class="benefits__item">
+                        <img src="/images/benefits-3.jpg"/>
+                        <div class="benefits__item-title">Тренажерный зал</div>
+                    </div>
+                </a>
                 <div class="benefits__item"></div>
-                <div class="benefits__item">
-                    <img src="/images/benefits-4.jpg"/>
-                    <div class="benefits__item-title">Ресторанный комплекс</div>
-                </div>
-                <div class="benefits__item">
-                    <img src="/images/benefits-5.jpg"/>
-                    <div class="benefits__item-title">Парк «Краснодар»</div>
-                </div>
+                <a href="{{ route('restaurant') }}">
+                    <div class="benefits__item">
+                        <img src="/images/benefits-4.jpg"/>
+                        <div class="benefits__item-title">Ресторанный комплекс</div>
+                    </div>
+                </a>
+                <a href="{{ route('park-krasnodar') }}">
+                    <div class="benefits__item">
+                        <img src="/images/benefits-5.jpg"/>
+                        <div class="benefits__item-title">Парк «Краснодар»</div>
+                    </div>
+                </a>
                 <div class="benefits__item"></div>
             </div>
         </div>
@@ -319,7 +316,7 @@
         const hotelName = '%D0%9F%D1%80%D0%B5%D0%BC%D1%8C%D0%B5%D1%80%20%D0%BE%D1%82%D0%B5%D0%BB%D1%8C'
         const start = formatDate(startDate.value)
         const end = formatDate(endDate.value)
-        window.location.href = `https://hotelpremier-test.ru/booking?startDate=${start}&endDate=${end}&hotelID=${hotelID}&headOfficeID=${headOfficeID}&hotelName=${hotelName}`
+        window.location.href = `https://hotelpremier-test.ru/booking?startDate=${start}&endDate=${end}&hotelID=${hotelID}&headOfficeID=${headOfficeID}&hotelName=${hotelName}&startTime=14:00&endTime=12:00`
     }
 
     createApp({

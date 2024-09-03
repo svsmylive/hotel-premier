@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RoomController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -61,3 +62,5 @@ Route::get('/privacy-policy/', function () {
 Route::get('/rules/', function () {
     return view('rules');
 })->name('rules');
+
+Route::get('/rooms/{id}', [RoomController::class, 'byId']);
