@@ -143,7 +143,8 @@
                 </div>
                 <div class="restaurant__info-item">
                     <h5 class="restaurant__info-item-title">Меню</h5>
-                    <div class="restaurant__info-item-text"><a href="#">Основное меню</a></div>
+                    <div class="restaurant__info-item-text"><a href="https://drink-in-group.ru/kamelot/">Основное
+                            меню</a></div>
                 </div>
             </div>
 
