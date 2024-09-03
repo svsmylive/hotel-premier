@@ -105,7 +105,7 @@
                             </div>
                             <div class="room__prices">
                                 <div class="room__price-new">
-                                    3 240
+                                    2 500
                                     <span>₽/час</span>
                                 </div>
                                 <div class="room__price-tel">
@@ -140,7 +140,7 @@
                             </div>
                             <div class="room__prices">
                                 <div class="room__price-new">
-                                    3 240
+                                    2 500
                                     <span>₽/час</span>
                                 </div>
                                 <div class="room__price-tel">
@@ -177,7 +177,7 @@
                             </div>
                             <div class="room__prices">
                                 <div class="room__price-new">
-                                    3 240
+                                    1 500
                                     <span>₽/час</span>
                                 </div>
                                 <div class="room__price-tel">

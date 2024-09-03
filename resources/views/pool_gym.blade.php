@@ -73,10 +73,10 @@
     <div class="pg">
         <div class="pg__sliders">
             <div class="pg__slider" v-if="tab === 'pool'">
-                <div class="pg__slide" style="background-image: url(/images/pool.png)"></div>
+                <div class="pg__slide" style="background-image: url(/images/pool.jpg)"></div>
             </div>
             <div class="pg__slider" v-if="tab === 'gym'">
-                <div class="pg__slide" style="background-image: url(/images/gym.png)"></div>
+                <div class="pg__slide" style="background-image: url(/images/gym.jpg)"></div>
             </div>
         </div>
         <div class="pg__content">
