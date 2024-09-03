@@ -87,7 +87,7 @@
                     <div class="room__info">
                         <div class="room__info-top">
                             <h4 class="room__name">Основной конференц-зал</h4>
-                            <div class="room__description">Театральная рассадка</div>
+                            <div class="room__description">Основной зал с театральной рассадкой</div>
                         </div>
                         <div class="room__info-bottom">
                             <div class="room__info-bottom-content">
@@ -106,7 +106,7 @@
                             <div class="room__prices">
                                 <div class="room__price-new">
                                     3 240
-                                    <span>₽/сутки</span>
+                                    <span>₽/час</span>
                                 </div>
                                 <div class="room__price-tel">
                                     +7 (861) 274-11-55
@@ -122,7 +122,7 @@
                     <div class="room__info">
                         <div class="room__info-top">
                             <h4 class="room__name">Большой конференц-зал</h4>
-                            <div class="room__description">Свободная рассадка</div>
+                            <div class="room__description">Большой зал со свободной рассадкой</div>
                         </div>
                         <div class="room__info-bottom">
                             <div class="room__info-bottom-content">
@@ -133,7 +133,7 @@
                                     </div>
                                     <div class="features__item features__item--qty">
                                         Вместимость
-                                        <div>до 70 чел.</div>
+                                        <div>до 120 чел.</div>
                                     </div>
                                 </div>
                                 <div class="room__description">Чтобы забронировать, позвоните по телефону</div>
@@ -141,7 +141,7 @@
                             <div class="room__prices">
                                 <div class="room__price-new">
                                     3 240
-                                    <span>₽/сутки</span>
+                                    <span>₽/час</span>
                                 </div>
                                 <div class="room__price-tel">
                                     +7 (861) 274-11-55
@@ -157,7 +157,9 @@
                     <div class="room__info">
                         <div class="room__info-top">
                             <h4 class="room__name">Переговорная комната</h4>
-                            <div class="room__description">Свободная рассадка</div>
+                            <div class="room__description">Специальная переговорная для бизнес встреч от 2 до 20
+                                человек
+                            </div>
                         </div>
                         <div class="room__info-bottom">
                             <div class="room__info-bottom-content">
@@ -168,7 +170,7 @@
                                     </div>
                                     <div class="features__item features__item--qty">
                                         Вместимость
-                                        <div>до 70 чел.</div>
+                                        <div>до 20 чел.</div>
                                     </div>
                                 </div>
                                 <div class="room__description">Чтобы забронировать, позвоните по телефону</div>
@@ -176,7 +178,7 @@
                             <div class="room__prices">
                                 <div class="room__price-new">
                                     3 240
-                                    <span>₽/сутки</span>
+                                    <span>₽/час</span>
                                 </div>
                                 <div class="room__price-tel">
                                     +7 (861) 274-11-55
