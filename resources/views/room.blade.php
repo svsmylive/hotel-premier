@@ -88,9 +88,9 @@
                         @if($loop->last)
                             <div class="room__image">
                                 <img src="{{ $image['url'] }}"/>
-                                @if($data['more_count'] > 0)
-                                    <span> {{  $data['more_count'] }} </span>
-                                @endif
+{{--                                @if($data['more_count'] > 0)--}}
+{{--                                    <span> {{  $data['more_count'] }} </span>--}}
+{{--                                @endif--}}
                             </div>
                         @endif
 
