@@ -194,7 +194,7 @@
                     <div class="banner__text">Возьмем на себя обслуживание гостей с нашим персоналом</div>
                 </div>
                 <div class="banner__image">
-                    <img src="/images/conf_rooms_banner.png"/>
+                    <img src="/images/conf_rooms_banner.jpg"/>
                 </div>
             </div>
         </div>
