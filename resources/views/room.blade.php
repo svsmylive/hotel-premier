@@ -15,11 +15,17 @@
         rel="stylesheet">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/@vuepic/vue-datepicker@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="/assets/styles/styles.css" rel="stylesheet">
     <link href="/assets/styles/room.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/@vuepic/vue-datepicker@latest/dist/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css">
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+          type="text/css">
 </head>
 <body id="app">
 <div class="wrapper">
@@ -87,15 +93,16 @@
                     @foreach($data['images'] as $image)
                         @if($loop->last)
                             <div class="room__image">
-                                <img src="{{ $image['url'] }}"/>
-{{--                                @if($data['more_count'] > 0)--}}
-{{--                                    <span> {{  $data['more_count'] }} </span>--}}
-{{--                                @endif--}}
+                                <img src="{{ $image['url'] }}" data-ngsrc="{{ $image['url'] }}"
+                                     data-nanogallery2-lightbox/>
+                                @if($data['more_count'] > 0)
+                                    <span> {{  $data['more_count'] }} </span>
+                                @endif
                             </div>
                         @endif
 
                         <div class="room__image @if($loop->first) room__image-main @endif ">
-                            <img src="{{ $image['url'] }}"/>
+                            <img src="{{ $image['url'] }}" data-ngsrc="{{ $image['url'] }}" data-nanogallery2-lightbox/>
                         </div>
                     @endforeach
 
@@ -137,6 +144,7 @@
                                     placeholder="Дата заезда"
                                     no-today
                                     :format="format"
+                                    :min-date="new Date()"
                                 />
                             </div>
                         </div>
@@ -151,6 +159,7 @@
                                     placeholder="Дата заезда"
                                     no-today
                                     :format="format"
+                                    :min-date="new Date()"
                                 />
                             </div>
                         </div>
@@ -322,7 +331,7 @@
     createApp({
         setup() {
             onMounted(() => {
-                fetchRooms()
+                // fetchRooms()
             })
 
             return {mobileMenu, toggleMenu, rooms, startDate, endDate, format, formatDate, goToBooking}

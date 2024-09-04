@@ -129,7 +129,7 @@
                                 <div class="room__features">
                                     <div class="features__item features__item--sqr">
                                         Площадь
-                                        <div>60 м<sup>2</sup></div>
+                                        <div>80 м<sup>2</sup></div>
                                     </div>
                                     <div class="features__item features__item--qty">
                                         Вместимость
@@ -166,7 +166,7 @@
                                 <div class="room__features">
                                     <div class="features__item features__item--sqr">
                                         Площадь
-                                        <div>60 м<sup>2</sup></div>
+                                        <div>45 м<sup>2</sup></div>
                                     </div>
                                     <div class="features__item features__item--qty">
                                         Вместимость

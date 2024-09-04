@@ -80,6 +80,7 @@
                 placeholder="Дата заезда"
                 no-today
                 :format="format"
+                :min-date="new Date()"
             />
         </div>
         <div class="widget__datepicker">
@@ -92,6 +93,7 @@
                 placeholder="Дата выезда"
                 no-today
                 :format="format"
+                :min-date="new Date()"
             />
         </div>
     </div>

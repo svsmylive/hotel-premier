@@ -115,7 +115,10 @@
                     <div class="reviews__button" @click="openModal()">Добавить отзыв</div>
                 </div>
             </div>
-            <div class="reviews__items">
+            <div
+                class="reviews__items"
+                :class="{'reviews__items--one': reviews.length === 1}"
+            >
                 <div
                     class="reviews__item"
                     v-for="review in reviews.data" :key="review.id"

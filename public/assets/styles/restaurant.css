@@ -187,6 +187,8 @@ body {
     background-repeat: no-repeat;
     background-size: 20px;
     padding-left: 36px;
+    text-decoration: none;
+    color: rgb(30, 30, 30);
 }
 .location__map {
     height: 320px;

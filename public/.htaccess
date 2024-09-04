@@ -8,6 +8,9 @@
     RewriteRule ^nomernoy-fond-2$ /rooms/ [R=301,L]
     RewriteRule ^nomernoy-fond-2/$ /rooms/ [R=301,L]
 
+    RewriteRule ^nomernoy-fond-2/nomer-klassa-standart$ /rooms/ [R=301,L]
+    RewriteRule ^nomernoy-fond-2/nomer-klassa-standart/$ /rooms/ [R=301,L]
+
     RewriteRule ^sample-page/park-krasnodar$ /park-krasnodar/ [R=301,L]
     RewriteRule ^sample-page/park-krasnodar/$ /park-krasnodar/ [R=301,L]
 

@@ -69,14 +69,14 @@ body {
         height: calc(100vh - 48px - 16px - 40px);
     }
     .pg__subtitle {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 24px;
     }
     .pg__title {
-        font-size: 48px;
+        font-size: 32px;
     }
     .pg__titles {
-        gap: 60px;
+        gap: 32px;
     }
 }
 @media all and (min-width: 768px) and (max-width: 1200px) {
