@@ -100,7 +100,7 @@ class RoomController
             $moreCount = count($detailImages) - 5;
 
             foreach ($detailImages as $image) {
-                if ($i == 4) {
+                if ($i == 5) {
                     break;
                 }
 
