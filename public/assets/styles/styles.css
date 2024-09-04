@@ -4,7 +4,7 @@
 
 body {
     overflow-x: hidden;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .wrapper {}
@@ -776,6 +776,7 @@ menu.mobile .menu__item a {
     padding: 30px;
     background-color: rgba(242, 242, 242, 1);
     border-radius: 20px;
+    z-index: 100;
 }
 .widget__datepickers {
     display: flex;

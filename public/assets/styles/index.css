@@ -116,7 +116,7 @@ body {
     top: 0px;
     left: 0px;
     width: calc(100vw - 48px);
-    height: calc(100vh - 48px);
+    height: calc(100dvh - 48px);
     border-radius: 20px;
 }
 
