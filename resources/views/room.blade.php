@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>{{ $data['meta_title'] }}</title>
     <meta name="description" content="{{ $data['meta_description'] }}">
 
@@ -96,14 +97,16 @@
                                 <img src="{{ $image['url'] }}" data-ngsrc="{{ $image['url'] }}"
                                      data-nanogallery2-lightbox/>
                                 @if($data['more_count'] > 0)
-                                    <span> {{  $data['more_count'] }} </span>
+                                    <div class="room__image-shadow"></div>
+                                    <span data-nanogallery2-lightbox>{{ '+' . $data['more_count'] . ' фото' }}</span>
                                 @endif
                             </div>
+                        @else
+                            <div class="room__image @if($loop->first) room__image-main @endif ">
+                                <img src="{{ $image['url'] }}" data-ngsrc="{{ $image['url'] }}"
+                                     data-nanogallery2-lightbox/>
+                            </div>
                         @endif
-
-                        <div class="room__image @if($loop->first) room__image-main @endif ">
-                            <img src="{{ $image['url'] }}" data-ngsrc="{{ $image['url'] }}" data-nanogallery2-lightbox/>
-                        </div>
                     @endforeach
 
                 </div>
@@ -163,23 +166,23 @@
                                 />
                             </div>
                         </div>
-                        {{--                        <div class="room__form-cost">--}}
-                        {{--                            <div class="room__form-cost-line">--}}
-                        {{--                                <span>Стоимость за 5 ночей</span>--}}
-                        {{--                                <span>18 000 ₽</span>--}}
-                        {{--                            </div>--}}
-                        {{--                            <div class="room__form-cost-line">--}}
-                        {{--                                <span>Скидка <div>-10%</div></span>--}}
-                        {{--                                <span>1 800 ₽</span>--}}
-                        {{--                            </div>--}}
-                        {{--                            <div class="room__form-cost-line room__form-cost-line--big">--}}
-                        {{--								<span>--}}
-                        {{--									ИТОГО--}}
-                        {{--									<small>Налоги и сборы включены</small>--}}
-                        {{--								</span>--}}
-                        {{--                                <span>16 200 ₽</span>--}}
-                        {{--                            </div>--}}
-                        {{--                        </div>--}}
+{{--                        <div class="room__form-cost">--}}
+{{--                            <div class="room__form-cost-line">--}}
+{{--                                <span>Стоимость за 5 ночей</span>--}}
+{{--                                <span>18 000 ₽</span>--}}
+{{--                            </div>--}}
+{{--                            <div class="room__form-cost-line">--}}
+{{--                                <span>Скидка <div>-10%</div></span>--}}
+{{--                                <span>1 800 ₽</span>--}}
+{{--                            </div>--}}
+{{--                            <div class="room__form-cost-line room__form-cost-line--big">--}}
+{{--                            <span>--}}
+{{--                                ИТОГО--}}
+{{--                                <small>Налоги и сборы включены</small>--}}
+{{--                            </span>--}}
+{{--                                <span>16 200 ₽</span>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                         <div class="room__form-button" @click="goToBooking()">Забронировать</div>
                     </div>
                 </div>
@@ -283,6 +286,8 @@
     </footer>
 </div>
 <script>
+    const roomPrice = {{ str_replace(' ', '', $data['price']) }};
+    const roomDiscount = {{ preg_replace('/[^\d]/', '',$data['discount_percent']) }}
     const {createApp, ref, onMounted} = Vue
 
     const rooms = ref([])
@@ -306,11 +311,9 @@
         }
     }
     const format = (date) => {
-        const day = date.getDate()
-        const month = new Date(date).toLocaleString("ru-RU", {month: "long"})
-        const year = date.getFullYear()
+        const formattedDate = new Date(date).toLocaleDateString("ru-RU", {day: "2-digit", month: "long"})
 
-        return `${day} ${month} ${year}`
+        return `${formattedDate}`
     }
     const formatDate = (date) => {
         const day = date.getDate()

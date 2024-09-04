@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8"><link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>Отель рядом с парком Краснодар - бизнес-отель «Премьер»</title>
     <meta name="description"
           content="Вы сможете быстро добраться до главной достопримечательности города — парка Краснодар. Расстояние составит всего 2 км. Бизнес-отель «Премьер».">

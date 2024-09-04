@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
     <title>Аренда конференц-зала в отеле «Премьер» в центре Краснодара - официальный сай</title>
     <meta name="description"
           content="Аренда конференц-зала в отеле «Премьер» в центре Краснодара. Узнать стоимость аренды и забронировать можете на сайте.">

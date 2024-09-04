@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
     <title>Бронирование номеров | Бизнес-отель «Премьер» - Краснодар</title>
     <meta name="description"
           content="Бронирование номера онлайн в нашей гостинице сэкономит ваше время на 90% а так же вы получите скидку на номер -5% от полной стоимости номера.">

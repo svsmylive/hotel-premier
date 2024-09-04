@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>Номерной фонд Бизнес Отеля «Премьер», г. Краснодар - официальный сайт</title>
     <meta name="description"
           content="Номерной фонд Бизнес Отеля «Премьер». Богатый номерной фонд в центре Краснодара: студии, люкс, стандарт.">
@@ -13,11 +14,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap"
         rel="stylesheet">
+
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/@vuepic/vue-datepicker@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="/assets/styles/styles.css" rel="stylesheet">
     <link href="/assets/styles/rooms.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@vuepic/vue-datepicker@latest/dist/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css">
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+          type="text/css">
 </head>
 <body id="app">
 <div class="wrapper">
@@ -92,7 +102,11 @@
                                         class="swiper-slide"
                                         v-for="image in room.images" :key="image.id"
                                     >
-                                        <img :src="`https://hotelpremier.ru${image.url}`"/>
+                                        <img
+                                            :src="`https://hotelpremier.ru${image.url}`"
+                                            :data-ngsrc="`https://hotelpremier.ru${image.url}`"
+                                            data-nanogallery2-lightbox
+                                        />
                                     </div>
                                 </div>
                                 <div class="swiper-pagination"></div>

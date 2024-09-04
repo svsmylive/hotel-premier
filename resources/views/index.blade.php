@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>Бизнес-отель «Премьер» 4 звезды в центре Краснодара</title>
     <meta name="description"
           content="Бизнес-отель «Премьер» 4 звезды. Конференц зал, спорт зал, ресторанный комплекс, богатый номерной фонд в центре Краснодара.">
@@ -110,11 +111,9 @@
         mobileMenu.value = !mobileMenu.value
     }
     const format = (date) => {
-        const day = date.getDate()
-        const month = new Date(date).toLocaleString("ru-RU", {month: "long"})
-        const year = date.getFullYear()
+        const formattedDate = new Date(date).toLocaleDateString("ru-RU", {day: "2-digit", month: "long"})
 
-        return `${day} ${month} ${year}`
+        return `${formattedDate}`
     }
     const formatDate = (date) => {
         const day = date.getDate()
