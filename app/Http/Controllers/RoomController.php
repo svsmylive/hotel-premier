@@ -69,7 +69,10 @@ class RoomController
         $images = [];
         $moreCount = 0;
 
-        $discountSum = $room->old_price - $room->price;
+        $price = (int)str_replace(' ', '', $room->price);
+        $priceOld = (int)str_replace(' ', '', $room->price_old);
+
+        $discountSum = $priceOld - $price;
 
         if ($room->id == 1) {
             $meta_title = 'Номер категории Стандарт для двух человек - бизнес-отель «Премьер» в центре Краснодара';
@@ -102,10 +105,6 @@ class RoomController
             $moreCount = count($detailImages) - 5;
 
             foreach ($detailImages as $image) {
-                if ($i == 5) {
-                    break;
-                }
-
                 $images[] = [
                     'id' => $image->id,
                     'name' => $image->name,

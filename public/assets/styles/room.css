@@ -20,6 +20,10 @@
     overflow: hidden;
     position: relative;
 }
+
+.room__image--hidden {
+    display: none;
+}
 .room__image img {
     object-fit: cover;
     object-position: 50%;

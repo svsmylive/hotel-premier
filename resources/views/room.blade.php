@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-            href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap"
-            rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/@vuepic/vue-datepicker@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="room__images">
                     @foreach($data['images'] as $image)
-                        @if($loop->last)
+                        @if($loop->iteration == 5)
                             <div class="room__image">
                                 <img src="{{ $image['url'] }}" data-ngsrc="{{ $image['url'] }}"
                                      data-nanogallery2-lightbox/>
@@ -112,8 +112,13 @@
                                     <span data-nanogallery2-lightbox>{{ '+' . $data['more_count'] . ' фото' }}</span>
                                 @endif
                             </div>
-                        @else
+                        @elseif($loop->iteration < 5)
                             <div class="room__image @if($loop->first) room__image-main @endif ">
+                                <img src="{{ $image['url'] }}" data-ngsrc="{{ $image['url'] }}"
+                                     data-nanogallery2-lightbox/>
+                            </div>
+                        @elseif($loop->iteration > 5)
+                            <div class="room__image room__image--hidden">
                                 <img src="{{ $image['url'] }}" data-ngsrc="{{ $image['url'] }}"
                                      data-nanogallery2-lightbox/>
                             </div>
@@ -151,30 +156,30 @@
                             <div class="room__form-row">
                                 <div class="room__form-input">
                                     <vue-date-picker
-                                            v-model="startDate"
-                                            locale="ru"
-                                            auto-apply
-                                            :enable-time-picker="false"
-                                            :clearable="false"
-                                            placeholder="Дата заезда"
-                                            no-today
-                                            :format="format"
-                                            :min-date="new Date()"
+                                        v-model="startDate"
+                                        locale="ru"
+                                        auto-apply
+                                        :enable-time-picker="false"
+                                        :clearable="false"
+                                        placeholder="Дата заезда"
+                                        no-today
+                                        :format="format"
+                                        :min-date="new Date()"
                                     />
                                 </div>
                             </div>
                             <div class="room__form-row">
                                 <div class="room__form-input">
                                     <vue-date-picker
-                                            v-model="endDate"
-                                            locale="ru"
-                                            auto-apply
-                                            :enable-time-picker="false"
-                                            :clearable="false"
-                                            placeholder="Дата заезда"
-                                            no-today
-                                            :format="format"
-                                            :min-date="new Date()"
+                                        v-model="endDate"
+                                        locale="ru"
+                                        auto-apply
+                                        :enable-time-picker="false"
+                                        :clearable="false"
+                                        placeholder="Дата заезда"
+                                        no-today
+                                        :format="format"
+                                        :min-date="new Date()"
                                     />
                                 </div>
                             </div>
@@ -182,7 +187,7 @@
                         <div class="room__form-cost">
                             <div class="room__form-cost-line">
                                 <span>Стоимость за 1 ночь</span>
-                                <span>{{ $data['price'] }} ₽</span>
+                                <span>{{ $data['price_old'] }} ₽</span>
                             </div>
                             <div class="room__form-cost-line">
                                 <span>Скидка <div>{{ $data['discount_percent'] }}</div></span>
@@ -193,7 +198,7 @@
                                                         ИТОГО
                                                         <small>Налоги и сборы включены</small>
                                                     </span>
-                                <span> {!! '{{ totalPrice }}' !!} ₽</span>
+                                <span> <?= '{{totalPrice}}' ?> ₽</span>
                             </div>
                         </div>
                         <div class="room__form-button" @click="goToBooking()">Забронировать</div>
@@ -212,7 +217,7 @@
                     <img src="/images/benefits-1.jpg"/>
                     <div class="benefits__item-title">Room service</div>
                 </div>
-                <div class="benefits__item"></div>
+                <div class="benefits__item benefits__item--empty"></div>
                 <a href="{{ route('pool_gym') }}">
                     <div class="benefits__item">
                         <img src="/images/benefits-2.jpg"/>
@@ -225,7 +230,7 @@
                         <div class="benefits__item-title">Тренажерный зал</div>
                     </div>
                 </a>
-                <div class="benefits__item"></div>
+                <div class="benefits__item benefits__item--empty"></div>
                 <a href="{{ route('restaurant') }}">
                     <div class="benefits__item">
                         <img src="/images/benefits-4.jpg"/>
@@ -238,7 +243,7 @@
                         <div class="benefits__item-title">Парк «Краснодар»</div>
                     </div>
                 </a>
-                <div class="benefits__item"></div>
+                <div class="benefits__item benefits__item--empty"></div>
             </div>
         </div>
     </main>
@@ -299,7 +304,7 @@
     </footer>
 </div>
 <script>
-    const roomPrice = {{ str_replace(' ', '', $data['price']) }};
+    const roomPrice = {{ str_replace(' ', '', $data['price_old']) }};
     const roomDiscount = {{ preg_replace('/[^\d]/', '',$data['discount_percent']) }}
         const
     {
