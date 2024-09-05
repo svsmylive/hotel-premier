@@ -69,6 +69,8 @@ class RoomController
         $images = [];
         $moreCount = 0;
 
+        $discountSum = $room->old_price - $room->price;
+
         if ($room->id == 1) {
             $meta_title = 'Номер категории Стандарт для двух человек - бизнес-отель «Премьер» в центре Краснодара';
             $meta_description = 'Номер категории Стандарт подходит для комфортабельного проживания двух человек. Бизнес-отель «Премьер» в самом центре Краснодара. Цены и бронирование на сайте. ';
@@ -132,6 +134,7 @@ class RoomController
             'meta_title' => $meta_title,
             'meta_description' => $meta_description,
             'more_count' => $moreCount,
+            'discount_sum' => $discountSum,
         ];
     }
 

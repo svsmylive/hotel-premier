@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tenor+Sans&display=swap"
+            rel="stylesheet">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/@vuepic/vue-datepicker@latest"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
@@ -151,49 +151,49 @@
                             <div class="room__form-row">
                                 <div class="room__form-input">
                                     <vue-date-picker
-                                        v-model="startDate"
-                                        locale="ru"
-                                        auto-apply
-                                        :enable-time-picker="false"
-                                        :clearable="false"
-                                        placeholder="Дата заезда"
-                                        no-today
-                                        :format="format"
-                                        :min-date="new Date()"
+                                            v-model="startDate"
+                                            locale="ru"
+                                            auto-apply
+                                            :enable-time-picker="false"
+                                            :clearable="false"
+                                            placeholder="Дата заезда"
+                                            no-today
+                                            :format="format"
+                                            :min-date="new Date()"
                                     />
                                 </div>
                             </div>
                             <div class="room__form-row">
                                 <div class="room__form-input">
                                     <vue-date-picker
-                                        v-model="endDate"
-                                        locale="ru"
-                                        auto-apply
-                                        :enable-time-picker="false"
-                                        :clearable="false"
-                                        placeholder="Дата заезда"
-                                        no-today
-                                        :format="format"
-                                        :min-date="new Date()"
+                                            v-model="endDate"
+                                            locale="ru"
+                                            auto-apply
+                                            :enable-time-picker="false"
+                                            :clearable="false"
+                                            placeholder="Дата заезда"
+                                            no-today
+                                            :format="format"
+                                            :min-date="new Date()"
                                     />
                                 </div>
                             </div>
                         </div>
                         <div class="room__form-cost">
                             <div class="room__form-cost-line">
-                                <span>Стоимость за 5 ночей</span>
-                                <span>18 000 ₽</span>
+                                <span>Стоимость за 1 ночь</span>
+                                <span>{{ $data['price'] }} ₽</span>
                             </div>
                             <div class="room__form-cost-line">
-                                <span>Скидка <div>-10%</div></span>
-                                <span>1 800 ₽</span>
+                                <span>Скидка <div>{{ $data['discount_percent'] }}</div></span>
+                                <span>{{ $data['discount_sum'] }} ₽</span>
                             </div>
                             <div class="room__form-cost-line room__form-cost-line--big">
                                                     <span>
                                                         ИТОГО
                                                         <small>Налоги и сборы включены</small>
                                                     </span>
-                                <span>16 200 ₽</span>
+                                <span> {!! '{{ totalPrice }}' !!} ₽</span>
                             </div>
                         </div>
                         <div class="room__form-button" @click="goToBooking()">Забронировать</div>
