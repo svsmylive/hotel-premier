@@ -286,10 +286,6 @@
 }
 
 @media all and (max-width: 768px) {
-    .cover-image__text {
-        font-size: 32px;
-        line-height: 40px;
-    }
     h1 {
         font-size: 32px;
         margin-bottom: 32px;
