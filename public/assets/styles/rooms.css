@@ -260,6 +260,10 @@ body {
 }
 
 @media all and (max-width: 768px) {
+    .cover-image__text {
+        font-size: 32px;
+        line-height: 40px;
+    }
     .cover-image {
         width: 100%;
         border-radius: 0;
