@@ -65,7 +65,7 @@
 </menu>
 <div
     style="position: absolute; left: 0; top: 0; width: 0; bottom: 0; background: transparent; clip-path: path('M156 68.5C167.046 68.5 176 59.5457 176 48.5V20C176 8.9543 184.954 0 196 0H1852C1863.05 0 1872 8.95431 1872 20V892C1872 903.046 1863.05 912 1852 912H20C8.95433 912 0 903.046 0 892V88.5C0 77.4543 8.9543 68.5 20 68.5H156Z')">
-    <video autoplay muted loop class="main-page-video">
+    <video autoplay muted loop playsinline class="main-page-video">
         <source src="/videos/main_page.mp4" type="video/mp4">
     </video>
 </div>
