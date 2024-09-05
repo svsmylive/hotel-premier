@@ -5,9 +5,15 @@
 body {
     overflow-x: hidden;
     height: 100dvh;
+    margin: 0;
+    padding: 0;
 }
 
-.wrapper {}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
 
 .desktop {}
 .mobile {}
@@ -294,9 +300,11 @@ h1 {
     text-decoration: none;
 }
 .before-footer {
+    margin-top: auto;
     height: 40px;
+    min-height: 40px;
     border-radius: 0 0 30px 30px;
-    width: 100vw;
+    width: 100%;
     background-color: white;
     position: relative;
     z-index: 100;
@@ -646,7 +654,7 @@ menu.mobile .menu__item a {
 
     .main .content {
         max-width: 100%;
-        padding: 0 24px;
+        padding: 0 16px;
     }
 
     .modal-dialog {
@@ -767,7 +775,7 @@ menu.mobile .menu__item a {
 
 .widget {
     position: absolute;
-    bottom: 100px;
+    bottom: 80px;
     left: 40px;
     right: 40px;
     width: calc(100vw - 80px - 40px);

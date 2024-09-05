@@ -24,7 +24,6 @@
     <link href="/assets/styles/styles.css" rel="stylesheet">
     <link href="/assets/styles/room.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/@vuepic/vue-datepicker@latest/dist/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.2.2/dist/photoswipe.css">
     <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
           type="text/css">
 </head>
@@ -90,6 +89,18 @@
             </div>
             <h1>Номер категории "{{ $data['name'] }}"</h1>
             <div class="room">
+                <div class="room__images-mobile">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            @foreach($data['images'] as $image)
+                                <div class="swiper-slide">
+                                    <img src="{{ $image['url'] }}"/>
+                                </div>
+                            @endforeach
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
                 <div class="room__images">
                     @foreach($data['images'] as $image)
                         @if($loop->last)
@@ -136,53 +147,55 @@
                             <div class="room__form-time1">Заезд 14:00</div>
                             <div class="room__form-time2">Выезд 12:00</div>
                         </div>
-                        <div class="room__form-row">
-                            <div class="room__form-input">
-                                <vue-date-picker
-                                    v-model="startDate"
-                                    locale="ru"
-                                    auto-apply
-                                    :enable-time-picker="false"
-                                    :clearable="false"
-                                    placeholder="Дата заезда"
-                                    no-today
-                                    :format="format"
-                                    :min-date="new Date()"
-                                />
+                        <div class="room__form-rows">
+                            <div class="room__form-row">
+                                <div class="room__form-input">
+                                    <vue-date-picker
+                                        v-model="startDate"
+                                        locale="ru"
+                                        auto-apply
+                                        :enable-time-picker="false"
+                                        :clearable="false"
+                                        placeholder="Дата заезда"
+                                        no-today
+                                        :format="format"
+                                        :min-date="new Date()"
+                                    />
+                                </div>
+                            </div>
+                            <div class="room__form-row">
+                                <div class="room__form-input">
+                                    <vue-date-picker
+                                        v-model="endDate"
+                                        locale="ru"
+                                        auto-apply
+                                        :enable-time-picker="false"
+                                        :clearable="false"
+                                        placeholder="Дата заезда"
+                                        no-today
+                                        :format="format"
+                                        :min-date="new Date()"
+                                    />
+                                </div>
                             </div>
                         </div>
-                        <div class="room__form-row">
-                            <div class="room__form-input">
-                                <vue-date-picker
-                                    v-model="endDate"
-                                    locale="ru"
-                                    auto-apply
-                                    :enable-time-picker="false"
-                                    :clearable="false"
-                                    placeholder="Дата заезда"
-                                    no-today
-                                    :format="format"
-                                    :min-date="new Date()"
-                                />
-                            </div>
-                        </div>
-{{--                        <div class="room__form-cost">--}}
-{{--                            <div class="room__form-cost-line">--}}
-{{--                                <span>Стоимость за 5 ночей</span>--}}
-{{--                                <span>18 000 ₽</span>--}}
-{{--                            </div>--}}
-{{--                            <div class="room__form-cost-line">--}}
-{{--                                <span>Скидка <div>-10%</div></span>--}}
-{{--                                <span>1 800 ₽</span>--}}
-{{--                            </div>--}}
-{{--                            <div class="room__form-cost-line room__form-cost-line--big">--}}
-{{--                            <span>--}}
-{{--                                ИТОГО--}}
-{{--                                <small>Налоги и сборы включены</small>--}}
-{{--                            </span>--}}
-{{--                                <span>16 200 ₽</span>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                        {{--                        <div class="room__form-cost">--}}
+                        {{--                            <div class="room__form-cost-line">--}}
+                        {{--                                <span>Стоимость за 5 ночей</span>--}}
+                        {{--                                <span>18 000 ₽</span>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="room__form-cost-line">--}}
+                        {{--                                <span>Скидка <div>-10%</div></span>--}}
+                        {{--                                <span>1 800 ₽</span>--}}
+                        {{--                            </div>--}}
+                        {{--                            <div class="room__form-cost-line room__form-cost-line--big">--}}
+                        {{--                            <span>--}}
+                        {{--                                ИТОГО--}}
+                        {{--                                <small>Налоги и сборы включены</small>--}}
+                        {{--                            </span>--}}
+                        {{--                                <span>16 200 ₽</span>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
                         <div class="room__form-button" @click="goToBooking()">Забронировать</div>
                     </div>
                 </div>
@@ -288,27 +301,16 @@
 <script>
     const roomPrice = {{ str_replace(' ', '', $data['price']) }};
     const roomDiscount = {{ preg_replace('/[^\d]/', '',$data['discount_percent']) }}
-    const {createApp, ref, onMounted} = Vue
+    const { createApp, ref, onMounted, watch, computed } = Vue
 
     const rooms = ref([])
+    const diffDays = ref(1)
 
     const mobileMenu = ref(false)
     const startDate = ref()
     const endDate = ref()
     const toggleMenu = () => {
         mobileMenu.value = !mobileMenu.value
-    }
-    const fetchRooms = async () => {
-        try {
-            const response = await fetch('https://hotelpremier.ru/api/rooms')
-            if (!response.ok) {
-                throw new Error(`Response status: ${response.status}`)
-            }
-
-            rooms.value = await response.json()
-        } catch (error) {
-            console.error(error.message)
-        }
     }
     const format = (date) => {
         const formattedDate = new Date(date).toLocaleDateString("ru-RU", {day: "2-digit", month: "long"})
@@ -325,22 +327,54 @@
     const goToBooking = () => {
         const hotelID = 56
         const headOfficeID = 42
-        const hotelName = '%D0%9F%D1%80%D0%B5%D0%BC%D1%8C%D0%B5%D1%80%20%D0%BE%D1%82%D0%B5%D0%BB%D1%8C'
+        const hotelName= '%D0%9F%D1%80%D0%B5%D0%BC%D1%8C%D0%B5%D1%80%20%D0%BE%D1%82%D0%B5%D0%BB%D1%8C'
         const start = formatDate(startDate.value)
         const end = formatDate(endDate.value)
-        window.location.href = `https://hotelpremier.ru/booking?startDate=${start}&endDate=${end}&hotelID=${hotelID}&headOfficeID=${headOfficeID}&hotelName=${hotelName}&startTime=14:00&endTime=12:00`
+        window.location.href = `https://hotelkrasnodar-test.ru/booking?startDate=${start}&endDate=${end}&hotelID=${hotelID}&headOfficeID=${headOfficeID}&hotelName=${hotelName}`
     }
+
+    const totalPrice = computed(() => {
+        return ((roomPrice - (roomPrice * (roomDiscount / 100))) * diffDays.value).toLocaleString()
+    })
+
+    const getDiffDays = (start, end) => {
+        const diffTime = Math.abs(end - start)
+        return Math.floor(diffTime / (1000 * 60 * 60 * 24))
+    }
+
+    watch(() => startDate.value, () => {
+        if (startDate.value && endDate.value) {
+            diffDays.value = getDiffDays(startDate.value, endDate.value)
+            console.log('diffDays', diffDays.value)
+        }
+    })
+    watch(() => endDate.value, () => {
+        if (startDate.value && endDate.value) {
+            diffDays.value = getDiffDays(startDate.value, endDate.value)
+            console.log('diffDays', diffDays.value)
+        }
+    })
 
     createApp({
         setup() {
             onMounted(() => {
-                // fetchRooms()
+                setTimeout(() => {
+                    const swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 1,
+                        spaceBetween: 12,
+                        loop: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                    })
+                }, 1000)
             })
-
-            return {mobileMenu, toggleMenu, rooms, startDate, endDate, format, formatDate, goToBooking}
+            return { mobileMenu, toggleMenu, rooms, startDate, endDate, format, formatDate, goToBooking, totalPrice }
         },
-        components: {VueDatePicker},
+        components: { VueDatePicker },
     }).mount('#app')
 </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

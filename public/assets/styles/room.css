@@ -11,6 +11,9 @@
     "main main . .";
     margin-bottom: 80px;
 }
+.room__images-mobile {
+    display: none;
+}
 .room__image {
     height: 240px;
     border-radius: 16px;
@@ -145,6 +148,11 @@
     font-size: 16px;
     font-weight: 400;
 }
+.room__form-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .room__form-row {}
 .room__form-cost {
     padding-top: 20px;
@@ -275,4 +283,178 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
+}
+
+@media all and (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+    .room__images-mobile {
+        display: flex;
+        height: 320px;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 60px;
+    }
+    .room__images-mobile img {
+        height: 320px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50%;
+    }
+    .room__images {
+        display: none;
+    }
+    .room {
+        margin-bottom: 60px;
+    }
+    .room__flex {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .room__form {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px 20px;
+    }
+    .room__options {
+        margin-bottom: 32px;
+        flex-direction: column;
+    }
+    .room__option {
+        font-size: 16px;
+    }
+    .room__description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .h2 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    .h2--right {
+        margin-left: 0;
+    }
+    .services {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .services__item {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .services__item:before {
+        margin-top: 12px;
+    }
+    .benefits {
+        display: flex;
+        gap: 20px;
+        width: 100vw;
+        margin-left: -16px;
+        margin-right: -16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        overflow: auto;
+        margin-bottom: 60px;
+    }
+    .benefits__item {
+        width: 288px;
+        min-width: 288px;
+        max-width: 288px;
+        height: 288px;
+    }
+    .benefits__item--empty {
+        display: none;
+    }
+}
+@media all and (min-width: 769px) and (max-width: 1200px) {
+    h1 {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+    .room__images {
+        display: none;
+        height: 420px;
+        border-radius: 16px;
+        margin-bottom: 52px;
+    }
+    .room__images-mobile {
+        display: flex;
+        height: 420px;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 52px;
+    }
+    .room__images-mobile img {
+        height: 420px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50%;
+    }
+    .room {
+        margin-bottom: 60px;
+    }
+    .room__flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .room__form {
+        width: 100%;
+        max-width: 100%;
+    }
+    .room__form-rows {
+        display: flex;
+        flex-direction: row;
+    }
+    .room__form-row {
+        flex: 0.5;
+    }
+    .room__options {
+        margin-bottom: 32px;
+    }
+    .room__option {
+        font-size: 20px;
+    }
+    .room__description {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .h2 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    .h2--right {
+        margin-left: 0;
+    }
+    .services {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .services__item {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .benefits {
+        display: flex;
+        gap: 20px;
+        width: 100vw;
+        margin-left: -24px;
+        margin-right: -24px;
+        padding-left: 24px;
+        padding-right: 24px;
+        overflow: auto;
+        margin-bottom: 80px;
+    }
+    .benefits__item {
+        width: 288px;
+        min-width: 288px;
+        max-width: 288px;
+        height: 288px;
+    }
+    .benefits__item--empty {
+        display: none;
+    }
 }
