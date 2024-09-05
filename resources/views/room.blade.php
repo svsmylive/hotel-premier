@@ -179,23 +179,23 @@
                                 </div>
                             </div>
                         </div>
-                        {{--                        <div class="room__form-cost">--}}
-                        {{--                            <div class="room__form-cost-line">--}}
-                        {{--                                <span>Стоимость за 5 ночей</span>--}}
-                        {{--                                <span>18 000 ₽</span>--}}
-                        {{--                            </div>--}}
-                        {{--                            <div class="room__form-cost-line">--}}
-                        {{--                                <span>Скидка <div>-10%</div></span>--}}
-                        {{--                                <span>1 800 ₽</span>--}}
-                        {{--                            </div>--}}
-                        {{--                            <div class="room__form-cost-line room__form-cost-line--big">--}}
-                        {{--                            <span>--}}
-                        {{--                                ИТОГО--}}
-                        {{--                                <small>Налоги и сборы включены</small>--}}
-                        {{--                            </span>--}}
-                        {{--                                <span>16 200 ₽</span>--}}
-                        {{--                            </div>--}}
-                        {{--                        </div>--}}
+                        <div class="room__form-cost">
+                            <div class="room__form-cost-line">
+                                <span>Стоимость за 5 ночей</span>
+                                <span>18 000 ₽</span>
+                            </div>
+                            <div class="room__form-cost-line">
+                                <span>Скидка <div>-10%</div></span>
+                                <span>1 800 ₽</span>
+                            </div>
+                            <div class="room__form-cost-line room__form-cost-line--big">
+                                                    <span>
+                                                        ИТОГО
+                                                        <small>Налоги и сборы включены</small>
+                                                    </span>
+                                <span>16 200 ₽</span>
+                            </div>
+                        </div>
                         <div class="room__form-button" @click="goToBooking()">Забронировать</div>
                     </div>
                 </div>
@@ -301,7 +301,11 @@
 <script>
     const roomPrice = {{ str_replace(' ', '', $data['price']) }};
     const roomDiscount = {{ preg_replace('/[^\d]/', '',$data['discount_percent']) }}
-    const { createApp, ref, onMounted, watch, computed } = Vue
+        const
+    {
+        createApp, ref, onMounted, watch, computed
+    }
+    = Vue
 
     const rooms = ref([])
     const diffDays = ref(1)
@@ -327,7 +331,7 @@
     const goToBooking = () => {
         const hotelID = 56
         const headOfficeID = 42
-        const hotelName= '%D0%9F%D1%80%D0%B5%D0%BC%D1%8C%D0%B5%D1%80%20%D0%BE%D1%82%D0%B5%D0%BB%D1%8C'
+        const hotelName = '%D0%9F%D1%80%D0%B5%D0%BC%D1%8C%D0%B5%D1%80%20%D0%BE%D1%82%D0%B5%D0%BB%D1%8C'
         const start = formatDate(startDate.value)
         const end = formatDate(endDate.value)
         window.location.href = `https://hotelkrasnodar-test.ru/booking?startDate=${start}&endDate=${end}&hotelID=${hotelID}&headOfficeID=${headOfficeID}&hotelName=${hotelName}`
@@ -370,9 +374,9 @@
                     })
                 }, 1000)
             })
-            return { mobileMenu, toggleMenu, rooms, startDate, endDate, format, formatDate, goToBooking, totalPrice }
+            return {mobileMenu, toggleMenu, rooms, startDate, endDate, format, formatDate, goToBooking, totalPrice}
         },
-        components: { VueDatePicker },
+        components: {VueDatePicker},
     }).mount('#app')
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
