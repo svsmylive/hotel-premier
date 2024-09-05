@@ -316,7 +316,7 @@
     const diffDays = ref(1)
 
     const mobileMenu = ref(false)
-    const startDate = ref()
+    const startDate = ref(new Date())
     const endDate = ref()
     const toggleMenu = () => {
         mobileMenu.value = !mobileMenu.value
@@ -378,6 +378,8 @@
                         },
                     })
                 }, 1000)
+                endDate.value = new Date()
+                endDate.value.setDate(endDate.value.getDate() + 1)
             })
             return {mobileMenu, toggleMenu, rooms, startDate, endDate, format, formatDate, goToBooking, totalPrice}
         },

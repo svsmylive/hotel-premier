@@ -103,7 +103,7 @@
 <script>
     const {createApp, ref, onMounted} = Vue
 
-    const startDate = ref()
+    const startDate = ref(new Date())
     const endDate = ref()
     const mobileMenu = ref(false)
 
@@ -133,6 +133,11 @@
 
     createApp({
         setup() {
+            onMounted(() => {
+                endDate.value = new Date()
+                endDate.value.setDate(endDate.value.getDate() + 1)
+            })
+
             return {mobileMenu, toggleMenu, startDate, endDate, format, goToBooking}
         },
         components: {VueDatePicker},
