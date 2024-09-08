@@ -166,3 +166,30 @@
     color: rgb(30, 30, 30);
     border-radius: 4px;
 }
+
+@media screen and (max-width: 867px) {
+    #ecvi-booking-container .search-container .search-container-item {
+        max-width: none;
+    }
+    #ecvi-booking-container .search-container .search-container-item.new-search {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #ecvi-booking-container .search-container .container {
+        flex-direction: column;
+    }
+    #ecvi-booking-container .search-container .search-container-item.widget-date-container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    #ecvi-booking-container .search-container .search-container-item.new-search {
+        width: 100%;
+        margin-top: 0;
+    }
+    #new-search {
+        margin-top: 0;
+    }
+}
+
