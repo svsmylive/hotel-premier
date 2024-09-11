@@ -65,6 +65,10 @@
     height: 100%;
 }
 
+.room__image--hidden {
+    display: none;
+}
+
 .room__flex {
     display: flex;
     gap: 40px;
