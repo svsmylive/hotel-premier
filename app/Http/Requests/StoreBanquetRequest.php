@@ -23,7 +23,6 @@ class StoreBanquetRequest extends FormRequest
     {
         return [
             'name' => ['required', 'string'],
-            'format' => ['required', 'string'],
             'date' => ['required', 'string'],
             'guest_count' => ['sometimes', 'nullable', 'string'],
             'phone' => ['sometimes', 'nullable', 'string'],

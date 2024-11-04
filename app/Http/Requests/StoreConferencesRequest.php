@@ -28,6 +28,7 @@ class StoreConferencesRequest extends FormRequest
             'phone' => ['sometimes', 'nullable', 'string'],
             'additional_info' => ['sometimes', 'nullable', 'string'],
             'type' => ['required', 'string'],
+            'format' => ['required', 'string'],
         ];
     }
 }

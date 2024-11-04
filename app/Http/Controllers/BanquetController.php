@@ -15,10 +15,9 @@ class BanquetController
             $message = $this->getMessage($data);
 
             $apiKey = config('telegram.api_key');
-            $chatId = config('telegram.chat_id_krasnodar');
 
             Http::post("https://api.telegram.org/bot{$apiKey}/sendMessage", [
-                'chat_id' => $chatId,
+                'chat_id' => '-4281880650',
                 'text' => $message,
             ]);
         } catch (\Throwable $msg) {
@@ -32,7 +31,6 @@ class BanquetController
     {
         $data = [
             'name' => $data['name'] ?? '',
-            'format' => $data['format'] ?? '',
             'date' => $data['date'] ?? '',
             'guest_count' => $data['guest_count'] ?? '',
             'phone' => $data['phone'] ?? '',
@@ -41,10 +39,9 @@ class BanquetController
 
         $messageOut = 'Заказ банкета Hotel premier' . "\n";
         $messageOut .= 'Имя : ' . $data['name'] . "\n";
-        $messageOut .= 'Формат банкета : ' . $data['format'] . "\n";
-        $messageOut .= 'Дата' . $data['date'] . "\n";
+        $messageOut .= 'Дата : ' . $data['date'] . "\n";
         $messageOut .= 'Кол-во гостей : ' . $data['guest_count'] . "\n";
-        $messageOut .= 'Телефона' . $data['phone'] . "\n";
+        $messageOut .= 'Телефон: ' . $data['phone'] . "\n";
         $messageOut .= 'Доп информация : ' . $data['additional_info'] . "\n";
 
         return $messageOut;

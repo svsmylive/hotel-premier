@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BanquetController;
 use App\Http\Controllers\ConferencesController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ReviewsController;
@@ -27,4 +28,4 @@ Route::post('/reviews/add', [ReviewsController::class, 'store']);
 
 Route::post('/reserve/conferences', [ConferencesController::class, 'store']);
 
-Route::post('/reserve/banquet', [ConferencesController::class, 'store']);
+Route::post('/reserve/banquet', [BanquetController::class, 'store']);
