@@ -48,15 +48,18 @@ class RoomController
                 'id' => $room->id,
                 'name' => $room->title,
                 'description' => $room->preview_description,
-                'price' => $room->price,
+                'price' => number_format($room->price, thousands_separator: " "),
                 'price_old' => $room->price_old,
                 'discount_percent' => $room->discount_percent,
+                'square' => $room->square,
+                'bed_size' => $room->bed_size,
+                'capacity' => $room->persons,
                 'options' => $propData,
                 'images' => $images
             ];
         }
 
-        return $data;
+        return view('index', ['rooms' => $data]);
     }
 
     public function get(int $id)

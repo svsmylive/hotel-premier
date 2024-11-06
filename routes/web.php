@@ -14,12 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [RoomController::class, 'index']);
 
 
-Route::get('/rooms/', function () {
+/*Route::get('/rooms/', function () {
     return view('rooms');
 })->name('rooms');
 
@@ -55,12 +53,13 @@ Route::get('/news/', function () {
     return view('news');
 })->name('news');
 
+
+Route::get('/rooms/{id}', [RoomController::class, 'byId']);*/
+
 Route::get('/privacy-policy/', function () {
-    return view('confidence');
+    return view('old.confidence');
 })->name('confidence');
 
 Route::get('/rules/', function () {
-    return view('rules');
+    return view('old.rules');
 })->name('rules');
-
-Route::get('/rooms/{id}', [RoomController::class, 'byId']);

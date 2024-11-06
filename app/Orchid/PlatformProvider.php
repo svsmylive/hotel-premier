@@ -33,7 +33,7 @@ class PlatformProvider extends OrchidServiceProvider
     {
         return [
 
-            Menu::make('Комнаты')
+            Menu::make('Номерной фонд')
                 ->permission('platform.systems.users')
                 ->route('platform.systems.rooms'),
 

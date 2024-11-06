@@ -1,0 +1,5 @@
+:root {
+  --transition-primary: all 0.4s ease;
+  --transition-carousel: all 0.7s ease;
+  --transition-carousel-mobile: all 0.5s ease;
+}

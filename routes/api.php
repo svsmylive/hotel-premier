@@ -18,13 +18,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/rooms', [RoomController::class, 'index']);
+/*Route::get('/rooms', [RoomController::class, 'index']);
 Route::get('/rooms/{id}', [RoomController::class, 'get']);
 
 Route::get('/news', [NewsController::class, 'index']);
 
 Route::get('/reviews', [ReviewsController::class, 'index']);
-Route::post('/reviews/add', [ReviewsController::class, 'store']);
+Route::post('/reviews/add', [ReviewsController::class, 'store']);*/
 
 Route::post('/reserve/conferences', [ConferencesController::class, 'store']);
 

@@ -1,0 +1,400 @@
+/* ui comoponents  */
+
+h1 {
+  font-family: Playfair Display;
+  font-size: 110px;
+  font-weight: 400;
+  line-height: 110px;
+  text-align: left;
+}
+
+h2 {
+  font-family: Jost;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+  text-align: left;
+}
+
+h3 {
+  font-family: Jost;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+}
+
+h4 {
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.btn-primary {
+  text-decoration: none;
+  font-family: 'Jost';
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20.4px;
+  text-align: center;
+  border: 1px solid #fdfcf9;
+  background: #000000;
+  color: #ffffff;
+  padding: 12px 28px;
+  cursor: pointer;
+  /* margin-top: 20px; */
+  transition: var(--transition-primary);
+}
+
+.btn-primary:hover {
+  background-color: #121212;
+  color: #d9d8d4;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  font-family: 'Jost';
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20.4px;
+  text-align: center;
+  border: 1px solid #fdfcf9;
+  background: transparent;
+  color: #fdfcf9;
+  padding: 12px 28px;
+  cursor: pointer;
+  /* margin-top: 20px; */
+  transition: var(--transition-primary);
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.toggler {
+  border-radius: 50%;
+  border: 1px solid #d9d8d4;
+  padding: 10px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: var(--transition-primary);
+}
+
+/* .toggler:hover {
+  background-color: #fff;
+  border-color: #fff;
+} */
+
+.toggler path {
+  transition: var(--transition-primary);
+  /* stroke: black; */
+}
+
+.toggler-secondary {
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 10px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: var(--transition-primary);
+}
+
+/* .toggler-secondary:hover {
+  background-color: #fff;
+  border-color: #fff;
+} */
+
+.toggler-secondary path {
+  stroke: black;
+  transition: var(--transition-primary);
+}
+
+.accordion-header {
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  /* height: 72px; */
+  padding: 24px 80px;
+  border: 1px solid #535353;
+  text-align: center;
+  position: relative;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+.accordion-header > div:first-child {
+  /* width: 36px; */
+}
+
+/* select-option  */
+
+.select-option {
+  position: relative;
+}
+
+.select-option > .select-option-selected {
+  padding: 12px;
+  border: 1px solid #adaaa9;
+  outline: none;
+  font-family: Jost;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20.4px;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+}
+
+.select-option-selected {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-option-variants {
+  display: none;
+  border: 1px solid black;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.select-option.active .select-option-variants {
+  display: block;
+}
+
+.select-option-selected__svg {
+  background-image: url(/assets/images/arrow-down.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.select-option.active .select-option-selected__svg {
+  background-image: url(/assets/images/arrow-up.svg);
+}
+
+.select-option-variants > div {
+  font-family: Jost;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20.4px;
+  text-align: left;
+  padding: 10px 12px;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+}
+
+.select-option-variants > div:hover {
+  background: #f4f2ed;
+}
+
+.select-option-variants > div.active {
+  color: #d1411c;
+}
+
+/* modals  */
+
+.modal-tint {
+  background-color: #00000099;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  display: none;
+  z-index: 100;
+}
+
+.modal-tint.active {
+  display: block;
+}
+
+.modal {
+  padding: 24px 24px 30px 24px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 440px;
+  z-index: 200;
+  box-sizing: border-box;
+  z-index: 105;
+}
+
+.modal.modal_too-tall {
+  top: 16px;
+  transform: translate(-50%, 0);
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  transition: var(--transition-primary);
+}
+
+.modal__close:hover > path {
+  stroke: #000000;
+}
+
+.modal__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.modal__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.modal > h1 {
+  font-family: 'Jost';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: center;
+}
+
+.modal__form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal__form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  /* align-items: flex-end; */
+}
+
+.modal__btn-submit {
+  width: 100%;
+}
+
+.modal__form-element {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modal__form-element.errored input[type='text'] {
+  border-color: #d1411c;
+}
+
+.modal__form-element.errored textarea {
+  border-color: #d1411c;
+}
+
+.modal__form-element-error {
+  font-family: Jost;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 15.4px;
+  text-align: left;
+  color: #d1411c;
+  margin-top: 6px;
+}
+
+.modal__form-element-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.modal__form-label-personal {
+  margin-left: 4px;
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+.modal__form-label-personal:hover {
+  color: #d1411c;
+  border-color: #d1411c;
+}
+
+.modal__form-element label {
+  font-family: Jost;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 15.4px;
+  text-align: left;
+}
+
+.modal__form-element input[type='text'] {
+  padding: 12px;
+  border: 1px solid #adaaa9;
+  outline: none;
+  font-family: Jost;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20.4px;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.modal__form-element input[type='text']:focus {
+  border: 1px solid black;
+}
+
+input[type='checkbox'] {
+  visibility: hidden;
+  position: absolute;
+}
+
+.modal__form-element textarea {
+  resize: none;
+  padding: 12px;
+  font-family: Jost;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 20.4px;
+  text-align: left;
+  outline: none;
+  border: 1px solid #adaaa9;
+}
+
+.modal__form-element textarea:focus {
+  border: 1px solid black;
+}
+
+.checkmark {
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type='checkbox'] ~ .checkmark > img {
+  display: none;
+}
+
+input[type='checkbox']:checked ~ .checkmark > img {
+  display: block;
+}
