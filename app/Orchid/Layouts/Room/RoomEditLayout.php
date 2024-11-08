@@ -70,8 +70,8 @@ class RoomEditLayout extends Rows
 
             Upload::make('room.attachment')
                 ->groups('previewImages')
-                ->title(__('Изображения на странице номеров'))
-                ->placeholder(__('Изображения на странице номеров')),
+                ->title(__('Изображения на главной'))
+                ->placeholder(__('Изображения на главной')),
 
             Upload::make('room.attachment')
                 ->groups('detailImages')

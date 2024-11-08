@@ -6,6 +6,7 @@ import './sections/numbers.js';
 import './sections/gastronomya.js';
 import './sections/events.js';
 import './sections/wellness.js';
+import './sections/footer.js';
 
 import './cookies.js';
 

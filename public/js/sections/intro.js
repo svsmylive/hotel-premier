@@ -7,7 +7,7 @@ video.addEventListener('loadeddata', () => {
   video.play();
 });
 
-video.src = './assets/videos/intro-video-small.mp4';
+video.src = '/assets/videos/intro-video-small.mp4';
 video.loop = true;
 video.autoplay = true;
 video.muted = true;

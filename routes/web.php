@@ -63,3 +63,7 @@ Route::get('/privacy-policy/', function () {
 Route::get('/rules/', function () {
     return view('old.rules');
 })->name('rules');
+
+Route::get('/booking/', function () {
+    return view('booking');
+})->name('booking');
