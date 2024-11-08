@@ -66,7 +66,6 @@
         </div>
         <div class="book-widget">
             <div class="left" id="_bn_widget_">
-                <a href="https://bnovo.ru/" id="_bnovo_link_" target="_blank">Bnovo</a>
             </div>
         </div>
     </section>
@@ -1364,7 +1363,7 @@
                 bg_alpha_mobile: "100",
                 border_color_mobile: "#C6CAD3",
                 padding: "24",
-                padding_mobile: "24",
+                padding_mobile: "15",
                 border_radius: "8",
                 button_font_size: "14",
                 button_height: "42",
