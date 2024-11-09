@@ -117,50 +117,50 @@
   .nums-carousel__item[data-state='left'] > .nums-carousel__item-image-wrapper {
     width: 500px;
     height: 300px;
-    transform: translateY(70px);
+    transform: translate3d(0, 70px, 0);
   }
 
   .nums-carousel__item[data-state='right'] > .nums-carousel__item-image-wrapper {
     width: 500px;
     height: 300px;
-    transform: translateY(70px);
+    transform: translate3d(0, 70px, 0);
   }
 
   .nums-carousel__item[data-state='left-gone'] > .nums-carousel__item-image-wrapper {
     width: 500px;
     height: 300px;
-    transform: translateY(70px);
+    transform: translate3d(0, 70px, 0);
   }
 
   .nums-carousel__item[data-state='right-gone'] > .nums-carousel__item-image-wrapper {
     width: 500px;
     height: 300px;
-    transform: translateY(70px);
+    transform: translate3d(0, 70px, 0);
   }
 
   .nums-carousel__item[data-state='left-gone'] {
-    transform: translate(-1800px, 0);
+    transform: translate3d(-1800px, 0, 0);
     opacity: 0;
     width: 500px;
     pointer-events: none;
   }
 
   .nums-carousel__item[data-state='left'] {
-    transform: translate(-970px, 0);
+    transform: translate3d(-970px, 0, 0);
     width: 500px;
   }
 
   .nums-carousel__item[data-state='active'] {
-    transform: translate(-50%, 0);
+    transform: translate3d(-370px, 0, 0);
   }
 
   .nums-carousel__item[data-state='right'] {
-    transform: translate(470px, 0);
+    transform: translate3d(470px, 0, 0);
     width: 500px;
   }
 
   .nums-carousel__item[data-state='right-gone'] {
-    transform: translate(1200px, 0);
+    transform: translate3d(1200px, 0, 0);
     opacity: 0;
     width: 500px;
     pointer-events: none;
@@ -581,6 +581,7 @@
   .footer__head {
     justify-content: center;
     border-bottom: 1px solid #535353;
+    padding: 24px 20px;
   }
   .footer__content {
     flex-direction: column;
@@ -603,14 +604,32 @@
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    padding: 20px;
     /* border-left: none; */
     border: none;
   }
-  .links a {
-    text-align: center;
+  .links a,
+  .policy-cont a {
+    text-align: center !important;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20.4px;
+    text-align: left;
+    cursor: pointer;
   }
   .links {
-    /* margin-bottom: 40px; */
+    margin-bottom: 40px;
+  }
+  .footer-map-cont__text {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20.4px;
+    text-align: left;
+    cursor: pointer;
+    text-align: center;
+  }
+  .footer_map {
+    margin-top: 32px;
   }
 }
 
