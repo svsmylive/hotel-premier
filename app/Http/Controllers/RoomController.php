@@ -48,7 +48,7 @@ class RoomController
                 'id' => $room->id,
                 'name' => $room->title,
                 'description' => $room->preview_description,
-                'price' => number_format($room->price, thousands_separator: " "),
+                'price' => number_format((float)$room->price, thousands_separator: " "),
                 'price_old' => $room->price_old,
                 'discount_percent' => $room->discount_percent,
                 'square' => $room->square,
