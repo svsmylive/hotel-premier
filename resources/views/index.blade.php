@@ -574,7 +574,7 @@
                     </div>
                     <div class="wealness-section__accordion-content">
                         <div class="wealness-section__accordion-content-descr">
-                            <h4>Бассейн размером NхN метров.</h4>
+                            <h4>Бассейн в нашей SPA-зоне.</h4>
                             <ul>
                                 <li>Регулярно чистим чашу и обновляем воду;</li>
                                 <li>На лежаках рядом с бассейном можно отдохнуть после купания.</li>

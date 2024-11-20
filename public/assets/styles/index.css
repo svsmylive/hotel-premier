@@ -254,7 +254,7 @@ ul {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(/assets/images/intro-image.png);
+  background-image: url(/assets/images/intro-image.jpeg);
 }
 
 .intro-section__video::before {
