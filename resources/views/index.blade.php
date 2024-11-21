@@ -329,7 +329,7 @@
                             </div>
                         </div>
                         <div class="events-section__accordion-item-descr-price">
-                            <h4>ЦЕНА</h4>
+                            <h4>ЦЕНА 2 500 ₽</h4>
                             <button class="btn-secondary events-section__btn-book">Забронировать</button>
                         </div>
                     </div>
@@ -423,7 +423,7 @@
                             </div>
                         </div>
                         <div class="events-section__accordion-item-descr-price">
-                            <h4>ЦЕНА</h4>
+                            <h4>ЦЕНА 3 500 ₽</h4>
                             <button class="btn-secondary events-section__btn-book">Забронировать</button>
                         </div>
                     </div>
@@ -517,7 +517,7 @@
                             </div>
                         </div>
                         <div class="events-section__accordion-item-descr-price">
-                            <h4>ЦЕНА</h4>
+                            <h4>ЦЕНА 1 500 ₽</h4>
                             <button class="btn-secondary events-section__btn-book">Забронировать</button>
                         </div>
                     </div>
