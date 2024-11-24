@@ -255,8 +255,7 @@
         <h2 class="events-section__title">ЗАЛЫ ДЛЯ МЕРОПРИЯТИЙ</h2>
         <p class="events-section__description">
             Проводите у нас совещания, мастер-классы, круглые столы, пресс-конференции, форумы, семинары, презентации
-            продуктов и
-            другие мероприятия. В перерывах организуем фуршет и кофе-брейк.
+            продуктов и другие мероприятия. В перерывах организуем фуршет и кофе-брейк.
         </p>
         <div class="events-section__accordion">
             <div class="events-section__accordion-item active">
@@ -284,7 +283,7 @@
                 </div>
                 <div class="events-section__accordion-content">
                     <div class="events-section__accordion-item-descr">
-                        <h4>Зал площадью 60 м2 с театральной рассадкой.</h4>
+                        <h4>Зал площадью 60 м2 со свободной рассадкой.</h4>
                         <div class="events-section__accordion-item-descr-advances">
                             <p>
                                 70 человек размещаются на удобных креслах. <br/>
@@ -312,17 +311,17 @@
                                     <p>30 чел.</p>
                                 </div>
                                 <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>
+                                    <img src="/assets/images/placements/placement_3.svg" alt=""/>
                                     <h3>Буква Т</h3>
                                     <p>30 чел.</p>
                                 </div>
                                 <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>
+                                    <img src="/assets/images/placements/placement_4.svg" alt=""/>
                                     <h3>Буква П</h3>
                                     <p>20 чел.</p>
                                 </div>
                                 <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>
+                                    <img src="/assets/images/placements/placement_5.svg" alt=""/>
                                     <h3>Буква О</h3>
                                     <p>25 чел.</p>
                                 </div>
@@ -378,10 +377,10 @@
                 </div>
                 <div class="events-section__accordion-content">
                     <div class="events-section__accordion-item-descr">
-                        <h4>Зал площадью 60 м2 с театральной рассадкой.</h4>
+                        <h4>Зал площадью 80 м2 с театральной рассадкой.</h4>
                         <div class="events-section__accordion-item-descr-advances">
                             <p>
-                                70 человек размещаются на удобных креслах. <br/>
+                                Вмещает до 120 человек. <br/>
                                 В зале много света и хорошая акустика.
                             </p>
                             <ul>
@@ -389,7 +388,6 @@
                                 <li>Проектор</li>
                                 <li>Экран</li>
                                 <li>Колонки</li>
-                                <li>Микрофоны и переносная трибуна</li>
                             </ul>
                         </div>
                         <div class="events-section__accordion-item-descr-placements">
@@ -400,26 +398,26 @@
                                     <h3>Театр</h3>
                                     <p>60 чел.</p>
                                 </div>
-{{--                                <div class="events-section__accordion-item-descr-placement">--}}
-{{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
-{{--                                    <h3>Класс</h3>--}}
-{{--                                    <p>30 чел.</p>--}}
-{{--                                </div>--}}
-{{--                                <div class="events-section__accordion-item-descr-placement">--}}
-{{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
-{{--                                    <h3>Буква Т</h3>--}}
-{{--                                    <p>30 чел.</p>--}}
-{{--                                </div>--}}
-{{--                                <div class="events-section__accordion-item-descr-placement">--}}
-{{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
-{{--                                    <h3>Буква П</h3>--}}
-{{--                                    <p>20 чел.</p>--}}
-{{--                                </div>--}}
-{{--                                <div class="events-section__accordion-item-descr-placement">--}}
-{{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
-{{--                                    <h3>Буква О</h3>--}}
-{{--                                    <p>25 чел.</p>--}}
-{{--                                </div>--}}
+                                {{--                                <div class="events-section__accordion-item-descr-placement">--}}
+                                {{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
+                                {{--                                    <h3>Класс</h3>--}}
+                                {{--                                    <p>30 чел.</p>--}}
+                                {{--                                </div>--}}
+                                {{--                                <div class="events-section__accordion-item-descr-placement">--}}
+                                {{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
+                                {{--                                    <h3>Буква Т</h3>--}}
+                                {{--                                    <p>30 чел.</p>--}}
+                                {{--                                </div>--}}
+                                {{--                                <div class="events-section__accordion-item-descr-placement">--}}
+                                {{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
+                                {{--                                    <h3>Буква П</h3>--}}
+                                {{--                                    <p>20 чел.</p>--}}
+                                {{--                                </div>--}}
+                                {{--                                <div class="events-section__accordion-item-descr-placement">--}}
+                                {{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
+                                {{--                                    <h3>Буква О</h3>--}}
+                                {{--                                    <p>25 чел.</p>--}}
+                                {{--                                </div>--}}
                             </div>
                         </div>
                         <div class="events-section__accordion-item-descr-price">
@@ -472,47 +470,44 @@
                 </div>
                 <div class="events-section__accordion-content">
                     <div class="events-section__accordion-item-descr">
-                        <h4>Зал площадью 60 м2 с театральной рассадкой.</h4>
+                        <h4>Помещение площадью 45 м2</h4>
                         <div class="events-section__accordion-item-descr-advances">
                             <p>
-                                70 человек размещаются на удобных креслах. <br/>
-                                В зале много света и хорошая акустика.
+                                Подходит для встреч от 2 до 20 человек. <br/>
+                                Светлая комната оснащена ноутбуком и WiFi.
                             </p>
                             <ul>
                                 <li>Wi-Fi</li>
-                                <li>Проектор</li>
-                                <li>Экран</li>
-                                <li>Колонки</li>
-                                <li>Микрофоны и переносная трибуна</li>
+                                <li>Ноутбук</li>
                             </ul>
                         </div>
                         <div class="events-section__accordion-item-descr-placements">
                             <p>Варианты рассадки:</p>
                             <div class="events-section__accordion-item-descr-placements-list">
-{{--                                <div class="events-section__accordion-item-descr-placement">--}}
-{{--                                    <img src="/assets/images/placements/placement_1.svg" alt=""/>--}}
-{{--                                    <h3>Театр</h3>--}}
-{{--                                    <p>60 чел.</p>--}}
-{{--                                </div>--}}
-{{--                                <div class="events-section__accordion-item-descr-placement">--}}
-{{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
-{{--                                    <h3>Класс</h3>--}}
-{{--                                    <p>30 чел.</p>--}}
-{{--                                </div>--}}
+                                {{--                                <div class="events-section__accordion-item-descr-placement">--}}
+                                {{--                                    <img src="/assets/images/placements/placement_1.svg" alt=""/>--}}
+                                {{--                                    <h3>Театр</h3>--}}
+                                {{--                                    <p>60 чел.</p>--}}
+                                {{--                                </div>--}}
+                                {{--                                <div class="events-section__accordion-item-descr-placement">--}}
+                                {{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
+                                {{--                                    <h3>Класс</h3>--}}
+                                {{--                                    <p>30 чел.</p>--}}
+                                {{--                                </div>--}}
                                 <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>
+                                    <img src="/assets/images/placements/placement_3.svg" alt=""/>
                                     <h3>Буква Т</h3>
-                                    <p>30 чел.</p>
+                                    <p>15 чел.</p>
                                 </div>
                                 <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>
+                                    <img src="/assets/images/placements/placement_4.svg" alt=""/>
                                     <h3>Буква П</h3>
-                                    <p>20 чел.</p>
+                                    <p>15 чел.</p>
                                 </div>
                                 <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>
+                                    <img src="/assets/images/placements/placement_5.svg" alt=""/>
                                     <h3>Буква О</h3>
-                                    <p>25 чел.</p>
+                                    <p>15 чел.</p>
                                 </div>
                             </div>
                         </div>
