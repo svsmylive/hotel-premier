@@ -236,7 +236,7 @@
                 <div class="gastro-cont__image" style="background-image: url('/assets/images/gastronomy/2.jpg')"></div>
                 <h3 class="gastro-cont__title">ЗАВТРАКИ</h3>
                 <span class="line"></span>
-                <p class="gastro-cont__description">С 7:00 до 11:00 подаём 2 варианта завтрака: </p>
+                <p class="gastro-cont__description">С 7:00 до 10:30 (по будням) и С 7:30 до 11:00 (по выходным)  подаём 2 варианта завтрака: </p>
                 <ul>
                     <li>Английский с глазуньей, сосисками и сырниками на десерт; </li>
                     <li>Континентальный со скремблом, лососем и овсяной кашей.</li>
