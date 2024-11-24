@@ -103,7 +103,7 @@ const initSwiper = () => {
     direction: 'horizontal',
     slidesPerView: 'auto',
     followFinger: true,
-    loop: true,
+    loop: false,
     pagination: {
       el: '.nums-carousel__dots-cont',
       type: 'bullets',

@@ -30,6 +30,8 @@ class BanquetController
     public function getMessage(array $data): string
     {
         $data = [
+            'type' => $data['type'] ?? '',
+            'format' => $data['format'] ?? '',
             'name' => $data['name'] ?? '',
             'date' => $data['date'] ?? '',
             'guest_count' => $data['guest_count'] ?? '',
@@ -39,9 +41,11 @@ class BanquetController
 
         $messageOut = 'Заказ банкета Hotel premier' . "\n";
         $messageOut .= 'Имя : ' . $data['name'] . "\n";
+        $messageOut .= 'Тип конференц зала : ' . $data['type'] . "\n";
+        $messageOut .= 'Формат : ' . $data['format'] . "\n";
         $messageOut .= 'Дата : ' . $data['date'] . "\n";
         $messageOut .= 'Кол-во гостей : ' . $data['guest_count'] . "\n";
-        $messageOut .= 'Телефон: ' . $data['phone'] . "\n";
+        $messageOut .= 'Телефон : ' . $data['phone'] . "\n";
         $messageOut .= 'Доп информация : ' . $data['additional_info'] . "\n";
 
         return $messageOut;

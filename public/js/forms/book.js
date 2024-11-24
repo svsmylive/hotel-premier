@@ -11,43 +11,13 @@ export const initBookForm = (formId, onSumbit) => {
     const phoneMask = IMask(phoneInput, {
       mask: '+{7} (000) 000 - 00 - 00',
       lazy: false,
-      // prepare: value => {
-      //   return value ? value : '';
-      // },
     });
-
-    // console.log(phoneMask.value);
 
     const dateMask = IMask(dateInput, {
       mask: Date,
       min: new Date(),
       lazy: false,
-      // prepare: value => {
-      //   return value ? value : '';
-      // },
     });
-
-    // phoneInput.addEventListener('focus', e => {
-    //   console.log('focus');
-    //   e.preventDefault();
-    // });
-
-    // phoneInput.addEventListener('click', e => {
-    //   console.log('focus');
-    //   e.preventDefault();
-    // });
-
-    // phoneInput.value = '';
-
-    // phoneInput.addEventListener('focus', event => {
-    //   mask.updateValue();
-    // });
-
-    // phoneInput.addEventListener('blur', event => {
-    //   if (phoneInput.value === '') {
-    //     phoneInput.value = '';
-    //   }
-    // });
   };
 
   initFormMasks();

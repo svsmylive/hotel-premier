@@ -156,6 +156,8 @@
                         </div>
                     </div>
                 @endforeach
+
+                <div class="nums-carousel-fake-last-item swiper-slide"></div>
             </div>
 
             <div class="nums-carousel__dots-cont"></div>
@@ -859,11 +861,27 @@
         <div class="modal__logo-wrapper">
             <img class="modal__logo" src="/assets/images/modal-logo.svg" alt=""/>
         </div>
-        <h1>Бронирование конференц-зала</h1>
+        <h1>Заказать банкет</h1>
         <form class="modal__form" id="modal-book-form" action="">
             <div class="modal__form-element" data-field-name="name">
                 <label for="book-form_name">Ваше имя</label>
                 <input id="book-form_name" name="name" type="text"/>
+                <div class="modal__form-element-error"></div>
+            </div>
+            <div class="modal__form-element select-option" data-field-name="event-type">
+                <label>Формат мероприятия</label>
+                <div class="select-option-selected">
+                    <span class="select-option-selected__text">Корпоратив</span>
+                    <span class="select-option-selected__svg"></span>
+                </div>
+                <div class="select-option-variants">
+                    <div class="active">Корпоратив</div>
+                    <div>Свадьба</div>
+                    <div>День рождения</div>
+                    <div>Банкет</div>
+                    <div>Деловой вечер</div>
+                    <div>Другое</div>
+                </div>
                 <div class="modal__form-element-error"></div>
             </div>
             <div class="modal__form-group">
@@ -921,22 +939,6 @@
             <div class="modal__form-element" data-field-name="name">
                 <label for="book-event-form_name">Ваше имя</label>
                 <input id="book-event-form_name" name="name" type="text"/>
-                <div class="modal__form-element-error"></div>
-            </div>
-            <div class="modal__form-element select-option" data-field-name="event-type">
-                <label>Формат мероприятия</label>
-                <div class="select-option-selected">
-                    <span class="select-option-selected__text">Корпоратив</span>
-                    <span class="select-option-selected__svg"></span>
-                </div>
-                <div class="select-option-variants">
-                    <div class="active">Корпоратив</div>
-                    <div>Свадьба</div>
-                    <div>День рождения</div>
-                    <div>Банкет</div>
-                    <div>Деловой вечер</div>
-                    <div>Другое</div>
-                </div>
                 <div class="modal__form-element-error"></div>
             </div>
             <div class="modal__form-group">

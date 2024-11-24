@@ -27,6 +27,8 @@ class StoreBanquetRequest extends FormRequest
             'guest_count' => ['sometimes', 'nullable', 'string'],
             'phone' => ['sometimes', 'nullable', 'string'],
             'additional_info' => ['sometimes', 'nullable', 'string'],
+            'type' => ['required', 'string'],
+            'format' => ['required', 'string'],
         ];
     }
 }

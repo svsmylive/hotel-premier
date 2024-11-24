@@ -178,6 +178,9 @@
 }
 
 @media (max-width: 1200px) {
+  .nums-carousel-fake-last-item {
+    display: block;
+  }
   .nums-carousel {
     --swiper-pagination-color: #000000;
     --swiper-pagination-bullet-horizontal-gap: 0px;
