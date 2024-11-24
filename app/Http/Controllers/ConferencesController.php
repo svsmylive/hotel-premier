@@ -30,6 +30,7 @@ class ConferencesController
     public function getMessage(array $data): string
     {
         $data = [
+            'type' => $data['type'] ?? '',
             'name' => $data['name'] ?? '',
             'date' => $data['date'] ?? '',
             'guest_count' => $data['guest_count'] ?? '',
@@ -39,6 +40,7 @@ class ConferencesController
 
         $messageOut = 'Бронирование конференц зала Hotel premier' . "\n";
         $messageOut .= 'Имя : ' . $data['name'] . "\n";
+        $messageOut .= 'Тип конференц зала : ' . $data['type'] . "\n";
         $messageOut .= 'Дата : ' . $data['date'] . "\n";
         $messageOut .= 'Кол-во гостей : ' . $data['guest_count'] . "\n";
         $messageOut .= 'Телефон: ' . $data['phone'] . "\n";
