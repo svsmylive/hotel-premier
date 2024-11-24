@@ -400,26 +400,26 @@
                                     <h3>Театр</h3>
                                     <p>60 чел.</p>
                                 </div>
-                                <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>
-                                    <h3>Класс</h3>
-                                    <p>30 чел.</p>
-                                </div>
-                                <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>
-                                    <h3>Буква Т</h3>
-                                    <p>30 чел.</p>
-                                </div>
-                                <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>
-                                    <h3>Буква П</h3>
-                                    <p>20 чел.</p>
-                                </div>
-                                <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>
-                                    <h3>Буква О</h3>
-                                    <p>25 чел.</p>
-                                </div>
+{{--                                <div class="events-section__accordion-item-descr-placement">--}}
+{{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
+{{--                                    <h3>Класс</h3>--}}
+{{--                                    <p>30 чел.</p>--}}
+{{--                                </div>--}}
+{{--                                <div class="events-section__accordion-item-descr-placement">--}}
+{{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
+{{--                                    <h3>Буква Т</h3>--}}
+{{--                                    <p>30 чел.</p>--}}
+{{--                                </div>--}}
+{{--                                <div class="events-section__accordion-item-descr-placement">--}}
+{{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
+{{--                                    <h3>Буква П</h3>--}}
+{{--                                    <p>20 чел.</p>--}}
+{{--                                </div>--}}
+{{--                                <div class="events-section__accordion-item-descr-placement">--}}
+{{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
+{{--                                    <h3>Буква О</h3>--}}
+{{--                                    <p>25 чел.</p>--}}
+{{--                                </div>--}}
                             </div>
                         </div>
                         <div class="events-section__accordion-item-descr-price">
@@ -489,16 +489,16 @@
                         <div class="events-section__accordion-item-descr-placements">
                             <p>Варианты рассадки:</p>
                             <div class="events-section__accordion-item-descr-placements-list">
-                                <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_1.svg" alt=""/>
-                                    <h3>Театр</h3>
-                                    <p>60 чел.</p>
-                                </div>
-                                <div class="events-section__accordion-item-descr-placement">
-                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>
-                                    <h3>Класс</h3>
-                                    <p>30 чел.</p>
-                                </div>
+{{--                                <div class="events-section__accordion-item-descr-placement">--}}
+{{--                                    <img src="/assets/images/placements/placement_1.svg" alt=""/>--}}
+{{--                                    <h3>Театр</h3>--}}
+{{--                                    <p>60 чел.</p>--}}
+{{--                                </div>--}}
+{{--                                <div class="events-section__accordion-item-descr-placement">--}}
+{{--                                    <img src="/assets/images/placements/placement_2.svg" alt=""/>--}}
+{{--                                    <h3>Класс</h3>--}}
+{{--                                    <p>30 чел.</p>--}}
+{{--                                </div>--}}
                                 <div class="events-section__accordion-item-descr-placement">
                                     <img src="/assets/images/placements/placement_2.svg" alt=""/>
                                     <h3>Буква Т</h3>
