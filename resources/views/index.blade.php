@@ -156,8 +156,6 @@
                         </div>
                     </div>
                 @endforeach
-
-                <div class="nums-carousel-fake-last-item swiper-slide"></div>
             </div>
 
             <div class="nums-carousel__dots-cont"></div>
