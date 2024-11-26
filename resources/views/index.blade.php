@@ -236,7 +236,8 @@
                 <div class="gastro-cont__image" style="background-image: url('/assets/images/gastronomy/2.jpg')"></div>
                 <h3 class="gastro-cont__title">ЗАВТРАКИ</h3>
                 <span class="line"></span>
-                <p class="gastro-cont__description">С 7:00 до 10:30 (по будням) и С 7:30 до 11:00 (по выходным)  подаём 2 варианта завтрака: </p>
+                <p class="gastro-cont__description">С 7:00 до 10:30 (по будням) и С 7:30 до 11:00 (по выходным) подаём 2
+                    варианта завтрака: </p>
                 <ul>
                     <li>Английский с глазуньей, сосисками и сырниками на десерт; </li>
                     <li>Континентальный со скремблом, лососем и овсяной кашей.</li>
@@ -262,7 +263,7 @@
             <div class="events-section__accordion-item active">
                 <div class="events-section__accordion-header accordion-header">
                     <div></div>
-                    <h4>МАЛЫЙ КОНФЕРЕНЦ-ЗАЛ</h4>
+                    <h4>КОНФЕРЕНЦ-ЗАЛ МОБИСКАР</h4>
                     <div class="events-section__toggler toggler">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -284,7 +285,7 @@
                 </div>
                 <div class="events-section__accordion-content">
                     <div class="events-section__accordion-item-descr">
-                        <h4>Зал площадью 60 м2 со свободной рассадкой.</h4>
+                        <h4>Зал площадью 80 м2 со свободной рассадкой.</h4>
                         <div class="events-section__accordion-item-descr-advances">
                             <p>
                                 70 человек размещаются на удобных креслах. <br/>
@@ -329,7 +330,7 @@
                             </div>
                         </div>
                         <div class="events-section__accordion-item-descr-price">
-                            <h4>ЦЕНА 2 500 ₽</h4>
+                            <h4>ЦЕНА ОТ 3 500 ₽</h4>
                             <button class="btn-secondary events-section__btn-book">Забронировать</button>
                         </div>
                     </div>
@@ -356,7 +357,7 @@
             <div class="events-section__accordion-item">
                 <div class="events-section__accordion-header accordion-header">
                     <div></div>
-                    <h4>БОЛЬШОЙ КОНФЕРЕНЦ-ЗАЛ</h4>
+                    <h4>КОНФЕРЕНЦ-ЗАЛ ПРЕМЬЕР</h4>
                     <div class="events-section__toggler toggler">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -422,7 +423,7 @@
                             </div>
                         </div>
                         <div class="events-section__accordion-item-descr-price">
-                            <h4>ЦЕНА 3 500 ₽</h4>
+                            <h4>ЦЕНА ОТ 3 500 ₽</h4>
                             <button class="btn-secondary events-section__btn-book">Забронировать</button>
                         </div>
                     </div>
@@ -513,7 +514,7 @@
                             </div>
                         </div>
                         <div class="events-section__accordion-item-descr-price">
-                            <h4>ЦЕНА 1 500 ₽</h4>
+                            <h4>ЦЕНА ОТ 3 500 ₽</h4>
                             <button class="btn-secondary events-section__btn-book">Забронировать</button>
                         </div>
                     </div>
