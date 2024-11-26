@@ -168,6 +168,16 @@
         <div class="advantages-cont">
             <div>
                 <div class="advantages-cont__advantage">
+                    <div style="background-image: url('/assets/images/our-hotel-suits/3.jpg')"></div>
+                    <span>
+              <h4>ДЛЯ ЗНАКОМСТВА С ГОРОДОМ</h4>
+              <p>
+                20 минут до ж/д вокзала и центра города. Вблизи парк «Краснодар», Японский сад и главный стадион юга России.
+                Прогулки, матчи и концерты — всё около отеля
+              </p>
+            </span>
+                </div>
+                <div class="advantages-cont__advantage">
                     <div style="background-image: url('/assets/images/our-hotel-suits/1.jpg')"></div>
                     <span>
                 <h4>ДЛЯ ДЕЛОВЫХ ВСТРЕЧ</h4>
@@ -187,16 +197,6 @@
                 </p>
               </span>
                 </div>
-            </div>
-            <div class="advantages-cont__advantage">
-                <div style="background-image: url('/assets/images/our-hotel-suits/3.jpg')"></div>
-                <span>
-              <h4>ДЛЯ ЗНАКОМСТВА С ГОРОДОМ</h4>
-              <p>
-                20 минут до ж/д вокзала и центра города. Вблизи парк «Краснодар», Японский сад и главный стадион юга России.
-                Прогулки, матчи и концерты — всё около отеля
-              </p>
-            </span>
             </div>
         </div>
     </section>
