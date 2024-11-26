@@ -14,7 +14,6 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/assets/styles/variables.css"/>
     <link rel="stylesheet" href="/assets/styles/shared.css"/>
     <link rel="stylesheet" href="/assets/styles/index.css"/>
@@ -524,7 +523,6 @@ Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size
     <button class="modal-cookie__btn-ok btn-primary">Хорошо</button>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="/js/lib/imask.js"></script>
 <script type="module">
     import '/js/ui.js';
