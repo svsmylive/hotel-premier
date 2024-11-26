@@ -737,15 +737,15 @@
                             <div class="swiper-wrapper">
                                 <div
                                     class="wealness-section__accordion-content-image swiper-slide"
-                                    style="background-image: url(/assets/images/wellness/sauna/1.jpg)"
+                                    style="background-image: url(/assets/images/wellness/solarium/1.jpeg)"
                                 ></div>
                                 <div
                                     class="wealness-section__accordion-content-image swiper-slide"
-                                    style="background-image: url(/assets/images/wellness/sauna/2.jpg)"
+                                    style="background-image: url(/assets/images/wellness/solarium/2.jpeg)"
                                 ></div>
                                 <div
                                     class="wealness-section__accordion-content-image swiper-slide"
-                                    style="background-image: url(/assets/images/wellness/sauna/3.jpg)"
+                                    style="background-image: url(/assets/images/wellness/solarium/3.jpeg)"
                                 ></div>
                             </div>
                             <div class="swiper-pagination"></div>
