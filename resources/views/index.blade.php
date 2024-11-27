@@ -1379,7 +1379,7 @@
                 uid: "917b573b-59b0-4f30-ad3c-324ecd99e0d1",
                 lang: "ru",
                 width: "100%",
-                width_mobile: "380",
+                width_mobile: "360",
                 background: "#34425A",
                 background_mobile: "#34425A",
                 bg_alpha: "5",
