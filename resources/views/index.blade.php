@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="/assets/styles/adaptive.css"/>
     <title>ПРЕМЬЕР</title>
 
-    <link rel="icon" type="image/png" href="./favicon.png"/>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
 </head>
 <body>
 <header class="header">
