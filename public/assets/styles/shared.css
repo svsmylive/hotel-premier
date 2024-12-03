@@ -204,7 +204,7 @@ h4 {
 
 .modal-tint {
   background-color: #00000099;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0;
