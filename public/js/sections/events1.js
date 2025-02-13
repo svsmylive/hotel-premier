@@ -83,6 +83,7 @@ initBookForm('modal-book-event-form', data => {
         }),
     })
         .then(res => {
+            ym(99236087, 'reachGoal', 'modal-book-event-form')
         })
         .catch(err => {
             console.log(err);

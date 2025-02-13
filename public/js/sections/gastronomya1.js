@@ -30,6 +30,7 @@ initBookForm('modal-book-form', data => {
         }),
     })
         .then(res => {
+            ym(99236087,'reachGoal','modal-book-form')
         })
         .catch(err => {
         });
