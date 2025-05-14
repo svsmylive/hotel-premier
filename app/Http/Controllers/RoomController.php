@@ -8,9 +8,8 @@ class RoomController
 {
     public function index()
     {
-        $rooms = Room::query()->with(['previewProperties', 'previewImages'])->get();
+        $rooms = Room::query()->with(['previewProperties', 'previewImages'])->orderBy('rank')->get();
         $data = [];
-
 
         foreach ($rooms as $room) {
             $previewProperties = $room->previewProperties;

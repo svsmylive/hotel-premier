@@ -135,7 +135,7 @@
 
     <section id="nums" class="nums-section">
         <h2 class="nums-section__title">НОМЕРА</h2>
-        <div class="nums-section__subtitle">Пять категорий номеров от 20 до 60 м²</div>
+        <div class="nums-section__subtitle">Восемь категорий номеров от 20 до 60 м²</div>
         <div class="nums-carousel swiper">
             <div class="nums-carousel__items-wrapper swiper-wrapper">
                 @foreach($rooms as $room)
@@ -160,7 +160,7 @@
                         </div>
 
                         <div class="nums-carousel__item-about">
-                            <div class="nums-carousel__item-counter"> {{ $loop->iteration }}<span>/5</span></div>
+                            <div class="nums-carousel__item-counter"> {{ $loop->iteration }}<span>/{{ $rooms->count() }}</span></div>
                             <h4>{{ $room['name'] }}</h4>
                             <div class="nums-carousel__item-conviniences">{{ $room['description'] }}
                             </div>
