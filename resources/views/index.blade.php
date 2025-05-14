@@ -160,7 +160,7 @@
                         </div>
 
                         <div class="nums-carousel__item-about">
-                            <div class="nums-carousel__item-counter"> {{ $loop->iteration }}<span>/{{ $rooms->count() }}</span></div>
+                            <div class="nums-carousel__item-counter"> {{ $loop->iteration }}<span>/{{ count($rooms) }}</span></div>
                             <h4>{{ $room['name'] }}</h4>
                             <div class="nums-carousel__item-conviniences">{{ $room['description'] }}
                             </div>
