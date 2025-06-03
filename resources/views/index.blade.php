@@ -160,7 +160,8 @@
                         </div>
 
                         <div class="nums-carousel__item-about">
-                            <div class="nums-carousel__item-counter"> {{ $loop->iteration }}<span>/{{ count($rooms) }}</span></div>
+                            <div class="nums-carousel__item-counter"> {{ $loop->iteration }}
+                                <span>/{{ count($rooms) }}</span></div>
                             <h4>{{ $room['name'] }}</h4>
                             <div class="nums-carousel__item-conviniences">{{ $room['description'] }}
                             </div>
@@ -1449,7 +1450,8 @@
                 down_mode: "on",
                 switch_mobiles: "on",
                 switch_mobiles_width: "500",
-
+                promo: "on",
+                promo_placeholder: "Скидка по промокоду",
             });
         });
     })();
