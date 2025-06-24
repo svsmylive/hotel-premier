@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <title>Сауна «Римские каникулы» в Краснодаре. Бассейн, бильярд.</title>
+    <meta name="description"
+          content="Приватная зона, бассейн и купель, баня-сауна с возможностью увеличить влажность. Бильярдный стол, комната отдыха, своя парковка. Работаем круглосуточно">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/roman_holidays/assets/styles/variables.css"/>
+    <link rel="stylesheet" href="/roman_holidays/assets/styles/shared.css"/>
+    <link rel="stylesheet" href="/roman_holidays/assets/styles/index.css"/>
+    <link rel="stylesheet" href="/roman_holidays/assets/styles/adaptive.css"/>
+    <title>ПРЕМЬЕР</title>
+
+    <link rel="icon" type="image/png" href="./favicon.png"/>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(99236087, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/99236087" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+</head>
+<body>
+<header class="header">
+    <div class="logo-cont">
+        <img src="/assets/images/logo2.svg" alt="#" class="logo-cont__img"/>
+        <h2 class="logo-cont__title">ПРЕМЬЕР</h2>
+    </div>
+    <div class="links-cont">
+        <a class="links-cont__link" href="/#nums">Номера</a>
+        <a class="links-cont__link" href="/#gastronomya">Гастрономия</a>
+        <a class="links-cont__link" href="/#events">Мероприятия</a>
+        <a class="links-cont__link" href="/#wealness">Wellness</a>
+        <a class="links-cont__link" href="/#entertaiment">Развлечения</a>
+        <a class="links-cont__link" href="/roman-holidays">Сауна</a>
+    </div>
+    <div class="phone-cont">
+        <a class="phone-cont__phone" href="tel:88612741155">8 (861) 274-11-55</a>
+    </div>
+    <div class="menu-icon">
+        <span></span>
+    </div>
+</header>
+<div class="menu-block collapsed">
+    <div class="links-cont">
+        <a class="links-cont__link" href="/#nums">Номера</a>
+        <a class="links-cont__link" href="/#gastronomya">Гастрономия</a>
+        <a class="links-cont__link" href="/#events">Мероприятия</a>
+        <a class="links-cont__link" href="/#wealness">Wellness</a>
+        <a class="links-cont__link" href="/#entertaiment">Развлечения</a>
+        <a class="links-cont__link" href="/roman-holidays">Сауна</a>
+    </div>
+
+    <div class="contacts-cont">
+        <a class="contacts-cont__phone" href="tel:88612741155">8 (861) 274-11-55</a>
+        <div class="contacts-cont__addr">г. Краснодар, ул. Васнецова, 14</div>
+    </div>
+</div>
+<main>
+    <section class="intro-section section">
+        <div class="intro-section__text-cont">
+            <p class="intro-section__intro">БАНЯ-САУНА</p>
+            <h1 class="intro-section__title">РИМСКИЕ КАНИКУЛЫ</h1>
+            <p class="intro-section__description">Атмосфера контрастов</p>
+            <a target="_blank" href="https://wa.clck.bar/79184476939?text=Здравствуйте" class="btn-primary btn-book"
+               style="margin-top: 32px">Забронировать</a>
+        </div>
+    </section>
+    <section id="nums" class="nums-section">
+        <div class="nums-section__hat">
+            <ul class="nums-section__hat-list">
+                <li class="active" data-carousel-id="steam-carousel">Пар</li>
+                <li data-carousel-id="water-carousel">Вода</li>
+                <li data-carousel-id="relax-carousel">Отдых</li>
+            </ul>
+            <div class="nums-section__hat-description">
+                <p data-carousel-id="steam-carousel" class="nums-section__hat-description-item active">
+                    Сауна на раскаленных камнях, влажность которой можно регулировать от 10 до 40%, добавив воды.
+                    Настройте парение
+                    под ваши предпочтения, обеспечивая максимальный комфорт и пользу для тела.
+                </p>
+                <p data-carousel-id="water-carousel" class="nums-section__hat-description-item">
+                    Бассейн с водопадом и гидромассажем (+29°C) для расслабления и ледяная купель (+8°C) для
+                    закаливания. Пологое дно,
+                    3 варианта подцветки, система фильтрации и обновления воды.
+                </p>
+                <p data-carousel-id="relax-carousel" class="nums-section__hat-description-item">
+                    Лаунж зона с дровяным камином, Smart TV и Bluetooth музыкальной системой. Зеркальная комната отдыха
+                    и приватная
+                    бильярдная. Подаём блюда и напитки по меню ресторана. Классическое пиво с собственной пивоварни.
+                </p>
+            </div>
+        </div>
+        <div id="steam-carousel" class="nums-carousel swiper active">
+            <div class="nums-carousel__items-wrapper swiper-wrapper">
+                <!-- image 1 -->
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 2 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 3 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 4 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 5 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Пар/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Пар/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="nums-carousel-fake-last-item swiper-slide"></div>
+            </div>
+
+            <div class="nums-carousel__dots-cont"></div>
+        </div>
+
+        <div id="water-carousel" class="nums-carousel swiper">
+            <div class="nums-carousel__items-wrapper swiper-wrapper">
+                <!-- image 1 -->
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 2 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 3 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 4 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 5 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Вода/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Вода/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="nums-carousel-fake-last-item swiper-slide"></div>
+            </div>
+
+            <div class="nums-carousel__dots-cont"></div>
+        </div>
+
+        <div id="relax-carousel" class="nums-carousel swiper">
+            <div class="nums-carousel__items-wrapper swiper-wrapper">
+                <!-- image 1 -->
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/5_mini.jpg)"
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 2 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 3 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 4 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image 5 -->
+
+                <div class="nums-carousel__item swiper-slide">
+                    <div class="nums-carousel__item-image-wrapper">
+                        <div
+                            data-var="1"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/1.jpg)"
+                        ></div>
+                        <div
+                            data-var="2"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/2.jpg)"
+                        ></div>
+                        <div
+                            data-var="3"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/3.jpg)"
+                        ></div>
+                        <div
+                            data-var="4"
+                            class="nums-carousel__item-image-variant"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/4.jpg)"
+                        ></div>
+                        <div
+                            data-var="5"
+                            class="nums-carousel__item-image-variant active"
+                            style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/5.jpg)"
+                        ></div>
+
+                        <div class="nums-carousel__item-minis">
+                            <div
+                                data-var="1"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/1_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="2"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/2_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="3"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/3_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="4"
+                                class="nums-carousel__item-mini-item"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/4_mini.jpg)"
+                            ></div>
+                            <div
+                                data-var="5"
+                                class="nums-carousel__item-mini-item active"
+                                style="background-image: url(/roman_holidays/assets/images/carousel/Отдых/5_mini.jpg)"
+                            ></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="nums-carousel-fake-last-item swiper-slide"></div>
+            </div>
+
+            <div class="nums-carousel__dots-cont"></div>
+        </div>
+    </section>
+
+    <section class="steam-section section">
+        <div class="steam-section__steam-content">
+            <h2 class="steam-content__title">РУССКОЕ ПАРЕНИЕ С БАНШИКОМ</h2>
+            <p class="steam-content__description">
+                Традиционная церемония, где мастер использует веники, ароматный пар, контрастные обливания и особые
+                техники массажа
+                для глубокого прогрева тела
+            </p>
+            <p class="steam-content__addition">Все принадлежности входят в стоимость парения</p>
+            <div class="steam-content__steam-photos">
+                <div class="steam-photos__firsts">
+                    <div class="steam-photos__photo-1"></div>
+                    <div class="steam-photos__photo-2"></div>
+                </div>
+                <div class="steam-photos__photo-3"></div>
+            </div>
+        </div>
+    </section>
+    <section class="prices-section section">
+        <h1 class="prices-section__title">ЦЕНЫ</h1>
+        <div style="display: flex; gap: 12px; width: 100%; height: 472px">
+            <div class="prices-section__services">
+                <div class="services__title-cont">Услуги</div>
+                <div class="services__services-content">
+                    <div class="services-content__content-cont">
+                        <img src="/roman_holidays/assets/images/flower.svg" alt=""/>
+                        <h3 class="content-cont__title">SPA-ЗОНА</h3>
+                        <p class="content-cont__additional">до 6 чел</p>
+                        <p class="content-cont__price">3 700 ₽/час</p>
+                        <p class="content-cont__description">(свыше 6 чел. — +600 ₽/час)</p>
+                    </div>
+                    <div class="services-content__content-cont">
+                        <img src="/roman_holidays/assets/images/ball.svg" alt=""/>
+                        <h3 class="content-cont__title">БИЛЬЯРД</h3>
+                        <p class="content-cont__price">600 ₽/час</p>
+                    </div>
+                    <div class="services-content__content-cont" style="border-right: none; border-bottom: none">
+                        <img src="/roman_holidays/assets/images/ball.svg" alt=""/>
+                        <h3 class="content-cont__title">РУССКОЕ ПАРЕНИЕ</h3>
+                        <p class="content-cont__price">5 000 ₽/час</p>
+                    </div>
+                </div>
+            </div>
+            <div class="prices-section__additional-services">
+                <div class="additional-services__title-cont">Дополнительные услуги</div>
+                <ul class="additional-services__services-list">
+                    <li class="services-list__item">
+                        <h3>Шапки</h3>
+                        <p>700 ₽/шт.</p>
+                    </li>
+                    <li class="services-list__item">
+                        <h3>Веники</h3>
+                        <p>600 ₽/шт.</p>
+                    </li>
+                    <li class="services-list__item">
+                        <h3>Скраб для тела</h3>
+                        <p>700 ₽/шт.</p>
+                    </li>
+                    <li class="services-list__item">
+                        <h3>Эфирные масла</h3>
+                        <p>300 ₽/шт.</p>
+                    </li>
+                    <li class="services-list__item">
+                        <h3>Средства для душа</h3>
+                        <p>300 ₽/шт.</p>
+                    </li>
+                    <li class="services-list__item">
+                        <h3>Тапочки-вьетнамки</h3>
+                        <p>150 ₽/шт.</p>
+                    </li>
+                    <li class="services-list__item">
+                        <h3>Аренда халата</h3>
+                        <p>300 ₽/шт.</p>
+                    </li>
+                    <li class="services-list__item">
+                        <h3>Аренда простыни</h3>
+                        <p>200 ₽/шт.</p>
+                    </li>
+                    <li class="services-list__item">
+                        <h3>Аренда полотенца</h3>
+                        <p>200 ₽/шт.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a target="_blank" href="https://wa.clck.bar/79184476939?text=Здравствуйте" class="btn-primary btn-book"
+           style="margin-top: 32px">Забронировать</a>
+    </section>
+    <section class="reservation-section">
+        <div class="reservation-section__reservation-content">
+            <div class="reservation-content__resevation-texts">
+                <h3 class="resevation-texts__title">Забронировать или узнать подробности:</h3>
+                <a href="tel:88612741155" class="resevation-texts__tel">8 (861) 274-11-55</a>
+                <p class="resevation-texts__adress-title">Наш адрес:</p>
+                <p class="resevation-texts__adress">г. Краснодар, ул. Васнецова, 14</p>
+            </div>
+            <div class="reservation-content__reservation-photo"></div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__head">
+        <img src="/assets/images/logo-footer.svg" alt=""/>
+        <h2>ПРЕМЬЕР</h2>
+    </div>
+    <div class="footer__content">
+        <div class="footer__content-map-links-wrapper">
+            <div class="footer-map-cont">
+                <p class="footer-map-cont__text" style="margin-bottom: 12px">г. Краснодар, ул. Васнецова, 14</p>
+                <a class="footer-map-cont__text" href="tel:88612741155">8 (861) 274-11-55</a>
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Adda1f7b06b71574a5fcb37454f8bf26dedcd8416ab439192dae38046dfad31c3&amp;source=constructor"
+                    width="100%"
+                    height="300"
+                    frameborder="0"
+                    style="margin-top: 20px"
+                ></iframe>
+            </div>
+            <div class="footer__content-links-wrapper">
+                <div class="links">
+                    <a href="/#nums">Номера</a>
+                    <a href="/#gastronomya">Гастрономия</a>
+                    <a href="/#events">Мероприятия</a>
+                    <a href="/#wealness">Wellness</a>
+                    <a href="/#entertaiment">Развлечения</a>
+                    <a class="links-cont__link" href="/roman-holidays">Сауна</a>
+                </div>
+                <div class="footer__social-media-cont">
+                    <a href="#">
+                        <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.5361 17.6C6.69623 17.6 1.08383 10.9934 0.849976 0H5.7789C5.94079 8.06887 9.57443 11.4867 12.4526 12.1914V0H17.0939V6.95896C19.9361 6.65946 22.9219 3.48829 23.9293 0H28.5705C27.797 4.2987 24.559 7.46987 22.2564 8.77357C24.559 9.83063 28.2469 12.5966 29.65 17.6H24.541C23.4437 14.2527 20.7097 11.6629 17.0939 11.3105V17.6H16.5361Z"
+                                fill="#ADAAA9"
+                            />
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/79189998039">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.2051 5.54986C18.615 -0.000183464 11.2852 -1.6502 5.60089 1.79983C0.0661373 5.24986 -1.72892 12.7499 1.86119 18.3L2.16037 18.75L0.963664 23.25L5.4513 22.05L5.90006 22.35C7.8447 23.4 9.93893 24 12.0332 24C14.277 24 16.5208 23.4 18.4654 22.2C24.0002 18.6 25.6456 11.2499 22.2051 5.54986ZM19.0638 17.0999C18.4654 18 17.7175 18.6 16.6704 18.75C16.072 18.75 15.3241 19.05 12.3323 17.85C9.78934 16.6499 7.69511 14.6999 6.19924 12.4499C5.30171 11.3999 4.85295 10.0499 4.70336 8.69988C4.70336 7.49987 5.15212 6.44987 5.90006 5.69986C6.19924 5.39986 6.49841 5.24986 6.79759 5.24986H7.54553C7.8447 5.24986 8.14388 5.24986 8.29347 5.84986C8.59264 6.59987 9.34058 8.39988 9.34058 8.54988C9.49017 8.69988 9.49017 8.99989 9.34058 9.14989C9.49017 9.44989 9.34058 9.74989 9.19099 9.89989C9.04141 10.0499 8.89182 10.3499 8.74223 10.4999C8.44305 10.6499 8.29347 10.9499 8.44305 11.2499C9.0414 12.1499 9.78934 13.0499 10.5373 13.7999C11.4348 14.5499 12.3323 15.1499 13.3794 15.5999C13.6786 15.7499 13.9778 15.7499 14.1274 15.4499C14.277 15.1499 15.0249 14.3999 15.3241 14.0999C15.6233 13.7999 15.7729 13.7999 16.072 13.9499L18.4654 15.1499C18.7646 15.2999 19.0638 15.4499 19.2134 15.5999C19.363 16.0499 19.363 16.6499 19.0638 17.0999Z"
+                                fill="#ADAAA9"
+                            />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.instagram.com/hotel_premier_krasnodar?igsh=N3I3c3lzdDI4NTVm">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.7381 12.2608C14.7381 10.9622 13.677 9.90551 12.3728 9.90551C11.0688 9.90551 10.0078 10.9622 10.0078 12.2608C10.0078 13.5598 11.0688 14.6163 12.3728 14.6163C13.677 14.6163 14.7381 13.5598 14.7381 12.2608ZM18.252 0H6.24795C2.94068 0 0.25 2.67976 0.25 5.97353V7.63792H9.07599C10.0073 6.97722 11.1447 6.58692 12.3728 6.58692C13.601 6.58692 14.7385 6.97722 15.6699 7.63792H24.25V5.97353C24.25 2.67974 21.5593 0 18.252 0ZM20.6811 5.68129C20.6811 6.04632 20.3814 6.34502 20.0147 6.34502H17.9555C17.5889 6.34502 17.2891 6.04632 17.2891 5.68129V3.63037C17.2891 3.26537 17.5889 2.96664 17.9555 2.96664H20.0147C20.3813 2.96664 20.6811 3.26532 20.6811 3.63037V5.68129ZM18.0702 12.2608C18.0702 15.3898 15.5143 17.9349 12.3728 17.9349C9.23127 17.9349 6.67552 15.3898 6.67552 12.2608C6.67552 11.3994 6.87034 10.5825 7.21678 9.8503H0.25V18.0265C0.25 21.3205 2.94068 24 6.24795 24H18.2521C21.5593 24 24.25 21.3205 24.25 18.0265V9.8503H17.529C17.8754 10.5825 18.0702 11.3994 18.0702 12.2608Z"
+                                fill="#ADAAA9"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="policy-cont">
+        <a class="policy-cont__link-rules" href="#">Правила проживания</a>
+        <a class="policy-cont__link-policy" href="#">Политика конфиденциальности</a>
+    </div>
+</footer>
+
+<div class="modal-tint">
+    <div class="modal" id="modal-policy">
+        <svg class="modal__close" width="20" height="20" viewBox="0 0 20 20" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17L17 3M3 3L17 17" stroke="#ADAAA9" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+        </svg>
+
+        <h3>ПОЛИТИКА ЗАЩИТЫ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЕЙ САЙТА</h3>
+        <h4>1. Общие условия</h4>
+        <ol>
+            <li>
+                Настоящая Политика определяет порядок обработки и защиты Индивидуальным предпринимателем Дрынкиным
+                Павелом
+                Семеновичем (Далее ИП Дрынкин П. С.) информации о физических лицах (далее – Пользователь), которая может
+                быть
+                получена ИП Дрынкиным П. С при использовании Пользователем услуг/товаров, неисключительной лицензии
+                предоставляемых
+                в том числе посредством сайта, сервисов, служб, программ используемых ИП Дрынкиным П. С (далее – Сайт,
+                Сервисы).
+            </li>
+            <li>
+                Целью настоящей Политики является обеспечение надлежащей защиты персональной информации которую
+                Пользователь
+                предоставляет о себе самостоятельно при использовании Сайта, Сервисов или в процессе регистрации
+                (создании учетной
+                записи), для приобретения товаров/услуг, неисключительной лицензии от несанкционированного доступа и
+                разглашения.
+            </li>
+            <li>
+                Отношения, связанные со сбором, хранением, распространением и защитой информации предоставляемой
+                Пользователем,
+                регулируются настоящей Политикой, иными официальными документами ИП Дрынкина П. С и действующим
+                законодательством
+                Российской Федерации.
+            </li>
+            <li>
+                Регистрируясь на Сайте и используя Сайт и Сервисы Пользователь выражает свое полное согласие с условиями
+                настоящей
+                Политики.
+            </li>
+            <li>
+                В случае несогласия Пользователя с условиями настоящей Политики использование Сайта и/или каких-либо
+                Сервисов
+                доступных при использовании Сайта должно быть немедленно прекращено.
+            </li>
+            <li>
+                В случае не согласия Пользователя в получении информации от ИП Дрынкина П. С Пользователь может
+                отписаться от
+                рассылки:
+                <ul>
+                    <li>кликнув по ссылке Отписаться внизу письма</li>
+                    <li>
+                        путем направления уведомления на электронную почту info@hotelpremier.ru или при телефонном
+                        обращении в
+                        контакт-центр.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>
+            При поступлении уведомлений на электронную почту info@hotelpremier.ru или при телефонном обращении в
+            контакт-центр в
+            специальном программном обеспечении для учета действий по соответствующему Пользователю, создается обращение
+            по итогам
+            полученной от Пользователя информации. Обращение обрабатывается максимум в течение 24 часов. В результате
+            информация о
+            Пользователе не включается в сегмент рассылок по соответствующему региону.
+        </p>
+        <h4>2. Цели сбора, обработки и хранения информации предоставляемой пользователями Сайта</h4>
+        <ol>
+            <li>
+                Обработка персональных данных Пользователя осуществляется в соответствии с законодательством Российской
+                Федерации.
+                ИП Дрынкин П. С. обрабатывает персональные данные Пользователя в целях:
+                <ul>
+                    <li>идентификации стороны в рамках соглашений и договоров заключаемых с ИП Дрынкиным П. С.;</li>
+                    <li>предоставления Пользователю товаров/услуг, неисключительной лицензии, доступа к Сайту,
+                        Сервисам;
+                    </li>
+                    <li>
+                        связи с Пользователем, направлении Пользователю транзакционных писем в момент получения заявки
+                        регистрации на
+                        Сайте или получении оплаты от Пользователя, разово, если Пользователь совершает эти действия,
+                        направлении
+                        Пользователю уведомлений, запросов;
+                    </li>
+                    <li>
+                        направлении Пользователю сообщений рекламного и/или информационного характера — не более 1
+                        сообщения в день;
+                    </li>
+                    <li>
+                        проверки, исследования и анализа таких данных, позволяющих поддерживать и улучшать сервисы и
+                        разделы Сайта, а
+                        также разрабатывать новые сервисы и разделы Сайта;
+                    </li>
+                    <li>проведение статистических и иных исследований на основе обезличенных данных.</li>
+                </ul>
+            </li>
+        </ol>
+        <h4>3. Условия обработки персональной информации предоставленной Пользователем и ее передачи третьим лицам</h4>
+        <ol>
+            <li>
+                ИП Дрынкин П. С. принимает все необходимые меры для защиты персональных данных Пользователя от
+                неправомерного
+                доступа, изменения, раскрытия или уничтожения.
+            </li>
+            <li>
+                ИП Дрынкин П. С. предоставляет доступ к персональным данным Пользователя только тем работникам,
+                подрядчикам и
+                Аффилированным лицам которым эта информация необходима для обеспечения функционирования Сайта, Сервисов
+                и оказания
+                Услуг, продажи товаров, получении неисключительной лицензии Пользователем.
+            </li>
+            <li>
+                ИП Дрынкин П. С. вправе использовать предоставленную Пользователем информацию, в том числе персональные
+                данные, в
+                целях обеспечения соблюдения требований действующего законодательства Российской Федерации (в том числе
+                в целях
+                предупреждения и/или пресечения незаконных и/или противоправных действий Пользователей). Раскрытие
+                предоставленной
+                Пользователем информации может быть произведено лишь в соответствии с действующим законодательством
+                Российской
+                Федерации по требованию суда, правоохранительных органов, а равно в иных предусмотренных
+                законодательством
+                Российской Федерации случаях.
+            </li>
+            <li>
+                ИП Дрынкин П. С. не проверяет достоверность информации предоставляемой Пользователем и исходит из того,
+                что
+                Пользователь в рамках добросовестности предоставляет достоверную и достаточную информацию, заботится о
+                своевременности внесения изменений в ранее предоставленную информацию при появлении такой необходимости,
+                включая но
+                не ограничиваясь изменение номера телефона
+            </li>
+        </ol>
+
+        <h4>4. Условия пользования Сайтом, Сервисами</h4>
+        <ol>
+            <li>
+                Пользователь при пользовании Сайтом, подтверждает, что:
+                <ul>
+                    <li>
+                        обладает всеми необходимыми правами, позволяющими ему осуществлять регистрацию (создание учетной
+                        записи) и
+                        использовать Услуги сайта;
+                    </li>
+                    <li>
+                        указывает достоверную информацию о себе в объемах, необходимых для пользования Услугами Сайта,
+                        обязательные для
+                        заполнения поля для дальнейшего предоставления Услуг сайта помечены специальным образом, вся
+                        иная информация
+                        предоставляется пользователем по его собственному усмотрению.
+                    </li>
+                    <li>
+                        осознает, что информация на Сайте, размещаемая Пользователем о себе, может становиться доступной
+                        для третьих лиц
+                        не оговоренных в настоящей Политике и может быть скопирована и распространена ими;
+                    </li>
+                    <li>
+                        ознакомлен с настоящей Политикой, выражает свое согласие с ней и принимает на себя указанные в
+                        ней права и
+                        обязанности. Ознакомление с условиями настоящей Политики и проставление галочки под ссылкой на
+                        данную Политику
+                        является письменным согласием Пользователя на сбор, хранение, обработку и передачу третьим лицам
+                        персональных
+                        данных предоставляемых Пользователем.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                ИП Дрынкин П. С. не проверяет достоверность получаемой (собираемой) информации о Пользователях, за
+                исключением
+                случаев, когда такая проверка необходима в целях исполнения обязательств перед Пользователем.
+            </li>
+        </ol>
+
+        <h4>5. В рамках настоящей Политики под «персональной информацией Пользователя» понимаются:</h4>
+        <ol>
+            <li>
+                Данные предоставленные Пользователем самостоятельно при пользовании Сайтом, Сервисами включая но, не
+                ограничиваясь:
+                имя, фамилия, пол, номер мобильного телефона и/или адрес электронной почты, семейное положение, дата
+                рождения,
+                родной город, родственные связи, домашний адрес, информация об образовании, о роде деятельности.
+            </li>
+            <li>
+                Данные, которые автоматически передаются Сервисам в процессе их использования с помощью установленного
+                на устройстве
+                Пользователя программного обеспечения, в том числе IP-адрес, информация из cookie, информация о браузере
+                пользователя (или иной программе, с помощью которой осуществляется доступ к Сервисам), время доступа,
+                адрес
+                запрашиваемой страницы.
+            </li>
+            <li>
+                Иная информация о Пользователе, сбор и/или предоставление которой определено в Регулирующих документах
+                отдельных
+                Сервисов ИП Дрынкина П. С.
+            </li>
+        </ol>
+        <h4>6. Изменение и удаление персональных данных</h4>
+        <ol>
+            <li>
+                Пользователь может в любой момент изменить (обновить, дополнить) предоставленную им персональную
+                информацию или её
+                часть, а также параметры её конфиденциальности, воспользовавшись функцией редактирования персональных
+                данных в
+                разделе, либо в персональном разделе соответствующего Сервиса. Пользователь обязан заботится о
+                своевременности
+                внесения изменений в ранее предоставленную информацию, ее актуализации, в противном случае ИП Дрынкин П.
+                С. не несет
+                ответственности за неполучение уведомлений, товаров/услуг и т.п.
+            </li>
+            <li>
+                Пользователь также может удалить предоставленную им в рамках определенной учетной записи персональную
+                информацию.
+                При этом удаление аккаунта может повлечь невозможность использования некоторых Сервисов.
+            </li>
+        </ol>
+        <h4>7. Изменение Политики конфиденциальности. Применимое законодательство</h4>
+        <ol>
+            <li>
+                ИП Дрынкин П. С. имеет право вносить изменения в настоящую Политику конфиденциальности. При внесении
+                изменений в
+                актуальной редакции указывается дата последнего обновления. Новая редакция Политики вступает в силу с
+                момента ее
+                размещения, если иное не предусмотрено новой редакцией Политики. Действующая редакция всегда находится
+                на странице
+                по адресу https://hotelpremier.ru/confidentiality/
+            </li>
+            <li>
+                К настоящей Политике и отношениям между Пользователем и ИП Дрынкиным П. С. возникающим в связи с
+                применением
+                Политики конфиденциальности, подлежит применению право Российской Федерации.
+            </li>
+        </ol>
+        <h4>8. Обратная связь. Вопросы и предложения</h4>
+        <p>
+            Все предложения или вопросы по поводу настоящей Политики следует сообщать в Службу поддержки ИП Дрынкина П.
+            С. по
+            электронной почте info@hotelpremier.ru или по телефону +7 (861) 274-11-55 или путем направления
+            корреспонденции по
+            адресу: 350059, г. Краснодар, ул. Васнецова,16
+        </p>
+    </div>
+
+    <div class="modal" id="modal-rules">
+        <svg class="modal__close" width="20" height="20" viewBox="0 0 20 20" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17L17 3M3 3L17 17" stroke="#ADAAA9" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+        </svg>
+        <h3>ПОРЯДОК ПРОЖИВАНИЯ В ПРЕМЬЕР ОТЕЛЕ</h3>
+        <ol>
+            <li>
+                Носите карточку гостя с собой. Она является документом, подтверждающим Ваше право на проживание и
+                пользование
+                услугами отеля, входящими в стоимость.
+            </li>
+            <li>
+                Расчётный час в 12:00. Если Вы хотите заехать раньше или взять дополнительные часы проживания,
+                предупредите об этом
+                администратора гостиницы заранее и оплатите согласно прейскуранту на дополнительные часы. Дополнительные
+                часы
+                предоставляются при условии наличия свободного номера той же категории.
+            </li>
+            <li>
+                Если вы хотите сократить срок пребывания в отеле, Вам необходимо сообщить об этом администратору не
+                менее чем за 24
+                часа. В противном случае проживание рассчитывается по ранее оговоренному сроку
+            </li>
+            <li>При проживании менее суток плата взимается за полные сутки.</li>
+            <li>
+                При заселении в номер Вы получаете ключ-карту. При её потере Вам необходимо сразу сообщить
+                администратору, чтобы
+                предотвратить злоупотребления. Сразу после извещения администратор выдаст Вам новый ключ стоимостью
+                согласно
+                прейскуранту.
+            </li>
+            <li>Люди, навещающие гостей, должны предварительно подходить к администратору службы размещения.</li>
+            <li>
+                Обо всех возможных дополнительных пожеланиях (например, побудка, стирка, глажение и т.д.) и отказах от
+                услуг
+                сообщайте администратору.
+            </li>
+            <li>
+                Ежедневная уборка – после 14:00. Если Вам удобно другое время – позвоните, пожалуйста, 553 или повесьте
+                зелёную
+                карту. Замена постельного белья в номерах производится каждый день.
+            </li>
+            <li>Просим соблюдать тишину и правила этики по отношению к другим гостям отеля.</li>
+            <li>
+                Если гость пользуется номером или другими помещениями отеля и ресторанного комплекса с нарушениями
+                общепринятых
+                правил, администрация отеля имеет право отказать в дальнейшем предоставлении услуг.
+            </li>
+            <li>
+                Сообщите о Вашем отъезде заранее, и мы сделаем всё возможное, чтобы не занимать Вашего времени на
+                оформление
+                отъезда.
+            </li>
+            <li>Если Вам необходима дополнительная информация или помощь, обращайтесь в службу приёма и размещения.</li>
+        </ol>
+        <h4>ПРАВИЛА ПОЛЬЗОВАНИЯ НОМЕРАМИ ОТЕЛЯ</h4>
+        <ol>
+            <li>
+                Просим аккуратно пользоваться аппаратурой, оборудованием и инвентарём, находящимся в номерах отеля, а
+                также общих
+                помещениях, и использовать их только по их прямому назначению. Ущерб, принесённый отелю по Вашей вине,
+                будет отнесён
+                на Ваш счёт согласно действующему прейскуранту на ремонтно-восстановительные работы.
+            </li>
+            <li>
+                Просим сразу сообщать о замеченных Вами повреждениях и неисправностях, чтобы мы устранили их в
+                кратчайшие сроки.
+            </li>
+            <li>
+                Соблюдайте правила противопожарной безопасности, Инструкцию о действиях в случае пожара и экстремальных
+                ситуаций,
+                Правила пользования электробытовыми приборами, иные правила, действующие на территории Отеля.
+            </li>
+            <li>
+                Курение в любых помещениях и на территории отеля запрещено. Курение разрешено в специально отведенной
+                зоне для
+                курения (на улице).
+            </li>
+        </ol>
+        <h4>ПОРЯДОК И УСЛОВИЯ БРОНИРОВАНИЯ НОМЕРОВ</h4>
+        <ol>
+            <li>Бронирование может быть осуществлено в любой форме: с помощью почтовой, телефонной и иной связи.</li>
+            <li>
+                В ПРЕМЬЕР отеле применяются следующие виды бронирования:
+                <ul>
+                    <li>
+                        Гарантированное бронирование – вид бронирования, при котором гостиница ожидает потребителя до
+                        расчетного часа
+                        дня, следующего за днем запланированного заезда. В случае отказа от бронирования позднее, чем за
+                        24 часа до
+                        расчетного часа даты заезда, опоздания или незаезда потребителя с него или с заказчика взимается
+                        плата за
+                        фактический простой номера, но не более, чем за сутки. При опоздании более чем на сутки
+                        гарантированное
+                        бронирование аннулируется.
+                    </li>
+                    <li>
+                        Негарантированное бронирование – вид бронирования, при котором гостиница ожидает потребителя до
+                        18:00 дня
+                        заезда, после чего бронирование аннулируется.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Бронирование считается действительным с момента получения заказчиком уведомления, содержащего сведения о
+                наименовании исполнителя, данных заказчика, категории заказанного номера и о его цене, об условиях
+                бронирования, о
+                сроках проживания.
+            </li>
+            <li>
+                Заказчик вправе аннулировать заявку не позднее, чем за 24 часа до даты заезда. В случае несвоевременной
+                отмены
+                заявки исполнитель вправе взимать оплату, за простой номера, но не более, чем за сутки.
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="modal" id="modal-cookie">
+    <svg class="modal__close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 17L17 3M3 3L17 17" stroke="#ADAAA9" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round"/>
+    </svg>
+    <p>Этот сайт собирает cookies, чтобы сделать его удобнее для вас.</p>
+    <button class="modal-cookie__btn-ok btn-primary">Хорошо</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/roman_holidays/js/index.js?{{ time() }}" type="module"></script>
+</body>
+</html>

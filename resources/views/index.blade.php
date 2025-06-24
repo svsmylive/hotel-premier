@@ -64,6 +64,7 @@
         <a class="links-cont__link" href="#events">Мероприятия</a>
         <a class="links-cont__link" href="#wealness">Wellness</a>
         <a class="links-cont__link" href="#entertaiment">Развлечения</a>
+        <a class="links-cont__link" href="/roman-holidays">Сауна</a>
     </div>
     <div class="phone-cont">
         <a class="phone-cont__phone" href="tel:88612741155">8 (861) 274-11-55</a>
@@ -79,6 +80,7 @@
         <a class="links-cont__link" href="#events">Мероприятия</a>
         <a class="links-cont__link" href="#wealness">Wellness</a>
         <a class="links-cont__link" href="#entertaiment">Развлечения</a>
+        <a class="links-cont__link" href="/roman-holidays">Сауна</a>
     </div>
 
     <div class="contacts-cont">
@@ -838,6 +840,7 @@
                     <a href="#events">Мероприятия</a>
                     <a href="#wealness">Wellness</a>
                     <a href="#entertaiment">Развлечения</a>
+                    <a class="links-cont__link" href="/roman-holidays">Сауна</a>
                 </div>
                 <div class="footer__social-media-cont">
                     <a href="#">
