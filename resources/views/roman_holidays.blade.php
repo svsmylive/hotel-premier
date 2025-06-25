@@ -56,7 +56,11 @@
 <header class="header">
     <div class="logo-cont">
         <img src="/assets/images/logo2.svg" alt="#" class="logo-cont__img"/>
-        <h2 class="logo-cont__title">ПРЕМЬЕР</h2>
+        <h2 class="logo-cont__title">
+            <a href="/" style="text-decoration: none; color: black">
+                ПРЕМЬЕР
+            </a>
+        </h2>
     </div>
     <div class="links-cont">
         <a class="links-cont__link" href="/#nums">Номера</a>
@@ -67,7 +71,7 @@
         <a class="links-cont__link" href="/roman-holidays">Сауна</a>
     </div>
     <div class="phone-cont">
-        <a class="phone-cont__phone" href="tel:88612741155">8 (861) 274-11-55</a>
+        <a class="phone-cont__phone" href="tel:89189997989">8 (918) 999-79-89</a>
     </div>
     <div class="menu-icon">
         <span></span>
@@ -84,7 +88,7 @@
     </div>
 
     <div class="contacts-cont">
-        <a class="contacts-cont__phone" href="tel:88612741155">8 (861) 274-11-55</a>
+        <a class="contacts-cont__phone" href="tel:89189997989">8 (918) 999-79-89</a>
         <div class="contacts-cont__addr">г. Краснодар, ул. Васнецова, 14</div>
     </div>
 </div>
@@ -1148,7 +1152,7 @@
         <div class="reservation-section__reservation-content">
             <div class="reservation-content__resevation-texts">
                 <h3 class="resevation-texts__title">Забронировать или узнать подробности:</h3>
-                <a href="tel:88612741155" class="resevation-texts__tel">8 (861) 274-11-55</a>
+                <a class="resevation-texts__tel" href="tel:89189997989">8 (918) 999-79-89</a>
                 <p class="resevation-texts__adress-title">Наш адрес:</p>
                 <p class="resevation-texts__adress">г. Краснодар, ул. Васнецова, 14</p>
             </div>
@@ -1166,7 +1170,7 @@
         <div class="footer__content-map-links-wrapper">
             <div class="footer-map-cont">
                 <p class="footer-map-cont__text" style="margin-bottom: 12px">г. Краснодар, ул. Васнецова, 14</p>
-                <a class="footer-map-cont__text" href="tel:88612741155">8 (861) 274-11-55</a>
+                <a class="footer-map-cont__text" href="tel:89189997989">8 (918) 999-79-89</a>
                 <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3Adda1f7b06b71574a5fcb37454f8bf26dedcd8416ab439192dae38046dfad31c3&amp;source=constructor"
                     width="100%"
