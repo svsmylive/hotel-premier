@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/assets/styles/variables.css"/>
     <link rel="stylesheet" href="/assets/styles/shared.css"/>
-    <link rel="stylesheet" href="/assets/styles/index.css"/>
-    <link rel="stylesheet" href="/assets/styles/adaptive.css"/>
+    <link rel="stylesheet" href="/assets/styles/index.css?a=<?php echo time();?>"/>
+    <link rel="stylesheet" href="/assets/styles/adaptive.css?a=<?php echo time();?>"/>
     <title>ПРЕМЬЕР</title>
 
     <link rel="icon" type="image/png" href="./favicon.png"/>
@@ -1388,6 +1388,40 @@
                 заявки исполнитель вправе взимать оплату, за простой номера, но не более, чем за сутки.
             </li>
         </ol>
+    </div>
+    <div class="modal" id="modal-promokod">
+        <div class="modal-promokod__title-cont">
+            <div style="display: flex; align-items: center">
+                <img
+                    src="/assets/images/party-popper-logo.png"
+                    alt="#"
+                    style="width: 20px; margin-right: 5px"
+                />
+                <h2>Скидка 7% по промокоду</h2>
+            </div>
+            <svg
+                class="modal__close"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M3 17L17 3M3 3L17 17"
+                    stroke="#ADAAA9"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+        </div>
+
+        <p class="modal-promokod__description">
+            Забронируйте номер и получите <span style="font-weight: 600">скидку 7% </span>по промокоду:
+        </p>
+        <div class="modal-promokod__premier"><p>PREMIER</p></div>
+        <p class="modal-promokod__additional">Введите его при оформлении бронирования на сайте.</p>
     </div>
 </div>
 

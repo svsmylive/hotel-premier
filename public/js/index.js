@@ -13,3 +13,4 @@ import './sections/footer.js';
 import './cookies.js';
 
 import './success-modal.js';
+import './promokod-modal.js';
