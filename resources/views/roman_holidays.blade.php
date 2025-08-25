@@ -98,7 +98,7 @@
             <p class="intro-section__intro">БАНЯ-САУНА</p>
             <h1 class="intro-section__title">РИМСКИЕ КАНИКУЛЫ</h1>
             <p class="intro-section__description">Атмосфера контрастов</p>
-            <a target="_blank" href="https://wa.clck.bar/79184476939?text=Здравствуйте" class="btn-primary btn-book"
+            <a href="tel:89184476939" class="btn-primary btn-book"
                style="margin-top: 32px">Забронировать</a>
         </div>
     </section>
