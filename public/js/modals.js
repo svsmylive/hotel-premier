@@ -2,6 +2,7 @@ const modalTint = document.getElementsByClassName('modal-tint')[0];
 
 const initCloseEvent = modal => {
   const btnClose = modal.querySelector('.modal__close');
+  if (!btnClose) return;
   btnClose.addEventListener('click', () => {
     modal.classList.remove('active');
     modalTint.classList.remove('active');
@@ -9,14 +10,6 @@ const initCloseEvent = modal => {
 };
 
 const ajustModalPosition = modal => {
-  // console.log(modal.clientHeight, window.innerHeight);
-
-  // if (modal.offsetTop <= 16) {
-  //   modal.classList.add('modal_too-tall');
-  // } else {
-  //   modal.classList.remove('modal_too-tall');
-  // }
-
   if (modal.clientHeight + 32 >= window.innerHeight) {
     modal.classList.add('modal_too-tall');
   } else {
@@ -54,8 +47,12 @@ export const openModal = (modalId, withBackground = true) => {
 
 export const closeModal = modalId => {
   const modal = document.getElementById(modalId);
-  modal.classList.remove('active');
-  modalTint.classList.remove('active');
+  const currentModal = document.querySelector('.modal.active');
+
+  if (currentModal && currentModal.id == modalId) {
+    modal.classList.remove('active');
+    modalTint.classList.remove('active');
+  }
 };
 
 init();
