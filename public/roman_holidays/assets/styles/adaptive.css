@@ -11,7 +11,7 @@
     display: none;
   }
   .header .phone-cont {
-    display: none;
+    /* display: none; */
   }
 
   .menu-block {
