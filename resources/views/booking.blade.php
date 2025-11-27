@@ -16,7 +16,7 @@
           rel="stylesheet"/>
     <link rel="stylesheet" href="/assets/styles/variables.css"/>
     <link rel="stylesheet" href="/assets/styles/shared.css"/>
-    <link rel="stylesheet" href="/assets/styles/index.css?a=<?php echo time();?>"/>
+    <link rel="stylesheet" href="/assets/styles/index_booking.css?a=<?php echo time();?>"/>
     <link rel="stylesheet" href="/assets/styles/adaptive.css?a=<?php echo time();?>"/>
     <title>ПРЕМЬЕР</title>
 
