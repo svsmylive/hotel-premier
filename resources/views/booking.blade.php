@@ -573,14 +573,14 @@ Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size
     <button class="modal-cookie__btn-ok btn-primary">Хорошо</button>
 </div>
 
-<script src="/js/lib/imask.js"></script>
-<script type="module">
-    import '/js/ui.js';
-    import '/js/sections/header.js';
-    import '/js/sections/footer.js';
-    import '/js/cookies.js';
-    import '/js/promokod-modal.js';
-</script>
+{{--<script src="/js/lib/imask.js"></script>--}}
+{{--<script type="module">--}}
+{{--    import '/js/ui.js';--}}
+{{--    import '/js/sections/header.js';--}}
+{{--    import '/js/sections/footer.js';--}}
+{{--    import '/js/cookies.js';--}}
+{{--    import '/js/promokod-modal.js';--}}
+{{--</script>--}}
 {{--<!-- calltouch -->--}}
 {{--<script>--}}
 {{--    (function (w, d, n, c) {--}}
