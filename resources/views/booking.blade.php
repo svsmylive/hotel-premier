@@ -579,7 +579,6 @@ Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size
         <p class="modal-promokod__additional">Введите его при оформлении бронирования на сайте.</p>
     </div>
 </div>
-</div>
 
 <div class="modal" id="modal-cookie">
     <svg class="modal__close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -596,12 +595,41 @@ Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size
     import '/js/sections/header.js';
     import '/js/sections/footer.js';
     import '/js/cookies.js';
-    import '/js/promokod-modal.js';
+    // import '/js/promokod-modal.js';
 </script>
 <script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
 <!-- calltouch -->
 <script>
-    (function(w,d,n,c){w.CalltouchDataObject=n;w[n]=function(){w[n]["callbacks"].push(arguments)};if(!w[n]["callbacks"]){w[n]["callbacks"]=[]}w[n]["loaded"]=false;if(typeof c!=="object"){c=[c]}w[n]["counters"]=c;for(var i=0;i<c.length;i+=1){p(c[i])}function p(cId){var a=d.getElementsByTagName("script")[0],s=d.createElement("script"),i=function(){a.parentNode.insertBefore(s,a)},m=typeof Array.prototype.find === 'function',n=m?"init-min.js":"init.js";s.async=true;s.src="https://mod.calltouch.ru/"+n+"?id="+cId;if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",i,false)}else{i()}}})(window,document,"ct","d0bjiqi8");
+    (function (w, d, n, c) {
+        w.CalltouchDataObject = n;
+        w[n] = function () {
+            w[n]["callbacks"].push(arguments)
+        };
+        if (!w[n]["callbacks"]) {
+            w[n]["callbacks"] = []
+        }
+        w[n]["loaded"] = false;
+        if (typeof c !== "object") {
+            c = [c]
+        }
+        w[n]["counters"] = c;
+        for (var i = 0; i < c.length; i += 1) {
+            p(c[i])
+        }
+
+        function p(cId) {
+            var a = d.getElementsByTagName("script")[0], s = d.createElement("script"), i = function () {
+                a.parentNode.insertBefore(s, a)
+            }, m = typeof Array.prototype.find === 'function', n = m ? "init-min.js" : "init.js";
+            s.async = true;
+            s.src = "https://mod.calltouch.ru/" + n + "?id=" + cId;
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", i, false)
+            } else {
+                i()
+            }
+        }
+    })(window, document, "ct", "d0bjiqi8");
 </script>
 <!-- calltouch -->
 </body>
