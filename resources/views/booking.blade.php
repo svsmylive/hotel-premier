@@ -100,22 +100,6 @@ Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size
 1em; opacity: .5; z-index: 10; margin-top: 10px;">
         </div>
     </div>
-    <script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
-    <script type="text/javascript">
-        (function () {
-            var BnovoBookFrame = new BookingIframe({
-                html_id: "booking_iframe",
-                uid: "917b573b-59b0-4f30-ad3c-324ecd99e0d1",
-                lang: "ru",
-                width: "auto",
-                height: "auto",
-                rooms: "",
-                IsMobile: "0",
-                scroll_to_rooms: "0",
-            });
-            BnovoBookFrame.init();
-        })();
-    </script>
 </main>
 
 <footer class="footer">
@@ -595,9 +579,8 @@ Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size
     import '/js/sections/header.js';
     import '/js/sections/footer.js';
     import '/js/cookies.js';
-    // import '/js/promokod-modal.js';
+    import '/js/promokod-modal.js';
 </script>
-<script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
 <!-- calltouch -->
 <script>
     (function (w, d, n, c) {
@@ -630,6 +613,24 @@ Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size
             }
         }
     })(window, document, "ct", "d0bjiqi8");
+</script>
+
+<script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
+<script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
+<script type="text/javascript">
+    (function () {
+        var BnovoBookFrame = new BookingIframe({
+            html_id: "booking_iframe",
+            uid: "917b573b-59b0-4f30-ad3c-324ecd99e0d1",
+            lang: "ru",
+            width: "auto",
+            height: "auto",
+            rooms: "",
+            IsMobile: "0",
+            scroll_to_rooms: "0",
+        });
+        BnovoBookFrame.init();
+    })();
 </script>
 <!-- calltouch -->
 </body>
