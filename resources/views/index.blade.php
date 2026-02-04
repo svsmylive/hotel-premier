@@ -824,6 +824,11 @@
         <div class="footer__content-map-links-wrapper">
             <div class="footer-map-cont">
                 <p class="footer-map-cont__text" style="margin-bottom: 12px">г. Краснодар, ул. Васнецова, 14</p>
+                <p class="footer-map-cont__text" style="margin-bottom: 12px">ID: 298894</p>
+                <a class="footer-map-cont__text"
+                   target="_blank"
+                   href="https://tourism.fsa.gov.ru/ru/resorts/hotels/f793b326-c606-11ef-92da-351896050cf7/about-resort"
+                   style="margin-bottom: 12px">Сведения о классификации</a>
                 <a class="footer-map-cont__text" href="tel:88612741155">8 (861) 274-11-55</a>
                 <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3Adda1f7b06b71574a5fcb37454f8bf26dedcd8416ab439192dae38046dfad31c3&amp;source=constructor"
@@ -1496,7 +1501,36 @@
 
 <!-- calltouch -->
 <script>
-    (function(w,d,n,c){w.CalltouchDataObject=n;w[n]=function(){w[n]["callbacks"].push(arguments)};if(!w[n]["callbacks"]){w[n]["callbacks"]=[]}w[n]["loaded"]=false;if(typeof c!=="object"){c=[c]}w[n]["counters"]=c;for(var i=0;i<c.length;i+=1){p(c[i])}function p(cId){var a=d.getElementsByTagName("script")[0],s=d.createElement("script"),i=function(){a.parentNode.insertBefore(s,a)},m=typeof Array.prototype.find === 'function',n=m?"init-min.js":"init.js";s.async=true;s.src="https://mod.calltouch.ru/"+n+"?id="+cId;if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",i,false)}else{i()}}})(window,document,"ct","d0bjiqi8");
+    (function (w, d, n, c) {
+        w.CalltouchDataObject = n;
+        w[n] = function () {
+            w[n]["callbacks"].push(arguments)
+        };
+        if (!w[n]["callbacks"]) {
+            w[n]["callbacks"] = []
+        }
+        w[n]["loaded"] = false;
+        if (typeof c !== "object") {
+            c = [c]
+        }
+        w[n]["counters"] = c;
+        for (var i = 0; i < c.length; i += 1) {
+            p(c[i])
+        }
+
+        function p(cId) {
+            var a = d.getElementsByTagName("script")[0], s = d.createElement("script"), i = function () {
+                a.parentNode.insertBefore(s, a)
+            }, m = typeof Array.prototype.find === 'function', n = m ? "init-min.js" : "init.js";
+            s.async = true;
+            s.src = "https://mod.calltouch.ru/" + n + "?id=" + cId;
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", i, false)
+            } else {
+                i()
+            }
+        }
+    })(window, document, "ct", "d0bjiqi8");
 </script>
 <!-- calltouch -->
 </body>
