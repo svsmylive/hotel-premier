@@ -1088,7 +1088,7 @@
                         <img src="/roman_holidays/assets/images/flower.svg" alt=""/>
                         <h3 class="content-cont__title">SPA-ЗОНА</h3>
                         <p class="content-cont__additional">до 6 чел</p>
-                        <p class="content-cont__price">3 700 ₽/час</p>
+                        <p class="content-cont__price">3 900 ₽/час</p>
                         <p class="content-cont__description">(свыше 6 чел. — +600 ₽/час)</p>
                     </div>
                     <div class="services-content__content-cont">
