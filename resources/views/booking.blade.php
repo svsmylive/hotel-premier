@@ -50,6 +50,46 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
+    <!-- start TL head script -->
+    <script type='text/javascript'>
+        (function(w) {
+            var q = [
+                ["setContext", "TL-INT-hotelpremier-ru_2026-06-03", "ru"],
+                ["embed", "booking-form", {
+                    container: "tl-booking-form"
+                }],
+                ["embed", "search-form", {
+                    container: "tl-search-form"
+                }]
+            ];
+            var h = ["ru-ibe.tlintegration.ru", "ibe.tlintegration.ru", "ibe.tlintegration.com"];
+            var t = w.travelline = (w.travelline || {}),
+                ti = t.integration = (t.integration || {});
+            ti.__cq = ti.__cq? ti.__cq.concat(q) : q;
+            if (!ti.__loader) {
+                ti.__loader = true;
+                var d=w.document,c=d.getElementsByTagName("head")[0]||d.getElementsByTagName("body")[0];
+                function e(s,f) {return function() {w.TL||(c.removeChild(s),f())}}
+                (function l(h) {
+                    if (0===h.length) return; var s=d.createElement("script");
+                    s.type="text/javascript";s.async=!0;s.src="https://"+h[0]+"/integration/loader.js";
+                    s.onerror=s.onload=e(s,function(){l(h.slice(1,h.length))});c.appendChild(s)
+                })(h);
+            }
+        })(window);
+    </script>
+    <!-- end TL head script -->
+
+    <style>
+        #tl-booking-form {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            z-index: 0;
+            margin-top: 50px;
+        }
+    </style>
+
 </head>
 <body>
 <header class="header" style="position: unset">
@@ -94,12 +134,9 @@
     </div>
 </div>
 <main class="main">
-    <div id="booking_iframe" style="position: relative; padding-bottom: 30px;">
-        <div id="bn_iframe" style="font-family: 'Proxima nova', 'Helvetica Neue', 'Cera Pro Medium',
-Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size: 12px; line-height:
-1em; opacity: .5; z-index: 10; margin-top: 10px;">
-        </div>
-    </div>
+    <!-- start TL Booking form script -->
+    <div id="tl-booking-form"></div>
+    <!-- end TL Booking form script -->
 </main>
 
 <footer class="footer">
@@ -613,24 +650,6 @@ Arial, Helvetica, sans-serif; position: absolute; right: 0; bottom: 0; font-size
             }
         }
     })(window, document, "ct", "d0bjiqi8");
-</script>
-
-<script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
-<script src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"></script>
-<script type="text/javascript">
-    (function () {
-        var BnovoBookFrame = new BookingIframe({
-            html_id: "booking_iframe",
-            uid: "917b573b-59b0-4f30-ad3c-324ecd99e0d1",
-            lang: "ru",
-            width: "auto",
-            height: "auto",
-            rooms: "",
-            IsMobile: "0",
-            scroll_to_rooms: "0",
-        });
-        BnovoBookFrame.init();
-    })();
 </script>
 <!-- calltouch -->
 </body>

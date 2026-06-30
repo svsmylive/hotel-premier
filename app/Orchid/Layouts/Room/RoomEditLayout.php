@@ -19,6 +19,12 @@ class RoomEditLayout extends Rows
                 ->title(__('Название'))
                 ->placeholder(__('Название')),
 
+            Input::make('room.room_type_id')
+                ->type('text')
+                ->max(255)
+                ->title(__('Travelline room_type_id'))
+                ->placeholder(__('Travelline room_type_id')),
+
             Input::make('room.discount_percent')
                 ->type('text')
                 ->required()

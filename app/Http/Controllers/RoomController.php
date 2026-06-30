@@ -46,6 +46,7 @@ class RoomController
             $data[] = [
                 'id' => $room->id,
                 'name' => $room->title,
+                'type_id' => $room->room_type_id,
                 'description' => $room->preview_description,
                 'price' => $room->price,
                 'price_old' => $room->price_old,

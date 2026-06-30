@@ -51,6 +51,62 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
+    <!-- start TL head script -->
+    <script type='text/javascript'>
+        (function(w) {
+            var q = [
+                ["setContext", "TL-INT-hotelpremier-ru_2026-06-03", "ru"],
+                ["embed", "booking-form", {
+                    container: "tl-booking-form"
+                }],
+                ["embed", "search-form", {
+                    container: "tl-search-form"
+                }]
+            ];
+            var h = ["ru-ibe.tlintegration.ru", "ibe.tlintegration.ru", "ibe.tlintegration.com"];
+            var t = w.travelline = (w.travelline || {}),
+                ti = t.integration = (t.integration || {});
+            ti.__cq = ti.__cq? ti.__cq.concat(q) : q;
+            if (!ti.__loader) {
+                ti.__loader = true;
+                var d=w.document,c=d.getElementsByTagName("head")[0]||d.getElementsByTagName("body")[0];
+                function e(s,f) {return function() {w.TL||(c.removeChild(s),f())}}
+                (function l(h) {
+                    if (0===h.length) return; var s=d.createElement("script");
+                    s.type="text/javascript";s.async=!0;s.src="https://"+h[0]+"/integration/loader.js";
+                    s.onerror=s.onload=e(s,function(){l(h.slice(1,h.length))});c.appendChild(s)
+                })(h);
+            }
+        })(window);
+    </script>
+    <!-- end TL head script -->
+
+    <style>
+        #block-search,
+        #block-search * {
+            box-sizing: border-box;
+        }
+
+        #block-search {
+            background: rgba(18, 18, 18, 0.7);
+            max-width: 1110px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 10px;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        #block-search.block-search--mobile {
+            background: rgba(18, 18, 18, 1);
+        }
+
+        .tl-container {
+            padding: 0 25px;
+        }
+    </style>
+
 </head>
 <body>
 <header class="header">
@@ -90,14 +146,16 @@
 </div>
 <main class="main">
     <section class="intro-section">
-        <div class="intro-section__video loading"></div>
-        <div class="intro-section__text-cont">
-            <h1 class="intro-section__title">ПРЕМЬЕР</h1>
-            <h4 class="intro-section__description">Для деловых встреч и тихого отдыха</h4>
-        </div>
-        <div class="book-widget">
-            <div class="left" id="_bn_widget_">
+        <div class="intro-section__video loading">
+            <div class="intro-section__text-cont">
+                <h1 class="intro-section__title">ПРЕМЬЕР</h1>
+                <h4 class="intro-section__description">Для деловых встреч и тихого отдыха</h4>
             </div>
+            <!-- start TL Search form script -->
+            <div id="block-search">
+                <div id="tl-search-form" class="tl-container"></div>
+            </div>
+            <!-- end TL Search form script -->
         </div>
     </section>
 
@@ -181,7 +239,7 @@
 
                                 <div class="nums-carousel__item-book-cont">
                                     <div class="nums-carousel__item-price">От {{ $room['price'] }} ₽/сутки</div>
-                                    <button onclick="location.href = '/booking'" class="btn-primary">Забронировать
+                                    <button onclick="location.href = '/booking?room-type={{ $room['type_id'] }}'" class="btn-primary">Забронировать
                                     </button>
                                 </div>
                             </div>
@@ -1442,62 +1500,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="/js/lib/imask.js"></script>
 <script src="/js/index.js?{{ time() }}" type="module"></script>
-<script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
-<script type="text/javascript">
-    (function () {
-        Bnovo_Widget.init(function () {
-            Bnovo_Widget.open('_bn_widget_', {
-                type: "horizontal",
-                uid: "917b573b-59b0-4f30-ad3c-324ecd99e0d1",
-                lang: "ru",
-                width: "100%",
-                width_mobile: "360",
-                background: "#34425A",
-                background_mobile: "#34425A",
-                bg_alpha: "5",
-                bg_alpha_mobile: "5",
-                border_color_mobile: "#C6CAD3",
-                padding: "1",
-                padding_mobile: "1",
-                border_radius: "5",
-                button_font_size: "14",
-                button_height: "42",
-                font_type: "roboto",
-                without_title: "on",
-                without_title_mobile: "on",
-                title_color: "#FFFFFF",
-                title_color_mobile: "#242742",
-                title_size: "20",
-                title_size_mobile: "22",
-                inp_color: "#FFFFFF",
-                inp_bordhover: "#FFFFFF",
-                inp_bordcolor: "#050505",
-                inp_alpha: "15",
-                btn_background: "#0f0f0f",
-                btn_background_over: "#FFFFFF",
-                btn_textcolor: "#FFFFFF",
-                btn_textover: "#0F0F0F",
-                btn_bordcolor: "#0F0F0F",
-                btn_bordhover: "#FFFFFF",
-                min_age: "0",
-                max_age: "17",
-                adults_default: "1",
-                dates_preset: "on",
-                dfrom_today: "on",
-                dfrom_value: "2",
-                dto_nextday: "on",
-                dto_value: "2",
-                cancel_color: "#FFFFFF",
-                url: "https://hotelpremier.ru/booking",
-                down_mode: "on",
-                switch_mobiles: "on",
-                switch_mobiles_width: "500",
-                promo: "on",
-                promo_placeholder: "Скидка по промокоду",
-            });
-        });
-    })();
-</script>
 
 <!-- calltouch -->
 <script>

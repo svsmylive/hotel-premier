@@ -27,6 +27,7 @@ class Room extends Model
         'square',
         'bed_size',
         'persons',
+        'room_type_id',
     ];
 
     public function presenter(): RoomPresenter
