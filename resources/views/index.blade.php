@@ -53,7 +53,7 @@
 
     <!-- start TL head script -->
     <script type='text/javascript'>
-        (function(w) {
+        (function (w) {
             var q = [
                 ["setContext", "TL-INT-hotelpremier-ru_2026-06-03", "ru"],
                 ["embed", "booking-form", {
@@ -66,15 +66,27 @@
             var h = ["ru-ibe.tlintegration.ru", "ibe.tlintegration.ru", "ibe.tlintegration.com"];
             var t = w.travelline = (w.travelline || {}),
                 ti = t.integration = (t.integration || {});
-            ti.__cq = ti.__cq? ti.__cq.concat(q) : q;
+            ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
             if (!ti.__loader) {
                 ti.__loader = true;
-                var d=w.document,c=d.getElementsByTagName("head")[0]||d.getElementsByTagName("body")[0];
-                function e(s,f) {return function() {w.TL||(c.removeChild(s),f())}}
+                var d = w.document, c = d.getElementsByTagName("head")[0] || d.getElementsByTagName("body")[0];
+
+                function e(s, f) {
+                    return function () {
+                        w.TL || (c.removeChild(s), f())
+                    }
+                }
+
                 (function l(h) {
-                    if (0===h.length) return; var s=d.createElement("script");
-                    s.type="text/javascript";s.async=!0;s.src="https://"+h[0]+"/integration/loader.js";
-                    s.onerror=s.onload=e(s,function(){l(h.slice(1,h.length))});c.appendChild(s)
+                    if (0 === h.length) return;
+                    var s = d.createElement("script");
+                    s.type = "text/javascript";
+                    s.async = !0;
+                    s.src = "https://" + h[0] + "/integration/loader.js";
+                    s.onerror = s.onload = e(s, function () {
+                        l(h.slice(1, h.length))
+                    });
+                    c.appendChild(s)
                 })(h);
             }
         })(window);
@@ -239,7 +251,8 @@
 
                                 <div class="nums-carousel__item-book-cont">
                                     <div class="nums-carousel__item-price">От {{ $room['price'] }} ₽/сутки</div>
-                                    <button onclick="location.href = '/booking?room-type={{ $room['type_id'] }}'" class="btn-primary">Забронировать
+                                    <button onclick="location.href = '/booking?room-type={{ $room['type_id'] }}'"
+                                            class="btn-primary">Забронировать
                                     </button>
                                 </div>
                             </div>
@@ -328,10 +341,10 @@
                 <span class="line"></span>
                 <p class="gastro-cont__description">С 7:00 до 10:30 (по будням) и С 7:30 до 11:00 (по выходным) {{--подаём 2
                     варианта завтрака: --}}</p>
-{{--                <ul>--}}
-{{--                    <li>Английский с глазуньей, сосисками и сырниками на десерт; </li>--}}
-{{--                    <li>Континентальный со скремблом, лососем и овсяной кашей.</li>--}}
-{{--                </ul>--}}
+                {{--                <ul>--}}
+                {{--                    <li>Английский с глазуньей, сосисками и сырниками на десерт; </li>--}}
+                {{--                    <li>Континентальный со скремблом, лососем и овсяной кашей.</li>--}}
+                {{--                </ul>--}}
                 <span class="line"></span>
                 <p class="gastro-cont__description">
                     По предзаказу приготовим завтрак к нужному времени или подадим его в номер. А для тех, кто сильно
@@ -421,7 +434,14 @@
                         </div>
                         <div class="events-section__accordion-item-descr-price">
                             <h4>ЦЕНА ОТ 3 500 ₽</h4>
-                            <button class="btn-secondary events-section__btn-book">Забронировать</button>
+                            <button
+                                class="btn-secondary events-section__btn-book"
+                                type="button"
+                                data-goal="Zal_Mobiscar"
+                                data-hall="КОНФЕРЕНЦ-ЗАЛ МОБИСКАР"
+                            >
+                                Забронировать
+                            </button>
                         </div>
                     </div>
                     <div class="events-section__accordion-item-swiper swiper">
@@ -514,7 +534,14 @@
                         </div>
                         <div class="events-section__accordion-item-descr-price">
                             <h4>ЦЕНА ОТ 3 500 ₽</h4>
-                            <button class="btn-secondary events-section__btn-book">Забронировать</button>
+                            <button
+                                class="btn-secondary events-section__btn-book"
+                                type="button"
+                                data-goal="Zal_Premyer"
+                                data-hall="КОНФЕРЕНЦ-ЗАЛ ПРЕМЬЕР"
+                            >
+                                Забронировать
+                            </button>
                         </div>
                     </div>
                     <div class="events-section__accordion-item-swiper swiper">
@@ -605,7 +632,14 @@
                         </div>
                         <div class="events-section__accordion-item-descr-price">
                             <h4>ЦЕНА ОТ 3 500 ₽</h4>
-                            <button class="btn-secondary events-section__btn-book">Забронировать</button>
+                            <button
+                                class="btn-secondary events-section__btn-book"
+                                type="button"
+                                data-goal="Peregovornay_kom"
+                                data-hall="ПЕРЕГОВОРНАЯ КОМНАТА"
+                            >
+                                Забронировать
+                            </button>
                         </div>
                     </div>
                     <div class="events-section__accordion-item-swiper swiper">
@@ -906,14 +940,14 @@
                     <a class="links-cont__link" href="/roman-holidays">Сауна</a>
                 </div>
                 <div class="footer__social-media-cont">
-                    <a href="#">
-                        <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M16.5361 17.6C6.69623 17.6 1.08383 10.9934 0.849976 0H5.7789C5.94079 8.06887 9.57443 11.4867 12.4526 12.1914V0H17.0939V6.95896C19.9361 6.65946 22.9219 3.48829 23.9293 0H28.5705C27.797 4.2987 24.559 7.46987 22.2564 8.77357C24.559 9.83063 28.2469 12.5966 29.65 17.6H24.541C23.4437 14.2527 20.7097 11.6629 17.0939 11.3105V17.6H16.5361Z"
-                                fill="#ADAAA9"
-                            />
-                        </svg>
-                    </a>
+                    {{--                    <a href="#">--}}
+                    {{--                        <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
+                    {{--                            <path--}}
+                    {{--                                d="M16.5361 17.6C6.69623 17.6 1.08383 10.9934 0.849976 0H5.7789C5.94079 8.06887 9.57443 11.4867 12.4526 12.1914V0H17.0939V6.95896C19.9361 6.65946 22.9219 3.48829 23.9293 0H28.5705C27.797 4.2987 24.559 7.46987 22.2564 8.77357C24.559 9.83063 28.2469 12.5966 29.65 17.6H24.541C23.4437 14.2527 20.7097 11.6629 17.0939 11.3105V17.6H16.5361Z"--}}
+                    {{--                                fill="#ADAAA9"--}}
+                    {{--                            />--}}
+                    {{--                        </svg>--}}
+                    {{--                    </a>--}}
                     <a href="https://wa.me/79189998039">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -923,7 +957,7 @@
                         </svg>
                     </a>
 
-                    <a href="https://www.instagram.com/hotel_premier_krasnodar?igsh=N3I3c3lzdDI4NTVm">
+                    <a href="https://www.instagram.com/hotelpremier.krd">
                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M14.7381 12.2608C14.7381 10.9622 13.677 9.90551 12.3728 9.90551C11.0688 9.90551 10.0078 10.9622 10.0078 12.2608C10.0078 13.5598 11.0688 14.6163 12.3728 14.6163C13.677 14.6163 14.7381 13.5598 14.7381 12.2608ZM18.252 0H6.24795C2.94068 0 0.25 2.67976 0.25 5.97353V7.63792H9.07599C10.0073 6.97722 11.1447 6.58692 12.3728 6.58692C13.601 6.58692 14.7385 6.97722 15.6699 7.63792H24.25V5.97353C24.25 2.67974 21.5593 0 18.252 0ZM20.6811 5.68129C20.6811 6.04632 20.3814 6.34502 20.0147 6.34502H17.9555C17.5889 6.34502 17.2891 6.04632 17.2891 5.68129V3.63037C17.2891 3.26537 17.5889 2.96664 17.9555 2.96664H20.0147C20.3813 2.96664 20.6811 3.26532 20.6811 3.63037V5.68129ZM18.0702 12.2608C18.0702 15.3898 15.5143 17.9349 12.3728 17.9349C9.23127 17.9349 6.67552 15.3898 6.67552 12.2608C6.67552 11.3994 6.87034 10.5825 7.21678 9.8503H0.25V18.0265C0.25 21.3205 2.94068 24 6.24795 24H18.2521C21.5593 24 24.25 21.3205 24.25 18.0265V9.8503H17.529C17.8754 10.5825 18.0702 11.3994 18.0702 12.2608Z"
@@ -953,7 +987,8 @@
             <img class="modal__logo" src="/assets/images/modal-logo.svg" alt=""/>
         </div>
         <h1>Заказать банкет</h1>
-        <form class="modal__form" id="modal-book-form" action="">
+        <form class="modal__form" id="modal-book-form" action=""
+              onsubmit="ym(99236087,'reachGoal','Banket'); return true;">
             <div class="modal__form-element" data-field-name="name">
                 <label for="book-form_name">Ваше имя</label>
                 <input id="book-form_name" name="name" type="text"/>

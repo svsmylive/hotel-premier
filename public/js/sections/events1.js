@@ -52,40 +52,69 @@ eventsAccordionItems.forEach((item, idx) => {
 
 // booking
 
-let accordionItemConnectedWihForm = null;
+let selectedConference = null;
 
 eventsAccordionItems.forEach(item => {
     const btnBook = item.querySelector('.events-section__btn-book');
+
     btnBook?.addEventListener('click', () => {
-        accordionItemConnectedWihForm = item;
+        selectedConference = {
+            hall: btnBook.dataset.hall,
+            goal: btnBook.dataset.goal,
+        };
+
         openModal('modal-book-event');
     });
 });
 
-initBookForm('modal-book-event-form', data => {
-    if (accordionItemConnectedWihForm) {
-        data.type = accordionItemConnectedWihForm.querySelector('.accordion-header > h4').textContent;
+initBookForm('modal-book-event-form', async data => {
+    if (!selectedConference) {
+        console.error('Не удалось определить выбранный конференц-зал');
+        return;
     }
 
-    closeModal('modal-book-event');
-    openModal('modal-book-success');
+    try {
+        const response = await fetch(
+            'https://hotelpremier.ru/api/reserve/conferences',
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    name: data.name,
+                    date: data.date,
+                    guest_count: data.guestsNum,
+                    phone: data.mobileNumber,
+                    additional_info: data.additionalData,
+                    type: selectedConference.hall,
+                }),
+            }
+        );
 
-    fetch('https://hotelpremier.ru/api/reserve/conferences', {
-        method: 'POST',
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({
-            name: data.name,
-            date: data.date,
-            guest_count: data.guestsNum,
-            phone: data.mobileNumber,
-            additional_info: data.additionalData,
-            type: data.type,
-        }),
-    })
-        .then(res => {
-            ym(99236087, 'reachGoal', 'modal-book-event-form')
-        })
-        .catch(err => {
-            console.log(err);
-        });
+        if (!response.ok) {
+            throw new Error(
+                `Ошибка отправки формы: ${response.status} ${response.statusText}`
+            );
+        }
+
+        if (
+            selectedConference.goal &&
+            typeof window.ym === 'function'
+        ) {
+            window.ym(
+                99236087,
+                'reachGoal',
+                selectedConference.goal
+            );
+        }
+
+        closeModal('modal-book-event');
+        openModal('modal-book-success');
+    } catch (error) {
+        console.error(
+            'Ошибка бронирования конференц-зала:',
+            error
+        );
+    }
 });
