@@ -185,7 +185,7 @@
             <li class="opportunities-section__list-divider"></li>
             <li class="opportunities-section__list-item">
                 <img src="/assets/images/opportunities_2.svg" alt=""/>
-                <h3>41 НОМЕР ОТ 3500 ₽</h3>
+                <h3>41 НОМЕР ОТ 4700 ₽</h3>
                 <p>
                     Room service, ранний завтрак,<br/>
                     можно с питомцем до 6 кг.<br/>
