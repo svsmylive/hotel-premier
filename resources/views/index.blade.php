@@ -1498,13 +1498,13 @@
             </li>
         </ol>
     </div>
-    <div class="modal" id="modal-promokod">
+    <div class="modal" id="modal-promokod" data-promokod="PREMIER">
         <div class="modal-promokod__title-cont">
-            <div style="display: flex; align-items: center">
+            <div class="modal-promokod__title">
                 <img
+                    class="modal-promokod__title-icon"
                     src="/assets/images/party-popper-logo.png"
-                    alt="#"
-                    style="width: 20px; margin-right: 5px"
+                    alt=""
                 />
                 <h2>Скидка 7% по промокоду</h2>
             </div>
@@ -1527,10 +1527,37 @@
         </div>
 
         <p class="modal-promokod__description">
-            Забронируйте номер и получите <span style="font-weight: 600">скидку 7% </span>по промокоду:
+            Забронируйте номер и получите <span>скидку 7%</span> по промокоду:
         </p>
-        <div class="modal-promokod__premier"><p>PREMIER</p></div>
-        <p class="modal-promokod__additional">Введите его при оформлении бронирования на сайте.</p>
+
+        <div class="modal-promokod__premier">
+            <p>PREMIER</p>
+            <button class="modal-promokod__copy" type="button" aria-label="Скопировать промокод">
+                <svg
+                    class="modal-promokod__copy-icon"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <rect x="5.7" y="5.7" width="8.6" height="8.6" rx="2" stroke="currentColor" stroke-width="1.4"/>
+                    <path
+                        d="M10.3 3.5v-1a1 1 0 0 0-1-1h-6.8a1 1 0 0 0-1 1v6.8a1 1 0 0 0 1 1h1"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                    />
+                </svg>
+                <span class="modal-promokod__copy-text">Копировать</span>
+            </button>
+        </div>
+
+        <a class="btn-primary modal-promokod__cta" href="/booking?promo-code-plain=PREMIER">
+            Забронировать со скидкой
+        </a>
+
+        <p class="modal-promokod__additional">По этой кнопке промокод применится автоматически.</p>
     </div>
 </div>
 

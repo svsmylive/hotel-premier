@@ -639,11 +639,52 @@
   .modal > h1 {
     max-width: 280px;
   }
+}
+
+/* modal promokod */
+
+/* На мобильных промокод показывается карточкой у нижнего края, чтобы не
+   перекрывать форму бронирования. Отступ снизу оставлен под кнопку чата. */
+@media (max-width: 768px) {
+  #modal-promokod {
+    position: fixed;
+    left: 8px;
+    right: 8px;
+    bottom: 76px;
+    top: auto;
+    transform: none;
+    width: auto !important;
+    max-width: none;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  }
+  #modal-promokod.modal_too-tall {
+    top: auto;
+    transform: none;
+  }
+  .modal-promokod__description,
   .modal-promokod__additional {
-    width: 200px;
+    width: 100%;
   }
   .modal-promokod__description {
-    width: 200px;
+    font-size: 16px;
+  }
+  .modal-promokod__premier p {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 360px) {
+  .modal-promokod__title-cont h2 {
+    font-size: 16px;
+  }
+  .modal-promokod__premier p {
+    font-size: 22px;
+  }
+  .modal-promokod__copy-text {
+    display: none;
   }
 }
 

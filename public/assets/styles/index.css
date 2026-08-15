@@ -1529,18 +1529,34 @@ ul {
   border-radius: 20px;
   flex-direction: column;
   align-items: center;
+  gap: 14px;
   width: auto !important;
+  max-width: calc(100vw - 32px);
+  box-sizing: border-box;
 }
-#modal-promokod svg {
+#modal-promokod.active {
+  display: flex;
+}
+#modal-promokod > .modal-promokod__title-cont > .modal__close {
   position: relative;
   top: 0;
   right: 0;
+  flex-shrink: 0;
 }
 .modal-promokod__title-cont {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
   width: 100%;
+}
+.modal-promokod__title {
+  display: flex;
+  align-items: center;
+}
+.modal-promokod__title-icon {
+  width: 20px;
+  margin-right: 5px;
 }
 .modal-promokod__title-cont h2 {
   font-size: 18px;
@@ -1550,27 +1566,72 @@ ul {
 .modal-promokod__description {
   font-size: 18px;
   width: 300px;
+  max-width: 100%;
+  margin: 0;
   text-align: center;
   font-family: 'Jost';
 }
+.modal-promokod__description span {
+  font-weight: 600;
+}
 .modal-promokod__premier {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   width: 100%;
   background-color: #f8f9fb;
   border: 1px solid #eeeeee;
   border-radius: 5px;
-  padding: 10px 0 10px 0;
+  padding: 10px 12px;
+  box-sizing: border-box;
 }
 .modal-promokod__premier p {
+  flex-grow: 1;
   text-align: center;
   font-size: 30px;
   font-weight: 500;
+  letter-spacing: 1px;
   margin: 0;
   font-family: 'Jost';
+}
+.modal-promokod__copy {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  padding: 8px 10px;
+  border: 1px solid #d9d8d4;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #616161;
+  font-family: 'Jost';
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: var(--transition-primary);
+}
+.modal-promokod__copy:hover {
+  color: #000000;
+  border-color: #000000;
+}
+.modal-promokod__copy.copied {
+  color: #1e8e3e;
+  border-color: #1e8e3e;
+}
+.modal-promokod__cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 .modal-promokod__additional {
   color: #616161;
   width: 300px;
+  max-width: 100%;
+  margin: 0;
   text-align: center;
   font-family: 'Jost';
+  font-size: 14px;
   line-height: 20px;
 }
