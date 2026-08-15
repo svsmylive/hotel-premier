@@ -25,6 +25,8 @@
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+
         (function (m, e, t, r, i, k, a) {
             m[i] = m[i] || function () {
                 (m[i].a = m[i].a || []).push(arguments)
@@ -37,13 +39,18 @@
             }
             k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
         })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        (window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=99236087', 'ym');
 
-        ym(99236087, "init", {
+        ym(99236087, 'init', {
+            ssr: true,
+            webvisor: true,
+            trackHash: true,
             clickmap: true,
-            trackLinks: true,
+            ecommerce: "dataLayer",
+            referrer: document.referrer,
+            url: location.href,
             accurateTrackBounce: true,
-            webvisor: true
+            trackLinks: true
         });
     </script>
     <noscript>
@@ -251,7 +258,7 @@
 
                                 <div class="nums-carousel__item-book-cont">
                                     <div class="nums-carousel__item-price">От {{ $room['price'] }} ₽/сутки</div>
-                                    <button onclick="location.href = '/booking?room-type={{ $room['type_id'] }}'"
+                                    <button onclick="if (typeof ym === 'function') { ym(99236087, 'reachGoal', 'Zabronirovat'); } location.href = '/booking?room-type={{ $room['type_id'] }}'"
                                             class="btn-primary">Забронировать
                                     </button>
                                 </div>
