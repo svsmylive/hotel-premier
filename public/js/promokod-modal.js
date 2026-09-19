@@ -3,7 +3,7 @@ import {closeModal, openModal} from './modals.js';
 const MODAL_ID = 'modal-promokod';
 const COOKIE_NAME = 'promokod_modal_shown';
 const COOKIE_MINUTES = 5;
-const AUTO_CLOSE_MS = 12_000;
+const AUTO_CLOSE_MS = 20_000;
 
 // Параметр модуля бронирования TravelLine, который применяет промокод сам,
 // без ручного ввода в форме.
