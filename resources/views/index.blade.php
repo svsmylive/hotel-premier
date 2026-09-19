@@ -1500,7 +1500,7 @@
     </div>
 </div>
 
-<div class="modal" id="modal-promokod" data-promokod="PREMIER">
+<div class="modal modal-promokod_top" id="modal-promokod" data-promokod="PREMIER">
     <div class="modal-promokod__title-cont">
         <div class="modal-promokod__title">
             <img
